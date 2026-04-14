@@ -1,3 +1,5 @@
+- **Public repo URL:** Documented clone URL `https://github.com/anshu-moonchariot/vapi-hillclimb.git` / `cd vapi-hillclimb` in `README.md` and `results/evaluation_report.md`.
+- **README Setup:** Restored explicit `git clone` + `cd` (step 1); install is step 2. `evaluation_report.md` §14 summary updated to match.
 - **Setup hardening:** Rewrote `README.md` Setup (no `git clone` placeholders; `cp .env.example .env`; table for required keys; aligned with `config.py` — fixed wrong `N_ROLLOUTS` / `K_CANDIDATES` names). Expanded `.env.example` with comments and `PATIENT_PHONE_NUMBER_ID`. Shortened `results/evaluation_report.md` §14 to point at README. Fixed broken Files table row; fixed `run_optimization.sh` (MODE, `final-eval`/`report` `--run-id`). Credits line is factual only.
 - Documented **Vapi credits exhausted** in `README.md` (intro) and `results/evaluation_report.md` (gaps table + prerequisites).
 - **README ML Approach expanded**: Rewrote ML Approach section with algorithm pseudocode, mutator design rationale, hybrid scoring breakdown, synthetic harness explanation, alternatives comparison table, and tradeoffs table.

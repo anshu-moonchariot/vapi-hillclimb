@@ -185,9 +185,16 @@ Both sides of each call are Vapi assistants:
 - A [Vapi](https://vapi.ai) account and API key
 - An [OpenRouter](https://openrouter.ai) API key
 
-### 1. Install from the project root
+### 1. Clone the repository
 
-Run these in the directory that contains `pyproject.toml` (the repository root after you clone or unpack this project):
+```bash
+git clone https://github.com/anshu-moonchariot/vapi-hillclimb.git
+cd vapi-hillclimb
+```
+
+To use SSH or a fork, use the URL from the repo’s **Code** button instead. If you received the project as a zip, unpack it and `cd` into the folder that contains `pyproject.toml`.
+
+### 2. Install dependencies
 
 ```bash
 conda create -n vapi-takehome python=3.11 -y
@@ -195,7 +202,7 @@ conda activate vapi-takehome
 uv pip install -e .
 ```
 
-### 2. Environment variables
+### 3. Environment variables
 
 ```bash
 cp .env.example .env
@@ -210,11 +217,11 @@ Edit `.env` and set at minimum:
 
 All other entries in `.env.example` have working defaults (see file). Variable names match `src/vapi_takehome/config.py` (`N`, `K`, `T`, `DELTA`, not alternate names).
 
-### 3. Voice mode only (`--mode voice`)
+### 4. Voice mode only (`--mode voice`)
 
 Set `VOICE_ENABLED=true` and fill `VAPI_PHONE_NUMBER_ID`, `PATIENT_PHONE_NUMBER_ID`, and `TEST_DESTINATION_E164` (E.164, e.g. `+15551234567`). Provision numbers in the Vapi dashboard. Free numbers have a low daily outbound cap; plan accordingly or wait for the UTC reset.
 
-### 4. Smoke test
+### 5. Smoke test
 
 ```bash
 python -m vapi_takehome.cli baseline --n 5 --mode chat

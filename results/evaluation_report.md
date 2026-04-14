@@ -322,7 +322,7 @@ The problem statement requires: *"Your system should be reproducible — we can 
 
 **Canonical setup:** follow **`README.md` → Setup** in this repository. Summary:
 
-1. Work in the directory that contains `pyproject.toml`.
+1. `git clone https://github.com/anshu-moonchariot/vapi-hillclimb.git` and `cd vapi-hillclimb` (or the URL from the repo’s **Code** button for forks/SSH).
 2. `conda create -n vapi-takehome python=3.11 -y` → `conda activate vapi-takehome` → `uv pip install -e .`
 3. `cp .env.example .env` and set `VAPI_API_KEY` and `OPENROUTER_API_KEY` (see `.env.example` for every key; defaults match `config.py`).
 
