@@ -308,7 +308,7 @@ The optimizer's peak measurement of **0.890** (+13.5%) remains the best estimate
 
 | Gap | Root cause | Mitigation |
 |---|---|---|
-| Vapi API credits exhausted | Account balance hit zero during development; cannot place more calls or create assistants until credits are added | Replenish Vapi credits; re-run `baseline` / `optimize` / `final-eval`; contact Vapi for additional credits if needed (per take-home instructions) |
+| Vapi API credits exhausted | Account balance hit zero; no further Vapi calls until credits are replenished | Fund the Vapi account; re-run `baseline` / `optimize` / `final-eval`; contact Vapi for additional credits if needed (per take-home instructions) |
 | Voice optimization loop incomplete | Vapi free-number daily outbound cap (~7 calls/day) | Architecture ready; use `./run_optimization.sh` after cap resets, or import paid Twilio number |
 | Final eval regressed vs. optimizer peak | LLM judge stochasticity + rollout variance | Run larger N (N=10+) for lower variance; use a fixed temperature=0 judge |
 | Only prompt is optimized | Scope decision | Temperature, `maxTokens`, voice/STT settings are straightforward additions to the mutator |
@@ -320,85 +320,33 @@ The optimizer's peak measurement of **0.890** (+13.5%) remains the best estimate
 
 The problem statement requires: *"Your system should be reproducible — we can run it and see similar results."*
 
-### Prerequisites
+**Canonical setup:** follow **`README.md` → Setup** in this repository. Summary:
 
-| Requirement | Notes |
-|---|---|
-| Conda | Any modern version; env is `vapi-takehome` |
-| `uv` | `brew install uv` on macOS |
-| Vapi account | Active credits (free tier or paid); provision 2 phone numbers in the dashboard if using voice mode |
-| OpenRouter API key | [openrouter.ai](https://openrouter.ai) — used for judge, mutator, and synthetic patient |
-| (Optional) Twilio number | Removes Vapi's ~7 calls/day outbound cap for voice optimization |
+1. Work in the directory that contains `pyproject.toml`.
+2. `conda create -n vapi-takehome python=3.11 -y` → `conda activate vapi-takehome` → `uv pip install -e .`
+3. `cp .env.example .env` and set `VAPI_API_KEY` and `OPENROUTER_API_KEY` (see `.env.example` for every key; defaults match `config.py`).
 
-### Step-by-step setup
+Chat mode (`--mode chat`) needs only those two secrets. Voice mode additionally needs `VOICE_ENABLED=true` and the three phone-related variables documented in `.env.example` and the README.
+
+### Commands (chat)
 
 ```bash
-# 1. Clone and enter the repo
-git clone <repo-url>
-cd vapi_takehome
-
-# 2. Create and activate the Conda environment
-conda create -n vapi-takehome python=3.11 -y
 conda activate vapi-takehome
-
-# 3. Install dependencies
-uv pip install -e .
-
-# 4. Configure environment
-cp .env.example .env
-```
-
-### Required `.env` values
-
-```bash
-# Vapi
-VAPI_API_KEY=<your Vapi secret key>
-VAPI_BASE_URL=https://api.vapi.ai
-
-# OpenRouter (used for judge, mutator, synthetic patient)
-OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
-OPENROUTER_API_KEY=<your OpenRouter key>
-OPENROUTER_MODEL_DEFAULT=openai/gpt-4o-mini
-
-# Voice call infrastructure (required only for --mode voice)
-VOICE_ENABLED=true
-VAPI_PHONE_NUMBER_ID=<outbound receptionist number ID from Vapi dashboard>
-PATIENT_PHONE_NUMBER_ID=<inbound patient number ID from Vapi dashboard>
-TEST_DESTINATION_E164=<inbound number in E.164 format, e.g. +18005551234>
-
-# Optimization hyperparameters (defaults shown)
-N_ROLLOUTS=5
-K_CANDIDATES=3
-T_ITERATIONS=5
-DELTA=0.03
-```
-
-### Run commands
-
-```bash
-# Chat-only (no phone numbers needed, unlimited calls):
 python -m vapi_takehome.cli baseline --n 5 --mode chat
 python -m vapi_takehome.cli optimize --mode chat
-python -m vapi_takehome.cli final-eval --run-id <run_id> --mode chat
-
-# Full voice run (requires provisioned numbers, resets at midnight UTC):
-./run_optimization.sh
-
-# Utilities:
-python -m vapi_takehome.cli spike          # API connectivity check
-python -m vapi_takehome.cli judge-check    # LLM judge variance test
-python -m vapi_takehome.cli report         # Generate results CSV + plots
+python -m vapi_takehome.cli final-eval --run-id optimize_20260414T104603 --mode chat
 ```
+
+Use the `optimize_*` directory name under `runs/` from your `optimize` run. Optional: `./run_optimization.sh` for a scripted sequence when voice env vars are set.
 
 ### Expected outputs
 
-| Path | Contents |
+| Path pattern | Contents |
 |---|---|
-| `runs/<run_id>/baseline_summary.json` | Per-dimension scores and metadata |
-| `runs/<run_id>/rollouts/*.json` | Full transcript + scores per persona |
-| `runs/<run_id>/optimization_summary.json` | Iteration log, accepted/rejected decisions |
-| `runs/<run_id>/final_prompt.txt` | Best system prompt found |
-| `results/summary.csv` | Aggregated scores across all runs |
-| `results/evaluation_report.md` | This report |
+| `runs/baseline_*/baseline_summary.json` | Per-dimension scores |
+| `runs/baseline_*/rollouts/*.json` | Transcripts + scores per persona |
+| `runs/optimize_*/optimization_summary.json` | Iteration log |
+| `runs/optimize_*/final_prompt.txt` | Best prompt |
+| `results/summary.csv` | Appended by `final-eval` |
 
-**Expected runtime:** ~2 min (chat baseline, 5 rollouts) + ~15–30 min (optimizer, 3 iterations × 3 candidates × 5 rollouts each).
+**Runtime (order of magnitude):** a few minutes for chat baseline; tens of minutes for a full optimize pass depending on early stopping.

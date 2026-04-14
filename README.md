@@ -4,7 +4,7 @@ ML-driven system that automatically improves a Vapi dental receptionist agent th
 
 **Use case:** Dental office appointment scheduler (chosen from the provided options).
 
-**Vapi credits:** The author’s Vapi account **ran out of credits** during this project, so no further assistant creation, chat, or voice calls can be run until credits are replenished (or access restored). Reviewers can still execute the code with their own `VAPI_API_KEY` and sufficient balance. The problem statement notes you can contact Vapi if you need credits beyond the free tier.
+**Vapi credits:** Credits on the account used for this work **ran out** before the final runs; additional Vapi usage requires a funded API key. The take-home allows requesting extra credits from Vapi if needed.
 
 ---
 
@@ -179,71 +179,73 @@ Both sides of each call are Vapi assistants:
 
 ### Prerequisites
 
-- Conda
-- `uv` (`brew install uv`)
-- Vapi account with 2 phone numbers provisioned (free tier is fine for chat mode)
-- OpenRouter API key
+- Python 3.11+
+- [Conda](https://docs.conda.io) (Miniconda is enough)
+- [uv](https://docs.astral.sh/uv/) — `brew install uv` on macOS, or `pip install uv`
+- A [Vapi](https://vapi.ai) account and API key
+- An [OpenRouter](https://openrouter.ai) API key
 
-### Install
+### 1. Install from the project root
+
+Run these in the directory that contains `pyproject.toml` (the repository root after you clone or unpack this project):
 
 ```bash
-git clone <repo-url>
-cd vapi_takehome
 conda create -n vapi-takehome python=3.11 -y
 conda activate vapi-takehome
 uv pip install -e .
 ```
 
-### Environment (`.env`)
+### 2. Environment variables
 
 ```bash
-# Vapi
-VAPI_API_KEY=<your Vapi secret key>
-VAPI_BASE_URL=https://api.vapi.ai
-
-# OpenRouter (judge + mutator + synthetic patient)
-OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
-OPENROUTER_API_KEY=<your OpenRouter key>
-OPENROUTER_MODEL_DEFAULT=openai/gpt-4o-mini
-
-# Voice call infrastructure (only needed for --mode voice)
-VOICE_ENABLED=true
-VAPI_PHONE_NUMBER_ID=<outbound receptionist number ID>
-PATIENT_PHONE_NUMBER_ID=<inbound patient number ID>
-TEST_DESTINATION_E164=<patient number in E.164, e.g. +18005551234>
-
-# Optimization hyperparameters (defaults shown)
-N_ROLLOUTS=5
-K_CANDIDATES=3
-T_ITERATIONS=5
-DELTA=0.03
+cp .env.example .env
 ```
 
-### Phone number setup (voice mode only)
+Edit `.env` and set at minimum:
 
-In the Vapi dashboard, provision 2 free phone numbers:
-1. `VAPI_PHONE_NUMBER_ID` — places outbound calls (receptionist side)
-2. `PATIENT_PHONE_NUMBER_ID` + `TEST_DESTINATION_E164` — receives calls (patient side)
+| Variable | Required | Where to get it |
+|----------|----------|-------------------|
+| `VAPI_API_KEY` | Yes | Vapi dashboard → API keys |
+| `OPENROUTER_API_KEY` | Yes | OpenRouter → Keys |
 
-> **Note**: Free Vapi numbers cap at ~7 outbound calls/day. For the full optimizer (~45 calls), either wait for midnight UTC reset or import a Twilio number via the Vapi dashboard.
+All other entries in `.env.example` have working defaults (see file). Variable names match `src/vapi_takehome/config.py` (`N`, `K`, `T`, `DELTA`, not alternate names).
+
+### 3. Voice mode only (`--mode voice`)
+
+Set `VOICE_ENABLED=true` and fill `VAPI_PHONE_NUMBER_ID`, `PATIENT_PHONE_NUMBER_ID`, and `TEST_DESTINATION_E164` (E.164, e.g. `+15551234567`). Provision numbers in the Vapi dashboard. Free numbers have a low daily outbound cap; plan accordingly or wait for the UTC reset.
+
+### 4. Smoke test
+
+```bash
+python -m vapi_takehome.cli baseline --n 5 --mode chat
+```
+
+This exercises Vapi Chat + OpenRouter only; no phone numbers required.
 
 ---
 
 ## Usage
 
 ```bash
-# Run baseline (5 real voice calls)
-python -m vapi_takehome.cli baseline --n 5
+conda activate vapi-takehome
 
-# Run hill-climbing optimizer
-python -m vapi_takehome.cli optimize
+# Recommended: chat mode (no PSTN; works with .env only)
+python -m vapi_takehome.cli baseline --n 5 --mode chat
+python -m vapi_takehome.cli optimize --mode chat
+# Replace the run id with the optimize_* folder name under runs/ (example below)
+python -m vapi_takehome.cli final-eval --run-id optimize_20260414T104603 --mode chat
 
-# Quick API spike (no optimization)
+# Voice: real phone calls (requires VOICE_ENABLED + phone IDs in .env)
+python -m vapi_takehome.cli baseline --n 5 --mode voice
+python -m vapi_takehome.cli optimize --mode voice
+
+# Utilities
 python -m vapi_takehome.cli spike
-
-# Validate LLM judge consistency
 python -m vapi_takehome.cli judge-check
+python -m vapi_takehome.cli report --run-id baseline_20260414T104422
 ```
+
+The `report` and `final-eval` run ids must match a directory under `runs/`. List them with `ls runs/`.
 
 ---
 
@@ -260,5 +262,6 @@ python -m vapi_takehome.cli judge-check
 | `prompts/baseline_system.txt` | Starting (deliberately weak) system prompt |
 | `results/voice_examples.md` | Call transcripts + structured data from baseline |
 | `results/voice_baseline_scores.csv` | Per-persona scores |
-| `results/evaluation_report.md` | Full step-by-step analysis with all results || `_notes/design_plan.md` | Full design document |
+| `results/evaluation_report.md` | Full step-by-step analysis with all results |
+| `_notes/design_plan.md` | Full design document |
 | `_notes/api_notes.md` | Vapi + OpenRouter API reference notes |
