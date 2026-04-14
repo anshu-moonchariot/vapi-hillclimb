@@ -1,0 +1,57 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book an emergency appointment for a toothache as soon as possible."
+      },
+      {
+        "role": "assistant",
+        "content": "I\u2019m sorry to hear that you\u2019re experiencing a toothache. I\u2019d be happy to help you schedule an emergency appointment. Could you please provide me with your preferred date and time for the visit? Also, may I have your full name and contact number to complete the booking?"
+      },
+      {
+        "role": "user",
+        "content": "ASAP. Today if you can. Name is John Doe, 555-0199."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, John! I have your name and contact number. Let me check our availability for today. \n\nCould you please let me know what time works best for you?"
+      },
+      {
+        "role": "user",
+        "content": "Any time works. Just get me in as soon as possible."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for your patience, John. I can schedule you for an emergency appointment today at 2:00 PM. Does that work for you?"
+      },
+      {
+        "role": "user",
+        "content": "2:00 works. Just see me then."
+      },
+      {
+        "role": "assistant",
+        "content": "Great! I have you scheduled for an emergency appointment today at 2:00 PM. \n\nJust to confirm, your name is John Doe, and your contact number is 555-0199. Is that correct?"
+      }
+    ],
+    "persona_id": "impatient",
+    "assistant_id": "b81f1062-90c9-49db-9925-d34e14959102",
+    "num_turns": 4,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 1.0,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 1.0,
+    "reasoning": "The assistant efficiently collected all required information in a professional, natural manner while successfully managing the urgency of the patient's request.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

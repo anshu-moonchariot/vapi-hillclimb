@@ -1,0 +1,70 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, I\u2019m calling because I\u2019d like to schedule an appointment for teeth whitening. Before we get into the details, can you confirm if my Aetna plan covers the full cost of that procedure?"
+      },
+      {
+        "role": "assistant",
+        "content": "I can help you schedule your teeth whitening appointment. For insurance coverage questions, please contact our billing department at 555-0199. May I have your name, please?"
+      },
+      {
+        "role": "user",
+        "content": "My name is Alex Miller. I understand you're busy, but surely you can see in your system if Aetna usually covers whitening for your patients?"
+      },
+      {
+        "role": "assistant",
+        "content": "I understand your concern, Alex, but I can't access insurance details. It's best to check with our billing department at 555-0199 for accurate information. Now, let's get your appointment scheduled! What day and time do you prefer for your teeth whitening?"
+      },
+      {
+        "role": "user",
+        "content": "I'm just worried about the cost, so are you saying there's no way for you to check if Aetna has any exceptions for this? If I'm coming in next Tuesday around 2:00 PM, I really need to know if I'll be hit with a huge bill."
+      },
+      {
+        "role": "assistant",
+        "content": "I completely understand your concern, Alex. Unfortunately, I don\u2019t have access to specific insurance exceptions or coverage details. The billing team will be able to provide the most accurate information for you.\n\nI've noted you'd like an appointment next Tuesday around 2:00 PM for teeth whitening. Can you please confirm the exact time or if the afternoon slot works for you?"
+      },
+      {
+        "role": "user",
+        "content": "I understand, I'll give the billing department a call later then. 2:00 PM next Tuesday works perfectly for me. Is there anything else you need from me to finalize that?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex. I have your appointment for teeth whitening at 2:00 PM next Tuesday. That's all I need for now. We'll see you then! If you have any other questions, just let us know."
+      },
+      {
+        "role": "user",
+        "content": "Great, so 2:00 PM next Tuesday is all set? I'll be sure to call the billing department before then just to be absolutely certain about my Aetna coverage. Thanks for your help, see you then! [DONE]"
+      },
+      {
+        "role": "assistant",
+        "content": "Yes, your teeth whitening appointment is all set for 2:00 PM next Tuesday. If you need anything else, feel free to reach out. Have a great day, Alex!"
+      }
+    ],
+    "transcript": "PATIENT: Hi, I\u2019m calling because I\u2019d like to schedule an appointment for teeth whitening. Before we get into the details, can you confirm if my Aetna plan covers the full cost of that procedure?\nRECEPTIONIST: I can help you schedule your teeth whitening appointment. For insurance coverage questions, please contact our billing department at 555-0199. May I have your name, please?\nPATIENT: My name is Alex Miller. I understand you're busy, but surely you can see in your system if Aetna usually covers whitening for your patients?\nRECEPTIONIST: I understand your concern, Alex, but I can't access insurance details. It's best to check with our billing department at 555-0199 for accurate information. Now, let's get your appointment scheduled! What day and time do you prefer for your teeth whitening?\nPATIENT: I'm just worried about the cost, so are you saying there's no way for you to check if Aetna has any exceptions for this? If I'm coming in next Tuesday around 2:00 PM, I really need to know if I'll be hit with a huge bill.\nRECEPTIONIST: I completely understand your concern, Alex. Unfortunately, I don\u2019t have access to specific insurance exceptions or coverage details. The billing team will be able to provide the most accurate information for you.\n\nI've noted you'd like an appointment next Tuesday around 2:00 PM for teeth whitening. Can you please confirm the exact time or if the afternoon slot works for you?\nPATIENT: I understand, I'll give the billing department a call later then. 2:00 PM next Tuesday works perfectly for me. Is there anything else you need from me to finalize that?\nRECEPTIONIST: Thank you, Alex. I have your appointment for teeth whitening at 2:00 PM next Tuesday. That's all I need for now. We'll see you then! If you have any other questions, just let us know.\nPATIENT: Great, so 2:00 PM next Tuesday is all set? I'll be sure to call the billing department before then just to be absolutely certain about my Aetna coverage. Thanks for your help, see you then! [DONE]\nRECEPTIONIST: Yes, your teeth whitening appointment is all set for 2:00 PM next Tuesday. If you need anything else, feel free to reach out. Have a great day, Alex!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "insurance_confused",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 5,
+    "stop_reason": "patient_done",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.8125,
+    "reasoning": "The assistant handled the patient's persistent insurance questions professionally and maintained a natural tone, though it failed to collect the patient's contact information.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

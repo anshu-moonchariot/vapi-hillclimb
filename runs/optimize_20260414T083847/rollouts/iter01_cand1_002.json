@@ -1,0 +1,65 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, cancel a thursday appointment and rebook for the following week."
+      },
+      {
+        "role": "assistant",
+        "content": "Hello! I'd be happy to help you with that. Could you please provide me with the date and time of your current Thursday appointment, and your preferred date and time for the following week? Also, please let me know the reason for your visit so I can find the best available slot for you."
+      },
+      {
+        "role": "user",
+        "content": "I'm not exactly sure of the time, but it's for this coming Thursday, the 14th. I'd like to move it to sometime the following week, preferably Tuesday morning, for a routine cleaning."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for the details! I'll look into rescheduling your routine cleaning appointment from Thursday, the 14th, to Tuesday morning of the following week. Could you please let me know if you have a preferred time range in the morning, such as early morning or late morning? This will help me find the best available slot for you."
+      },
+      {
+        "role": "user",
+        "content": "Any time between 9:00 and 11:00 AM would work perfectly for me. Just please confirm once you've cancelled the appointment on the 14th."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for confirming your preferred time range. I will proceed with canceling your appointment on Thursday, the 14th, and then schedule your routine cleaning on Tuesday of the following week between 9:00 and 11:00 AM. I will confirm both the cancellation and the new appointment time for you shortly. One moment, please."
+      },
+      {
+        "role": "user",
+        "content": "Thank you, I'll wait on the line."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for your patience! Your appointment on Thursday, the 14th, has been successfully canceled. I\u2019ve scheduled your routine cleaning for Tuesday morning of the following week, with an appointment at 9:30 AM. If this time works for you or if you\u2019d like to adjust it, please let me know. We're looking forward to seeing you then!"
+      },
+      {
+        "role": "user",
+        "content": "That works perfectly for me, thank you for checking on that. I'll see you on Tuesday at 9:30 AM."
+      },
+      {
+        "role": "assistant",
+        "content": "You're very welcome! We're glad the time works for you. We'll see you on Tuesday at 9:30 AM for your cleaning. If you have any questions or need further assistance before then, feel free to reach out. Have a wonderful day!"
+      }
+    ],
+    "persona_id": "reschedule",
+    "assistant_id": "b81f1062-90c9-49db-9925-d34e14959102",
+    "num_turns": 5,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 1.0,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.9125,
+    "reasoning": "The assistant successfully managed the rescheduling process and maintained a professional tone, though it missed collecting the patient's contact information.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

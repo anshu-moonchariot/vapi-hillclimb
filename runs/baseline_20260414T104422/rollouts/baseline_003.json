@@ -1,0 +1,70 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi there, I\u2019m calling because I\u2019d like to schedule an appointment for teeth whitening. Before we get into the details, can you confirm if my Aetna plan covers the cost of this procedure?"
+      },
+      {
+        "role": "assistant",
+        "content": "For questions about insurance coverage and billing, please call our billing department directly. Now, could you please provide your name and let me know when you would like to schedule your teeth whitening appointment?"
+      },
+      {
+        "role": "user",
+        "content": "I understand you want me to call billing, but surely you have a general idea if Aetna typically covers whitening? My name is Alex Miller, and I'm hoping to come in sometime next week."
+      },
+      {
+        "role": "assistant",
+        "content": "I appreciate your understanding, Alex. Generally, teeth whitening is often considered a cosmetic procedure, and many insurance plans, including Aetna, may not cover it. However, it's best to confirm with our billing department for your specific plan.\n\nNow, let\u2019s find a time for your appointment. What day next week works best for you? And do you have a preferred time?"
+      },
+      {
+        "role": "user",
+        "content": "I hear you, but if I call them and they say it's up to the office's billing code, I'll just be back to square one. Are you sure there isn't a standard policy for Aetna patients here? Regardless, I\u2019m free next Tuesday morning if that works."
+      },
+      {
+        "role": "assistant",
+        "content": "I understand your concern, but I cannot provide specific insurance coverage details. Please reach out to our billing department for accurate information regarding Aetna.\n\nNow, let's get your appointment scheduled. I will check for availability next Tuesday morning. Would you prefer a specific time, such as 9 AM or 10 AM?"
+      },
+      {
+        "role": "user",
+        "content": "I've already asked, but I'm just worried about the cost if it isn't covered. Let's go with 10 AM, but could you just double-check if there's any way to code this differently for insurance?"
+      },
+      {
+        "role": "assistant",
+        "content": "I completely understand your worries, but unfortunately, I don\u2019t have the ability to check or change billing codes. I recommend confirming directly with the billing department for the most accurate information.\n\nIn the meantime, I've noted your appointment for Tuesday at 10 AM for teeth whitening. Would you like me to confirm that?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, please confirm that for Tuesday at 10 AM. I\u2019ll make sure to call the billing department later today to see if there is any way to get some of it covered. Thanks for your help.\n\n[DONE]"
+      },
+      {
+        "role": "assistant",
+        "content": "Your appointment for teeth whitening is confirmed for Tuesday at 10 AM. Thank you, Alex! If you have any other questions or need further assistance, feel free to reach out. Have a great day!"
+      }
+    ],
+    "transcript": "PATIENT: Hi there, I\u2019m calling because I\u2019d like to schedule an appointment for teeth whitening. Before we get into the details, can you confirm if my Aetna plan covers the cost of this procedure?\nRECEPTIONIST: For questions about insurance coverage and billing, please call our billing department directly. Now, could you please provide your name and let me know when you would like to schedule your teeth whitening appointment?\nPATIENT: I understand you want me to call billing, but surely you have a general idea if Aetna typically covers whitening? My name is Alex Miller, and I'm hoping to come in sometime next week.\nRECEPTIONIST: I appreciate your understanding, Alex. Generally, teeth whitening is often considered a cosmetic procedure, and many insurance plans, including Aetna, may not cover it. However, it's best to confirm with our billing department for your specific plan.\n\nNow, let\u2019s find a time for your appointment. What day next week works best for you? And do you have a preferred time?\nPATIENT: I hear you, but if I call them and they say it's up to the office's billing code, I'll just be back to square one. Are you sure there isn't a standard policy for Aetna patients here? Regardless, I\u2019m free next Tuesday morning if that works.\nRECEPTIONIST: I understand your concern, but I cannot provide specific insurance coverage details. Please reach out to our billing department for accurate information regarding Aetna.\n\nNow, let's get your appointment scheduled. I will check for availability next Tuesday morning. Would you prefer a specific time, such as 9 AM or 10 AM?\nPATIENT: I've already asked, but I'm just worried about the cost if it isn't covered. Let's go with 10 AM, but could you just double-check if there's any way to code this differently for insurance?\nRECEPTIONIST: I completely understand your worries, but unfortunately, I don\u2019t have the ability to check or change billing codes. I recommend confirming directly with the billing department for the most accurate information.\n\nIn the meantime, I've noted your appointment for Tuesday at 10 AM for teeth whitening. Would you like me to confirm that?\nPATIENT: Yes, please confirm that for Tuesday at 10 AM. I\u2019ll make sure to call the billing department later today to see if there is any way to get some of it covered. Thanks for your help.\n\n[DONE]\nRECEPTIONIST: Your appointment for teeth whitening is confirmed for Tuesday at 10 AM. Thank you, Alex! If you have any other questions or need further assistance, feel free to reach out. Have a great day!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "insurance_confused",
+    "assistant_id": "204bb9c3-4081-4746-9789-1d9f3a84d085",
+    "call_id": "",
+    "num_turns": 5,
+    "stop_reason": "patient_done",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 0.7,
+    "tone_naturalness": 0.7,
+    "error_recovery": 0.7,
+    "aggregate": 0.685,
+    "reasoning": "The assistant failed to collect the patient's contact information, and the conversation was slightly inefficient due to the repetitive back-and-forth regarding insurance policy.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

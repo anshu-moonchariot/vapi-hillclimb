@@ -1,0 +1,65 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book a teeth whitening appointment, but repeatedly asks about insurance coverage."
+      },
+      {
+        "role": "assistant",
+        "content": "Certainly! May I have your full name, please? Regarding insurance coverage, I apologize, but for detailed insurance or billing inquiries, please contact our billing department directly at [Insert Phone Number]. Now, could you please provide your preferred date and time for the teeth whitening appointment?"
+      },
+      {
+        "role": "user",
+        "content": "My name is Sarah Miller. Before we pick a time, are you sure my Aetna plan doesn't have any whitening benefits at all? It seems like it should be covered."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Sarah Miller. I understand your concern, but I apologize, for detailed insurance or billing inquiries, please contact our billing department directly at [Insert Phone Number]. Now, could you please let me know your preferred date and time for the teeth whitening appointment?"
+      },
+      {
+        "role": "user",
+        "content": "I hear you, but couldn't you just double-check if Aetna ever covers cosmetic procedures? I'd hate to pay out-of-pocket if there's a loophole. Can I come in next Tuesday morning?"
+      },
+      {
+        "role": "assistant",
+        "content": "I appreciate your understanding, Sarah. For insurance specifics, please reach out to our billing department at [Insert Phone Number]. I have noted your preference for next Tuesday morning for your teeth whitening appointment. Could you please specify a time in the morning that works best for you?"
+      },
+      {
+        "role": "user",
+        "content": "I'm looking for 9:00 AM, but are you absolutely certain there's no way to verify if my Aetna plan has a co-pay reduction for this? It would really help me decide if I should go ahead with it."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Sarah. I\u2019ve scheduled your teeth whitening appointment for next Tuesday at 9:00 AM. Regarding insurance details, I\u2019m unable to verify coverage here; please contact our billing department at [Insert Phone Number] for assistance. Is there anything else I can help you with?"
+      },
+      {
+        "role": "user",
+        "content": "Okay, I suppose I'll call them later, but it's just so frustrating. Since we are all set, I'll see you then."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Sarah. We look forward to seeing you next Tuesday at 9:00 AM for your teeth whitening appointment. If you have any other questions or need to reschedule, please don't hesitate to contact us. Have a great day!"
+      }
+    ],
+    "persona_id": "insurance_confused",
+    "assistant_id": "60c2ef02-ea01-4105-b782-d4113d84c519",
+    "num_turns": 5,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 0.7,
+    "tone_naturalness": 0.7,
+    "error_recovery": 0.7,
+    "aggregate": 0.695,
+    "reasoning": "The assistant successfully collected all required information but failed to collect a contact phone number or email, and the repetitive insurance responses slightly hindered the flow.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

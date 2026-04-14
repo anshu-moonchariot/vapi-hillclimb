@@ -1,0 +1,70 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, I have an appointment coming up this Thursday, but I need to move it to sometime next week instead. Could you help me with that?"
+      },
+      {
+        "role": "assistant",
+        "content": "I'd be happy to help you with rescheduling your appointment. May I have your name and the reason for your visit, please? Also, could you tell me your preferred date and time for next week?"
+      },
+      {
+        "role": "user",
+        "content": "My name is Alex Miller, and I'm just coming in for my regular six-month cleaning. I'm not entirely sure what time my original appointment was, but could you please confirm that one is cancelled before we look at next week?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex. For appointment changes, I currently don't have access to existing appointment details. I recommend confirming the cancellation of your original appointment directly with us, then we can proceed to schedule your new appointment for next week. Could you please provide your preferred date and time within our business hours (Monday to Friday, 8:00 AM to 5:00 PM) for your six-month cleaning?"
+      },
+      {
+        "role": "user",
+        "content": "I understand, so please go ahead and cancel my Thursday slot first. Once that's cleared, do you have anything open next Tuesday morning, maybe around 10:00 AM?"
+      },
+      {
+        "role": "assistant",
+        "content": "I apologize, but I do not have the capability to cancel appointments directly. Please contact our office to confirm the cancellation of your Thursday appointment. However, I can help you book a new appointment for next Tuesday at 10:00 AM. Would you like me to go ahead and book that for your six-month cleaning?"
+      },
+      {
+        "role": "user",
+        "content": "I'm a bit confused since I thought I was talking to the office. If I call back to cancel that Thursday slot, can you hold that Tuesday 10:00 AM spot for me in the meantime?"
+      },
+      {
+        "role": "assistant",
+        "content": "I understand the confusion, and I apologize for any inconvenience. Unfortunately, I cannot hold appointments without confirming the cancellation of your original slot. Please call our office to cancel your Thursday appointment, and once that's done, I can assist you in booking the Tuesday at 10:00 AM slot for your cleaning. Thank you for your understanding!"
+      },
+      {
+        "role": "user",
+        "content": "Okay, I understand. I'll call the office right now to handle that cancellation, and then I'll call back to secure the Tuesday spot. Thanks for the help. [DONE]"
+      },
+      {
+        "role": "assistant",
+        "content": "You're very welcome! Whenever you're ready, just give us a call back to book that Tuesday appointment. Have a great day!"
+      }
+    ],
+    "transcript": "PATIENT: Hi, I have an appointment coming up this Thursday, but I need to move it to sometime next week instead. Could you help me with that?\nRECEPTIONIST: I'd be happy to help you with rescheduling your appointment. May I have your name and the reason for your visit, please? Also, could you tell me your preferred date and time for next week?\nPATIENT: My name is Alex Miller, and I'm just coming in for my regular six-month cleaning. I'm not entirely sure what time my original appointment was, but could you please confirm that one is cancelled before we look at next week?\nRECEPTIONIST: Thank you, Alex. For appointment changes, I currently don't have access to existing appointment details. I recommend confirming the cancellation of your original appointment directly with us, then we can proceed to schedule your new appointment for next week. Could you please provide your preferred date and time within our business hours (Monday to Friday, 8:00 AM to 5:00 PM) for your six-month cleaning?\nPATIENT: I understand, so please go ahead and cancel my Thursday slot first. Once that's cleared, do you have anything open next Tuesday morning, maybe around 10:00 AM?\nRECEPTIONIST: I apologize, but I do not have the capability to cancel appointments directly. Please contact our office to confirm the cancellation of your Thursday appointment. However, I can help you book a new appointment for next Tuesday at 10:00 AM. Would you like me to go ahead and book that for your six-month cleaning?\nPATIENT: I'm a bit confused since I thought I was talking to the office. If I call back to cancel that Thursday slot, can you hold that Tuesday 10:00 AM spot for me in the meantime?\nRECEPTIONIST: I understand the confusion, and I apologize for any inconvenience. Unfortunately, I cannot hold appointments without confirming the cancellation of your original slot. Please call our office to cancel your Thursday appointment, and once that's done, I can assist you in booking the Tuesday at 10:00 AM slot for your cleaning. Thank you for your understanding!\nPATIENT: Okay, I understand. I'll call the office right now to handle that cancellation, and then I'll call back to secure the Tuesday spot. Thanks for the help. [DONE]\nRECEPTIONIST: You're very welcome! Whenever you're ready, just give us a call back to book that Tuesday appointment. Have a great day!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "reschedule",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 5,
+    "stop_reason": "patient_done",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.5,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 0.7,
+    "tone_naturalness": 0.7,
+    "error_recovery": 0.4,
+    "aggregate": 0.565,
+    "reasoning": "The assistant failed to complete the task because it lacked the necessary system integration to manage existing appointments, leading to a circular and inefficient workflow for the patient.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

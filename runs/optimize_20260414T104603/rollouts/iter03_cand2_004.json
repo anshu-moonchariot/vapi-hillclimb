@@ -1,0 +1,62 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Tooth hurts bad. Need an emergency appointment ASAP."
+      },
+      {
+        "role": "assistant",
+        "content": "I'm sorry to hear that you're in pain. May I have your name, please? Also, could you let me know your preferred date and time for the emergency appointment?"
+      },
+      {
+        "role": "user",
+        "content": "It's Mark Evans. I told you, I need to come in today. ASAP."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Mark. I understand the urgency. What time today would you prefer for your appointment? Also, could you please provide your contact phone number?"
+      },
+      {
+        "role": "user",
+        "content": "Any time works, just get me in. My number is 555-0199."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for your phone number, Mark. I\u2019ll go ahead and book you for an emergency appointment today. Just to confirm, would you like to come in at 1 PM?"
+      },
+      {
+        "role": "user",
+        "content": "1 PM works. See you then. [DONE]"
+      },
+      {
+        "role": "assistant",
+        "content": "Your appointment is confirmed for today at 1 PM, Mark. We look forward to seeing you then! If you have any other questions, feel free to reach out. Take care!"
+      }
+    ],
+    "transcript": "PATIENT: Tooth hurts bad. Need an emergency appointment ASAP.\nRECEPTIONIST: I'm sorry to hear that you're in pain. May I have your name, please? Also, could you let me know your preferred date and time for the emergency appointment?\nPATIENT: It's Mark Evans. I told you, I need to come in today. ASAP.\nRECEPTIONIST: Thank you, Mark. I understand the urgency. What time today would you prefer for your appointment? Also, could you please provide your contact phone number?\nPATIENT: Any time works, just get me in. My number is 555-0199.\nRECEPTIONIST: Thank you for your phone number, Mark. I\u2019ll go ahead and book you for an emergency appointment today. Just to confirm, would you like to come in at 1 PM?\nPATIENT: 1 PM works. See you then. [DONE]\nRECEPTIONIST: Your appointment is confirmed for today at 1 PM, Mark. We look forward to seeing you then! If you have any other questions, feel free to reach out. Take care!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "impatient",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 4,
+    "stop_reason": "patient_done",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 1.0,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 1.0,
+    "reasoning": "The assistant efficiently collected all required information while maintaining a professional and empathetic tone throughout the urgent scheduling process.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

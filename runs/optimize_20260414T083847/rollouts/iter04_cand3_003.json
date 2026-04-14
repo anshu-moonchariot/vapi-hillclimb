@@ -1,0 +1,65 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book a teeth whitening appointment, but repeatedly asks about insurance coverage."
+      },
+      {
+        "role": "assistant",
+        "content": "Hello! I'd be happy to help you schedule a teeth whitening appointment. Could you please provide your name? Also, what date and time would work best for you? Regarding insurance coverage, I\u2019m unable to verify that information, but you can contact our billing department at 555-123-4567 for assistance."
+      },
+      {
+        "role": "user",
+        "content": "My name is Sarah Miller, and I was hoping for next Tuesday morning. Before we finalize that, are you sure my Aetna plan won't cover at least a portion of the whitening cost?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Sarah! I appreciate your understanding. I cannot verify insurance coverage, but you can reach out to our billing department at 555-123-4567 for any questions regarding your Aetna plan.\n\nNow, let's get your appointment scheduled. Next Tuesday morning works for you. What time would you prefer?"
+      },
+      {
+        "role": "user",
+        "content": "I'd like 10:00 AM, but are you certain there's absolutely no way you can check if Aetna classifies this as medically necessary? I'd hate to pay out of pocket if there's a code you can run."
+      },
+      {
+        "role": "assistant",
+        "content": "I understand your concerns, Sarah. Unfortunately, I\u2019m unable to check insurance details or codes for coverage. Our billing department at 555-123-4567 will be the best resource to provide that information.\n\nTo confirm, I have your name as Sarah Miller, phone number (may I have your phone number? If it's already provided, please let me know), appointment for teeth whitening on next Tuesday at 10:00 AM. Could you please provide your phone number so I can complete the booking?"
+      },
+      {
+        "role": "user",
+        "content": "My number is 555-0199. Are you really sure there isn't a specific billing code you can check for Aetna before I commit to this?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for providing your phone number, Sarah. I have you down for a teeth whitening appointment on next Tuesday at 10:00 AM. \n\nI truly understand your concerns about the billing code, but I cannot access that information. The best option is to contact our billing department at 555-123-4567, as they can assist you with any specific questions regarding your Aetna plan.\n\nTo summarize, your appointment is scheduled for next Tuesday at 10:00 AM for teeth whitening. Can I confirm this booking for you?"
+      },
+      {
+        "role": "user",
+        "content": "If I call the billing department, will they be able to confirm if Aetna covers cosmetic procedures? If so, then yes, please confirm the booking for next Tuesday at 10:00 AM."
+      },
+      {
+        "role": "assistant",
+        "content": "Yes, Sarah, the billing department will be able to provide detailed information about whether Aetna covers cosmetic procedures like teeth whitening.\n\nThank you for confirming! Your teeth whitening appointment is scheduled for next Tuesday at 10:00 AM.\n\nWe look forward to seeing you then. If you have any other questions, feel free to reach out. Have a great day!"
+      }
+    ],
+    "persona_id": "insurance_confused",
+    "assistant_id": "b81f1062-90c9-49db-9925-d34e14959102",
+    "num_turns": 5,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.9,
+    "reasoning": "The assistant successfully collected all required information and handled the patient's repetitive insurance questions with professional patience, though the process took several turns due to the user's persistence.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

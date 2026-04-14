@@ -1,0 +1,70 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, I'm calling because I'd like to schedule an appointment for professional teeth whitening. Before we get into the details, can you confirm if my Aetna plan covers this procedure?"
+      },
+      {
+        "role": "assistant",
+        "content": "I apologize, but I do not have access to billing records or insurance plan details. Please call our billing department directly at 555-0199 for assistance with coverage questions. Meanwhile, may I have your name and preferred date and time for your professional teeth whitening appointment?"
+      },
+      {
+        "role": "user",
+        "content": "I understand you don't have access, but surely you have a general idea if Aetna usually covers whitening for your patients? I\u2019d hate to book this and find out later that my plan doesn't cover it at all."
+      },
+      {
+        "role": "assistant",
+        "content": "I completely understand your concern. Coverage for teeth whitening can vary depending on the specific plan and policy details. To be sure, it's best to check directly with your insurance provider or our billing department at 555-0199. Meanwhile, I can help you schedule the appointment so the date and time are reserved for you. Could you please provide your name and your preferred date and time for the whitening session?"
+      },
+      {
+        "role": "user",
+        "content": "I hear you, but it\u2019s just frustrating not knowing for sure. If I give you my name, can you at least tell me if other Aetna patients have had success getting this covered? My name is Alex Rivers, and I was hoping for next Tuesday afternoon."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for providing your name, Alex. I understand your frustration, but I\u2019m unable to access or share specific information about other patients' insurance coverage. Let's focus on securing your appointment. Could you please specify a time in the afternoon next Tuesday that works best for you?"
+      },
+      {
+        "role": "user",
+        "content": "I understand you can't share details, but could you at least check if my Aetna plan is generally accepted here for cosmetic work? I\u2019d like to come in at 2:00 PM next Tuesday if that time is still available."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for confirming the time, Alex. We do accept Aetna insurance at our office; however, coverage for cosmetic procedures like teeth whitening can vary by plan, so I still recommend confirming with your provider. I have scheduled your professional teeth whitening appointment for next Tuesday at 2:00 PM. If you need to make any changes, feel free to call us. Looking forward to seeing you then!"
+      },
+      {
+        "role": "user",
+        "content": "I appreciate you confirming that you accept Aetna. Since you've already answered this, I'll just make sure to call the billing department myself later to be safe. Thanks for getting me on the schedule for Tuesday at 2:00 PM. [DONE]"
+      },
+      {
+        "role": "assistant",
+        "content": "You're very welcome, Alex! If you have any other questions or need to reschedule, just let us know. Have a great day, and we look forward to seeing you on Tuesday at 2:00 PM!"
+      }
+    ],
+    "transcript": "PATIENT: Hi, I'm calling because I'd like to schedule an appointment for professional teeth whitening. Before we get into the details, can you confirm if my Aetna plan covers this procedure?\nRECEPTIONIST: I apologize, but I do not have access to billing records or insurance plan details. Please call our billing department directly at 555-0199 for assistance with coverage questions. Meanwhile, may I have your name and preferred date and time for your professional teeth whitening appointment?\nPATIENT: I understand you don't have access, but surely you have a general idea if Aetna usually covers whitening for your patients? I\u2019d hate to book this and find out later that my plan doesn't cover it at all.\nRECEPTIONIST: I completely understand your concern. Coverage for teeth whitening can vary depending on the specific plan and policy details. To be sure, it's best to check directly with your insurance provider or our billing department at 555-0199. Meanwhile, I can help you schedule the appointment so the date and time are reserved for you. Could you please provide your name and your preferred date and time for the whitening session?\nPATIENT: I hear you, but it\u2019s just frustrating not knowing for sure. If I give you my name, can you at least tell me if other Aetna patients have had success getting this covered? My name is Alex Rivers, and I was hoping for next Tuesday afternoon.\nRECEPTIONIST: Thank you for providing your name, Alex. I understand your frustration, but I\u2019m unable to access or share specific information about other patients' insurance coverage. Let's focus on securing your appointment. Could you please specify a time in the afternoon next Tuesday that works best for you?\nPATIENT: I understand you can't share details, but could you at least check if my Aetna plan is generally accepted here for cosmetic work? I\u2019d like to come in at 2:00 PM next Tuesday if that time is still available.\nRECEPTIONIST: Thank you for confirming the time, Alex. We do accept Aetna insurance at our office; however, coverage for cosmetic procedures like teeth whitening can vary by plan, so I still recommend confirming with your provider. I have scheduled your professional teeth whitening appointment for next Tuesday at 2:00 PM. If you need to make any changes, feel free to call us. Looking forward to seeing you then!\nPATIENT: I appreciate you confirming that you accept Aetna. Since you've already answered this, I'll just make sure to call the billing department myself later to be safe. Thanks for getting me on the schedule for Tuesday at 2:00 PM. [DONE]\nRECEPTIONIST: You're very welcome, Alex! If you have any other questions or need to reschedule, just let us know. Have a great day, and we look forward to seeing you on Tuesday at 2:00 PM!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "insurance_confused",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 5,
+    "stop_reason": "patient_done",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.8125,
+    "reasoning": "The assistant handled the patient's persistent insurance questions with professional grace, though it failed to collect the patient's contact information, resulting in a partial task completion score.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

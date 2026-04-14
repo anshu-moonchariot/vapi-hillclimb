@@ -1,0 +1,62 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, I\u2019m calling because I\u2019d like to schedule an appointment for professional teeth whitening. Before we get into the details, can you confirm if my Aetna plan covers this procedure?"
+      },
+      {
+        "role": "assistant",
+        "content": "I apologize, but I do not have access to billing records. Please call our billing department directly at 555-0199 for assistance with insurance coverage. \n\nTo get started with scheduling your professional teeth whitening appointment, could you please provide me with your full name?"
+      },
+      {
+        "role": "user",
+        "content": "My name is Sarah Jenkins. But wait, are you sure there isn't a general policy for Aetna members regarding cosmetic whitening? I just want to make sure I won't be hit with a surprise bill."
+      },
+      {
+        "role": "assistant",
+        "content": "I understand your concern, Sarah. However, I really recommend contacting our billing department at 555-0199 to get the most accurate information about your Aetna plan and coverage for cosmetic whitening. \n\nIn the meantime, could you please provide your phone number so we can proceed with scheduling your teeth whitening appointment? Also, let me know your preferred date and time."
+      },
+      {
+        "role": "user",
+        "content": "My number is 555-0123. I\u2019m still worried about the cost\u2014are you certain your office doesn't have any internal notes on whether Aetna typically covers whitening for patients? I'd like to come in next Tuesday morning if possible."
+      },
+      {
+        "role": "assistant",
+        "content": "I completely understand your concerns, Sarah. Unfortunately, I do not have access to internal notes or specific insurance details regarding Aetna coverage. For the most accurate information, please contact our billing department at 555-0199.\n\nNow, to schedule your appointment for professional teeth whitening next Tuesday morning, can you please specify a time that works best for you?"
+      },
+      {
+        "role": "user",
+        "content": "I understand, but as I mentioned, I\u2019ve already asked you about this a few times now. Since you don't have that info, I guess I'll just have to call them later. Does 9:00 AM next Tuesday work for the whitening session?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for your understanding, Sarah. I've noted your preferred appointment time for professional teeth whitening on next Tuesday at 9:00 AM. \n\nTo summarize: \n- Name: Sarah Jenkins \n- Phone number: 555-0123 \n- Reason: Professional teeth whitening \n- Date and time: Next Tuesday at 9:00 AM \n\nI will go ahead and book your appointment for that time.\nYour appointment for professional teeth whitening with Sarah Jenkins is scheduled for next Tuesday at 9:00 AM. If you need to make any changes, please feel free to call us. Have a great day!"
+      }
+    ],
+    "transcript": "PATIENT: Hi, I\u2019m calling because I\u2019d like to schedule an appointment for professional teeth whitening. Before we get into the details, can you confirm if my Aetna plan covers this procedure?\nRECEPTIONIST: I apologize, but I do not have access to billing records. Please call our billing department directly at 555-0199 for assistance with insurance coverage. \n\nTo get started with scheduling your professional teeth whitening appointment, could you please provide me with your full name?\nPATIENT: My name is Sarah Jenkins. But wait, are you sure there isn't a general policy for Aetna members regarding cosmetic whitening? I just want to make sure I won't be hit with a surprise bill.\nRECEPTIONIST: I understand your concern, Sarah. However, I really recommend contacting our billing department at 555-0199 to get the most accurate information about your Aetna plan and coverage for cosmetic whitening. \n\nIn the meantime, could you please provide your phone number so we can proceed with scheduling your teeth whitening appointment? Also, let me know your preferred date and time.\nPATIENT: My number is 555-0123. I\u2019m still worried about the cost\u2014are you certain your office doesn't have any internal notes on whether Aetna typically covers whitening for patients? I'd like to come in next Tuesday morning if possible.\nRECEPTIONIST: I completely understand your concerns, Sarah. Unfortunately, I do not have access to internal notes or specific insurance details regarding Aetna coverage. For the most accurate information, please contact our billing department at 555-0199.\n\nNow, to schedule your appointment for professional teeth whitening next Tuesday morning, can you please specify a time that works best for you?\nPATIENT: I understand, but as I mentioned, I\u2019ve already asked you about this a few times now. Since you don't have that info, I guess I'll just have to call them later. Does 9:00 AM next Tuesday work for the whitening session?\nRECEPTIONIST: Thank you for your understanding, Sarah. I've noted your preferred appointment time for professional teeth whitening on next Tuesday at 9:00 AM. \n\nTo summarize: \n- Name: Sarah Jenkins \n- Phone number: 555-0123 \n- Reason: Professional teeth whitening \n- Date and time: Next Tuesday at 9:00 AM \n\nI will go ahead and book your appointment for that time.\nYour appointment for professional teeth whitening with Sarah Jenkins is scheduled for next Tuesday at 9:00 AM. If you need to make any changes, please feel free to call us. Have a great day!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "insurance_confused",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 4,
+    "stop_reason": "receptionist_closed",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 0.7,
+    "tone_naturalness": 0.7,
+    "error_recovery": 1.0,
+    "aggregate": 0.795,
+    "reasoning": "The assistant successfully collected all required information, but the conversation efficiency was impacted by the patient's repeated questions regarding insurance which the assistant handled consistently but repetitively.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

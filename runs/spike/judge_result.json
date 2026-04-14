@@ -1,0 +1,24 @@
+{
+  "run_1": {
+    "task_completion": 1.0,
+    "turn_efficiency": 0.9,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 0.9,
+    "error_recovery": 1.0,
+    "aggregate": 0.965,
+    "reasoning": "The assistant successfully collected all required information and handled the late provision of the phone number smoothly without needing to restart the process.",
+    "_recomputed_aggregate": 0.965
+  },
+  "run_2": {
+    "task_completion": 1.0,
+    "turn_efficiency": 0.9,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 0.9,
+    "error_recovery": 1.0,
+    "aggregate": 0.965,
+    "reasoning": "The assistant successfully collected all required information and handled the late provision of the phone number smoothly without needing to restart the process.",
+    "_recomputed_aggregate": 0.965
+  },
+  "variance": 0.0,
+  "model": "google/gemini-3.1-flash-lite-preview"
+}

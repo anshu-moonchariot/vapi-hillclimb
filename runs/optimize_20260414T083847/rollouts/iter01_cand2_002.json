@@ -1,0 +1,57 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, cancel a thursday appointment and rebook for the following week."
+      },
+      {
+        "role": "assistant",
+        "content": "Could you please provide me with the specific time of your original Thursday appointment and your preferred time window for rebooking next week? Additionally, let me know if there is a particular date that works best for you."
+      },
+      {
+        "role": "user",
+        "content": "I'm not exactly sure what time it was, but it's for this coming Thursday under the name Alex Rivera. I'm hoping to move it to sometime next Tuesday or Wednesday morning if you have anything open then."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex. We have openings next Tuesday at 9:00 AM and 10:30 AM, and next Wednesday at 8:30 AM and 11:00 AM. Which time would you prefer for your appointment?"
+      },
+      {
+        "role": "user",
+        "content": "Could you first confirm that my original Thursday appointment has been successfully cancelled? Once that's taken care of, I'd like to go with next Tuesday at 10:30 AM."
+      },
+      {
+        "role": "assistant",
+        "content": "Your original appointment for this Thursday under Alex Rivera has been successfully cancelled. I have booked your new appointment for next Tuesday at 10:30 AM. If you need any further assistance, please let me know."
+      },
+      {
+        "role": "user",
+        "content": "Great, thanks for confirming that cancellation and getting me rescheduled. I'm all set then, have a good day."
+      },
+      {
+        "role": "assistant",
+        "content": "You're welcome, Alex! Have a great day, and we look forward to seeing you next Tuesday at 10:30 AM."
+      }
+    ],
+    "persona_id": "reschedule",
+    "assistant_id": "b81f1062-90c9-49db-9925-d34e14959102",
+    "num_turns": 4,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 1.0,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.9125,
+    "reasoning": "The assistant successfully managed the rescheduling process and confirmed the cancellation, though it missed explicitly asking for the procedure type, which was likely implied by the existing appointment.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

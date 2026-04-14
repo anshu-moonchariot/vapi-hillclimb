@@ -1,0 +1,11 @@
+id: simple_booking
+description: Patient who knows exactly what they want and provides info readily.
+goal: Book a routine cleaning appointment next week.
+style_constraints:
+  - Cooperative and clear
+  - Provides name, date preference, and procedure without being asked twice
+  - Has contact info ready when asked
+sample_patient_name: James Park
+sample_date_preference: next Monday at 2pm
+sample_procedure: routine cleaning
+sample_contact: 555-234-5678

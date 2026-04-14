@@ -1,0 +1,70 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, I'm looking to schedule a routine dental checkup and cleaning. Do you have any openings on Christmas Day?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for reaching out! Our office is open Monday through Friday from 8:00 AM to 5:00 PM, and we are closed on weekends and holidays, including Christmas Day. \n\nCould you please provide me with another preferred date and time within our operating hours?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, I see. Well, how about this coming Sunday morning then? I'm usually free around 9:00 AM before I head to brunch."
+      },
+      {
+        "role": "assistant",
+        "content": "I appreciate your flexibility! However, our office is also closed on Sundays. \n\nCould you please provide me with a different date and time during our business hours, Monday through Friday, 8:00 AM to 5:00 PM?"
+      },
+      {
+        "role": "user",
+        "content": "That\u2019s a shame, I didn't realize you were closed then too. Could I come in on Tuesday, October 22nd, at 3:00 AM instead? I like to get things done before my day starts."
+      },
+      {
+        "role": "assistant",
+        "content": "I understand your preference for early appointments, but unfortunately, we do not have any availability at 3:00 AM. Our operating hours are Monday through Friday from 8:00 AM to 5:00 PM. \n\nWould you like to choose a time within our operating hours? For example, we have availabilities starting from 8:00 AM onward on Tuesday. Please let me know what works for you!"
+      },
+      {
+        "role": "user",
+        "content": "Oh, 3:00 AM is too early? My apologies. Could I just come in on that same Tuesday, October 22nd, at 8:30 AM then?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for providing that information! Just to confirm, I have you scheduled for a routine dental checkup and cleaning on Tuesday, October 22nd, at 8:30 AM.\n\nShall I go ahead and book that appointment for you?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, that sounds perfect, please go ahead and book it. Thank you for your help. [DONE]"
+      },
+      {
+        "role": "assistant",
+        "content": "Your appointment for a routine dental checkup and cleaning on Tuesday, October 22nd, at 8:30 AM has been successfully booked. Thank you for choosing us, and we look forward to seeing you then! If you have any other questions or need further assistance, feel free to ask. Have a great day!"
+      }
+    ],
+    "transcript": "PATIENT: Hi, I'm looking to schedule a routine dental checkup and cleaning. Do you have any openings on Christmas Day?\nRECEPTIONIST: Thank you for reaching out! Our office is open Monday through Friday from 8:00 AM to 5:00 PM, and we are closed on weekends and holidays, including Christmas Day. \n\nCould you please provide me with another preferred date and time within our operating hours?\nPATIENT: Oh, I see. Well, how about this coming Sunday morning then? I'm usually free around 9:00 AM before I head to brunch.\nRECEPTIONIST: I appreciate your flexibility! However, our office is also closed on Sundays. \n\nCould you please provide me with a different date and time during our business hours, Monday through Friday, 8:00 AM to 5:00 PM?\nPATIENT: That\u2019s a shame, I didn't realize you were closed then too. Could I come in on Tuesday, October 22nd, at 3:00 AM instead? I like to get things done before my day starts.\nRECEPTIONIST: I understand your preference for early appointments, but unfortunately, we do not have any availability at 3:00 AM. Our operating hours are Monday through Friday from 8:00 AM to 5:00 PM. \n\nWould you like to choose a time within our operating hours? For example, we have availabilities starting from 8:00 AM onward on Tuesday. Please let me know what works for you!\nPATIENT: Oh, 3:00 AM is too early? My apologies. Could I just come in on that same Tuesday, October 22nd, at 8:30 AM then?\nRECEPTIONIST: Thank you for providing that information! Just to confirm, I have you scheduled for a routine dental checkup and cleaning on Tuesday, October 22nd, at 8:30 AM.\n\nShall I go ahead and book that appointment for you?\nPATIENT: Yes, that sounds perfect, please go ahead and book it. Thank you for your help. [DONE]\nRECEPTIONIST: Your appointment for a routine dental checkup and cleaning on Tuesday, October 22nd, at 8:30 AM has been successfully booked. Thank you for choosing us, and we look forward to seeing you then! If you have any other questions or need further assistance, feel free to ask. Have a great day!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "bad_date",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 5,
+    "stop_reason": "patient_done",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.8125,
+    "reasoning": "The assistant was professional and handled multiple scheduling constraints gracefully, though it failed to collect the patient's contact information, resulting in incomplete task completion.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

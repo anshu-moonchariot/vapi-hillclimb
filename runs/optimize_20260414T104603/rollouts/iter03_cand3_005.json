@@ -1,0 +1,62 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, I\u2019m calling to schedule a routine dental checkup and cleaning. I'm hoping to come in on Christmas Day if you have any openings?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for reaching out! To help schedule your routine dental checkup and cleaning, may I please have your full name and a reliable contact phone number? Also, while I check on availability, could you confirm if you are flexible with any other dates besides Christmas Day?"
+      },
+      {
+        "role": "user",
+        "content": "My name is Alex Miller, and my number is 555-0199. I'm really only free on major holidays or perhaps this coming Sunday at 3:00 AM if you happen to be open then?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex Miller. We appreciate your flexibility. I will check our schedule for Christmas Day and Sunday at 3:00 AM. Routine checkups typically need to be during regular office hours. May I confirm that your visit is for a routine dental checkup and cleaning?\nAlex, I have noted your name and phone number, and the reason for the visit as a routine dental checkup and cleaning. I will check availability on Christmas Day during office hours and on Sunday. Could you please specify a preferred time on Christmas Day during regular hours, such as morning or afternoon?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, I apologize, I forgot you probably aren't open on the actual holiday. How about next Tuesday at midnight instead?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for understanding, Alex. Our office is not open at midnight. Could you please provide a preferred time during regular office hours (typically 9:00 AM to 5:00 PM) on next Tuesday for your routine dental checkup and cleaning?"
+      },
+      {
+        "role": "user",
+        "content": "My apologies, I seem to be having trouble with the clock! How about next Tuesday at 10:00 AM instead?"
+      },
+      {
+        "role": "assistant",
+        "content": "No worries at all, Alex! I have all the details now: your name, phone number, reason for the visit, and your preferred appointment time of next Tuesday at 10:00 AM for a routine dental checkup and cleaning. I will go ahead and book that for you.\nYour appointment for a routine dental checkup and cleaning is scheduled for next Tuesday at 10:00 AM. If you have any other questions or need to reschedule, please feel free to call us. Have a great day, Alex!"
+      }
+    ],
+    "transcript": "PATIENT: Hi, I\u2019m calling to schedule a routine dental checkup and cleaning. I'm hoping to come in on Christmas Day if you have any openings?\nRECEPTIONIST: Thank you for reaching out! To help schedule your routine dental checkup and cleaning, may I please have your full name and a reliable contact phone number? Also, while I check on availability, could you confirm if you are flexible with any other dates besides Christmas Day?\nPATIENT: My name is Alex Miller, and my number is 555-0199. I'm really only free on major holidays or perhaps this coming Sunday at 3:00 AM if you happen to be open then?\nRECEPTIONIST: Thank you, Alex Miller. We appreciate your flexibility. I will check our schedule for Christmas Day and Sunday at 3:00 AM. Routine checkups typically need to be during regular office hours. May I confirm that your visit is for a routine dental checkup and cleaning?\nAlex, I have noted your name and phone number, and the reason for the visit as a routine dental checkup and cleaning. I will check availability on Christmas Day during office hours and on Sunday. Could you please specify a preferred time on Christmas Day during regular hours, such as morning or afternoon?\nPATIENT: Oh, I apologize, I forgot you probably aren't open on the actual holiday. How about next Tuesday at midnight instead?\nRECEPTIONIST: Thank you for understanding, Alex. Our office is not open at midnight. Could you please provide a preferred time during regular office hours (typically 9:00 AM to 5:00 PM) on next Tuesday for your routine dental checkup and cleaning?\nPATIENT: My apologies, I seem to be having trouble with the clock! How about next Tuesday at 10:00 AM instead?\nRECEPTIONIST: No worries at all, Alex! I have all the details now: your name, phone number, reason for the visit, and your preferred appointment time of next Tuesday at 10:00 AM for a routine dental checkup and cleaning. I will go ahead and book that for you.\nYour appointment for a routine dental checkup and cleaning is scheduled for next Tuesday at 10:00 AM. If you have any other questions or need to reschedule, please feel free to call us. Have a great day, Alex!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "bad_date",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 4,
+    "stop_reason": "receptionist_closed",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.9,
+    "reasoning": "The assistant successfully collected all required information and handled the patient's unrealistic scheduling requests with professional grace, though the process took several turns due to the patient's confusion.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

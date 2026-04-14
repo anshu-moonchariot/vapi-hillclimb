@@ -1,0 +1,5 @@
+phase,run_id,aggregate,aggregate_std,n_valid,n_failed,task_completion,turn_efficiency,graceful_handling,tone_naturalness,error_recovery
+baseline,baseline_20260414T083715,0.828,0.1674,5,0,0.8,0.7,0.88,0.94,0.88
+final,optimize_20260414T083847,0.966,0.0365,5,0,1.0,0.82,1.0,1.0,1.0
+baseline,baseline_20260414T104422,0.7835,0.1501,5,0,0.8,0.7,0.82,0.82,0.76
+final,optimize_20260414T104603,0.767,0.1465,5,0,0.75,0.76,0.76,0.82,0.76

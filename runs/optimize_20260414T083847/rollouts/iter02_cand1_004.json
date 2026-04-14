@@ -1,0 +1,49 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book an emergency appointment for a toothache as soon as possible."
+      },
+      {
+        "role": "assistant",
+        "content": "I'm sorry to hear you're experiencing a toothache. Let's get you seen as soon as possible. Could you please provide me with your preferred date and time for the emergency appointment? Also, may I have your full name and current contact phone number?"
+      },
+      {
+        "role": "user",
+        "content": "ASAP. Today if you have space. John Doe, 555-0199."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, John. Let me check our schedule for today to see the soonest available emergency appointment. May I confirm what time works best for you if we find an opening, or should I book the earliest slot available?"
+      },
+      {
+        "role": "user",
+        "content": "Earliest slot available. Just get me in."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for your patience, John. I have scheduled you for the earliest available emergency appointment today. If you need any further assistance before your visit, please don't hesitate to reach out. We look forward to helping you feel better soon!"
+      }
+    ],
+    "persona_id": "impatient",
+    "assistant_id": "b81f1062-90c9-49db-9925-d34e14959102",
+    "num_turns": 3,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 1.0,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 1.0,
+    "reasoning": "The assistant efficiently collected all required information in a professional, empathetic manner and successfully completed the booking in minimal turns.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

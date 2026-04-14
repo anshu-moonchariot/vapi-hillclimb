@@ -1,0 +1,62 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Need an emergency appointment. Toothache is killing me. Can you see me today?"
+      },
+      {
+        "role": "assistant",
+        "content": "I'm sorry to hear that you're in pain. To help you as quickly as possible, could you please provide me with your name and a preferred time for today? Our office hours are Monday to Friday, 8:00 AM to 5:00 PM.\nCould you please tell me your name and what time today would work best for you? Our office hours are Monday to Friday, 8:00 AM to 5:00 PM."
+      },
+      {
+        "role": "user",
+        "content": "I already told you I need this today. Name's Alex Reed. Just get me in ASAP."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex Reed. I understand you're looking to get in as soon as possible. Since our office opens at 8:00 AM, the earliest I can schedule you would be at that time. Does that work for you, or is there a specific time later in the day that you'd prefer? "
+      },
+      {
+        "role": "user",
+        "content": "8:00 AM works. Just put me down."
+      },
+      {
+        "role": "assistant",
+        "content": "Just to confirm, I have you scheduled for an emergency appointment at 8:00 AM today for your toothache. \n\nIs there anything else I can assist you with?"
+      },
+      {
+        "role": "user",
+        "content": "No, that's it. See you then. [DONE]"
+      },
+      {
+        "role": "assistant",
+        "content": "Your appointment is confirmed for today at 8:00 AM. Take care, and see you then!"
+      }
+    ],
+    "transcript": "PATIENT: Need an emergency appointment. Toothache is killing me. Can you see me today?\nRECEPTIONIST: I'm sorry to hear that you're in pain. To help you as quickly as possible, could you please provide me with your name and a preferred time for today? Our office hours are Monday to Friday, 8:00 AM to 5:00 PM.\nCould you please tell me your name and what time today would work best for you? Our office hours are Monday to Friday, 8:00 AM to 5:00 PM.\nPATIENT: I already told you I need this today. Name's Alex Reed. Just get me in ASAP.\nRECEPTIONIST: Thank you, Alex Reed. I understand you're looking to get in as soon as possible. Since our office opens at 8:00 AM, the earliest I can schedule you would be at that time. Does that work for you, or is there a specific time later in the day that you'd prefer? \nPATIENT: 8:00 AM works. Just put me down.\nRECEPTIONIST: Just to confirm, I have you scheduled for an emergency appointment at 8:00 AM today for your toothache. \n\nIs there anything else I can assist you with?\nPATIENT: No, that's it. See you then. [DONE]\nRECEPTIONIST: Your appointment is confirmed for today at 8:00 AM. Take care, and see you then!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "impatient",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 4,
+    "stop_reason": "patient_done",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 0.7,
+    "tone_naturalness": 0.7,
+    "error_recovery": 0.7,
+    "aggregate": 0.685,
+    "reasoning": "The assistant failed to collect the contact information and repeated its initial greeting unnecessarily, though it handled the emergency context professionally.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

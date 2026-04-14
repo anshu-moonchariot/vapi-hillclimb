@@ -1,0 +1,14 @@
+{
+  "task_completion": 0.75,
+  "turn_efficiency": 0.76,
+  "graceful_handling": 0.76,
+  "tone_naturalness": 0.82,
+  "error_recovery": 0.76,
+  "aggregate": 0.767,
+  "aggregate_std": 0.1465,
+  "n_valid": 5,
+  "n_failed": 0,
+  "run_id": "optimize_20260414T104603",
+  "prompt_hash": "3d759669fbf6",
+  "timestamp": "2026-04-14T11:15:04.186113+00:00"
+}

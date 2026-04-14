@@ -1,0 +1,328 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "system",
+        "time": 1776160067583,
+        "message": "You are a receptionist at a dental office. Help patients book appointments.\n\nIf patients ask about insurance, tell them to call billing.\n",
+        "secondsFromStart": 0
+      },
+      {
+        "role": "bot",
+        "time": 1776160068802,
+        "source": "",
+        "endTime": 1776160074792,
+        "message": "Thank you for calling Bright Smile Dental. This is the receptionist. How can I help you today?",
+        "duration": 4390,
+        "secondsFromStart": 1.182
+      },
+      {
+        "role": "user",
+        "time": 1776160076522,
+        "endTime": 1776160084551.999,
+        "message": "Hi there. Like to book an appointment for teeth whitening. Before we proceed, can you tell me if my Aetna insurance covers whitening services?",
+        "duration": 7129.99951171875,
+        "metadata": {
+          "wordLevelConfidence": [
+            {
+              "end": 8.92,
+              "word": "hi",
+              "start": 8.76,
+              "confidence": 0.7963867,
+              "punctuated_word": "Hi"
+            },
+            {
+              "end": 9.42,
+              "word": "there",
+              "start": 8.92,
+              "confidence": 0.9663086,
+              "punctuated_word": "there."
+            }
+          ]
+        },
+        "secondsFromStart": 8.76
+      },
+      {
+        "role": "bot",
+        "time": 1776160085802,
+        "source": "",
+        "endTime": 1776160097692,
+        "message": "I recommend that you call our billing department to inquire about your Aetna insurance coverage for whitening services. You like to go ahead and book your appointment for teeth whitening?",
+        "duration": 9980.0009765625,
+        "secondsFromStart": 18.182
+      },
+      {
+        "role": "user",
+        "time": 1776160099432,
+        "endTime": 1776160107832,
+        "message": "I understand. Uh, but could you double check if you have any information about coverage for teeth whitening with Aetna? It's important for me to know before I book.",
+        "duration": 8070.001953125,
+        "metadata": {
+          "wordLevelConfidence": [
+            {
+              "end": 31.83,
+              "word": "i",
+              "start": 31.67,
+              "confidence": 0.93847656,
+              "punctuated_word": "I"
+            },
+            {
+              "end": 32.33,
+              "word": "understand",
+              "start": 31.83,
+              "confidence": 0.94262695,
+              "punctuated_word": "understand."
+            },
+            {
+              "end": 32.71,
+              "word": "uh",
+              "start": 32.63,
+              "confidence": 0.8815918,
+              "punctuated_word": "Uh,"
+            },
+            {
+              "end": 32.87,
+              "word": "but",
+              "start": 32.71,
+              "confidence": 0.9970703,
+              "punctuated_word": "but"
+            },
+            {
+              "end": 33.19,
+              "word": "could",
+              "start": 32.87,
+              "confidence": 1,
+              "punctuated_word": "could"
+            },
+            {
+              "end": 33.35,
+              "word": "you",
+              "start": 33.19,
+              "confidence": 1,
+              "punctuated_word": "you"
+            },
+            {
+              "end": 33.59,
+              "word": "double",
+              "start": 33.35,
+              "confidence": 1,
+              "punctuated_word": "double"
+            },
+            {
+              "end": 34.06,
+              "word": "check",
+              "start": 33.59,
+              "confidence": 1,
+              "punctuated_word": "check"
+            }
+          ]
+        },
+        "secondsFromStart": 31.67
+      },
+      {
+        "role": "bot",
+        "time": 1776160108941.996,
+        "source": "",
+        "endTime": 1776160126682,
+        "message": "I don't have access to specific insurance coverage details for teeth whitening. So it would be best to contact our billing department directly for accurate information. Would you like me to help you book an appointment for teeth whitening now, or do you need the billing department's contact information?",
+        "duration": 15250.005859375,
+        "secondsFromStart": 41.32199609375
+      },
+      {
+        "role": "user",
+        "time": 1776160128352,
+        "endTime": 1776160131022,
+        "message": "I get that. Could you maybe tell me if",
+        "duration": 2190,
+        "metadata": {
+          "wordLevelConfidence": [
+            {
+              "end": 60.75,
+              "word": "i",
+              "start": 60.59,
+              "confidence": 0.9428711,
+              "punctuated_word": "I"
+            },
+            {
+              "end": 61.23,
+              "word": "get",
+              "start": 60.75,
+              "confidence": 0.99902344,
+              "punctuated_word": "get"
+            },
+            {
+              "end": 61.59,
+              "word": "that",
+              "start": 61.23,
+              "confidence": 0.98706055,
+              "punctuated_word": "that."
+            }
+          ]
+        },
+        "secondsFromStart": 60.59
+      },
+      {
+        "role": "bot",
+        "time": 1776160133502.005,
+        "source": "",
+        "endTime": 1776160134382,
+        "message": "Seems like your",
+        "duration": 879.9951171875,
+        "secondsFromStart": 65.8820048828125
+      },
+      {
+        "role": "user",
+        "time": 1776160133741.996,
+        "endTime": 1776160134832,
+        "message": "sorry. I was about to",
+        "duration": 1090.00390625,
+        "metadata": {
+          "wordLevelConfidence": [
+            {
+              "end": 66.22,
+              "word": "sorry",
+              "start": 65.979996,
+              "confidence": 0.98461914,
+              "punctuated_word": "sorry."
+            },
+            {
+              "end": 66.299995,
+              "word": "i",
+              "start": 66.22,
+              "confidence": 1,
+              "punctuated_word": "I"
+            },
+            {
+              "end": 66.619995,
+              "word": "was",
+              "start": 66.299995,
+              "confidence": 1,
+              "punctuated_word": "was"
+            },
+            {
+              "end": 66.86,
+              "word": "about",
+              "start": 66.619995,
+              "confidence": 0.9980469,
+              "punctuated_word": "about"
+            },
+            {
+              "end": 67.07,
+              "word": "to",
+              "start": 66.86,
+              "confidence": 0.61572266,
+              "punctuated_word": "to"
+            }
+          ]
+        },
+        "secondsFromStart": 65.97999609375
+      },
+      {
+        "role": "bot",
+        "time": 1776160137302,
+        "source": "",
+        "endTime": 1776160138752,
+        "message": "No problem. Please take your time.",
+        "duration": 1450,
+        "secondsFromStart": 69.682
+      },
+      {
+        "role": "user",
+        "time": 1776160138192,
+        "endTime": 1776160138912,
+        "message": "no worries.",
+        "duration": 720,
+        "metadata": {
+          "wordLevelConfidence": [
+            {
+              "end": 70.68,
+              "word": "no",
+              "start": 70.43,
+              "confidence": 0.9892578,
+              "punctuated_word": "no"
+            },
+            {
+              "end": 71.15,
+              "word": "worries",
+              "start": 70.68,
+              "confidence": 0.9980469,
+              "punctuated_word": "worries."
+            }
+          ]
+        },
+        "secondsFromStart": 70.43
+      },
+      {
+        "role": "bot",
+        "time": 1776160139631.995,
+        "source": "",
+        "endTime": 1776160141402,
+        "message": "If you need any assistance with booking",
+        "duration": 1770.0048828125,
+        "secondsFromStart": 72.0119951171875
+      },
+      {
+        "role": "user",
+        "time": 1776160140912,
+        "endTime": 1776160141412,
+        "message": "Thanks.",
+        "duration": 500,
+        "metadata": {
+          "wordLevelConfidence": [
+            {
+              "end": 73.65,
+              "word": "thanks",
+              "start": 73.15,
+              "confidence": 0.9785156,
+              "punctuated_word": "Thanks."
+            }
+          ]
+        },
+        "secondsFromStart": 73.15
+      },
+      {
+        "role": "bot",
+        "time": 1776160142771.995,
+        "source": "",
+        "endTime": 1776160152172,
+        "message": "you're welcome. If you need any assistance, with booking an appointment or have any other questions, feel free to reach out. Have a great day.",
+        "duration": 7660,
+        "secondsFromStart": 75.1519951171875
+      }
+    ],
+    "transcript": "AI: Thank you for calling Bright Smile Dental. This is the receptionist. How can I help you today?\nUser: Hi there. Like to book an appointment for teeth whitening. Before we proceed, can you tell me if my Aetna insurance covers whitening services?\nAI: I recommend that you call our billing department to inquire about your Aetna insurance coverage for whitening services. You like to go ahead and book your appointment for teeth whitening?\nUser: I understand. Uh, but could you double check if you have any information about coverage for teeth whitening with Aetna? It's important for me to know before I book.\nAI: I don't have access to specific insurance coverage details for teeth whitening. So it would be best to contact our billing department directly for accurate information. Would you like me to help you book an appointment for teeth whitening now, or do you need the billing department's contact information?\nUser: I get that. Could you maybe tell me if\nAI: Seems like your\nUser: sorry. I was about to\nAI: No problem. Please take your time.\nUser: no worries.\nAI: If you need any assistance with booking\nUser: Thanks.\nAI: you're welcome. If you need any assistance, with booking an appointment or have any other questions, feel free to reach out. Have a great day.\n",
+    "recording_url": "https://storage.vapi.ai/019d8b63-c904-7ee0-bd46-9cd8427a7c9f-1776160154853-c45129a6-0588-4c52-a2ab-c630930f0fdb-mono.wav",
+    "structured_data": {
+      "procedure": "teeth whitening",
+      "appointment_booked": false
+    },
+    "analysis": {
+      "summary": "The user called Bright Smile Dental to book a teeth whitening appointment but prioritized confirming their Aetna insurance coverage for the service. The AI receptionist repeatedly stated they could not access specific insurance details and directed the user to contact the billing department. The call ended without the user receiving the desired insurance information or booking an appointment.",
+      "structuredData": {
+        "procedure": "teeth whitening",
+        "appointment_booked": false
+      },
+      "successEvaluation": "false"
+    },
+    "persona_id": "insurance_confused",
+    "assistant_id": "ec8c3cc2-e49f-49c2-9242-09cde84be6c0",
+    "call_id": "019d8b63-c904-7ee0-bd46-9cd8427a7c9f",
+    "num_turns": 6,
+    "stop_reason": "customer-ended-call",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.0,
+    "turn_efficiency": 0.0,
+    "graceful_handling": 0.4,
+    "tone_naturalness": 0.4,
+    "error_recovery": 0.1,
+    "aggregate": 0.149,
+    "reasoning": "The assistant failed to collect any required booking information and prematurely terminated the call without completing the user's request.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

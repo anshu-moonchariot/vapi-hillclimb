@@ -1,0 +1,57 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book a teeth whitening appointment, but repeatedly asks about insurance coverage."
+      },
+      {
+        "role": "assistant",
+        "content": "To schedule your teeth whitening appointment, may I know your preferred date and time? For questions about insurance coverage, please contact our billing department at [Insert Phone Number]. What time works best for you?"
+      },
+      {
+        "role": "user",
+        "content": "I'm looking at next Tuesday morning, but are you sure my Aetna plan won't cover a portion of this since it's for dental health?"
+      },
+      {
+        "role": "assistant",
+        "content": "I understand your concern about insurance coverage, but for that specific inquiry, please reach out to our billing department at [Insert Phone Number]. As for your appointment, do you have a specific time in mind for next Tuesday morning? We can offer openings at 9:00 AM or 10:30 AM. What works best for you?"
+      },
+      {
+        "role": "user",
+        "content": "I'll take the 9:00 AM slot, but if I call the billing department, will they be able to confirm if Aetna covers cosmetic procedures like this?"
+      },
+      {
+        "role": "assistant",
+        "content": "Yes, the billing department will provide detailed information about your Aetna plan's coverage for cosmetic procedures like teeth whitening. I've booked your appointment for next Tuesday at 9:00 AM. If you need anything else, feel free to ask."
+      },
+      {
+        "role": "user",
+        "content": "Okay, that sounds good. My name is Alex Miller, and my date of birth is May 12th, 1985. Just to be absolutely sure, you're certain the billing department is the only one who can verify if Aetna covers this?"
+      },
+      {
+        "role": "assistant",
+        "content": "Yes, the billing department is the best source to verify your Aetna coverage for teeth whitening. Your appointment for next Tuesday at 9:00 AM is confirmed under the name Alex Miller, DOB May 12th, 1985. If you need further assistance, please let me know."
+      }
+    ],
+    "persona_id": "insurance_confused",
+    "assistant_id": "b81f1062-90c9-49db-9925-d34e14959102",
+    "num_turns": 4,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.8,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.8725,
+    "reasoning": "The assistant handled the persistent insurance questions gracefully and maintained a professional tone, though it failed to collect the patient's contact information.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

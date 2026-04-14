@@ -1,0 +1,78 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, I\u2019d like to schedule an appointment for professional teeth whitening. Before we get into the details, can you confirm if my Aetna plan covers the full cost of this procedure?"
+      },
+      {
+        "role": "assistant",
+        "content": "I apologize, but I do not have access to billing records. Please call our billing department directly at 555-0199 for assistance. \n\nNow, may I have your name, preferred date and time for your teeth whitening appointment?"
+      },
+      {
+        "role": "user",
+        "content": "My name is Alex Miller. I understand you don't have the records, but surely you have a general idea if Aetna usually covers whitening for most patients here?"
+      },
+      {
+        "role": "assistant",
+        "content": "I understand your concern, but I'm unable to provide information about insurance coverage specifics. It's best to check directly with our billing department at 555-0199 for accurate information.\n\nNow, let's schedule your appointment! What date and time works best for you, Alex?"
+      },
+      {
+        "role": "user",
+        "content": "I hear you, but since I\u2019m already on the phone with you, can you tell me if most people with Aetna end up paying out of pocket for this? I\u2019d hate to show up and be surprised by a huge bill."
+      },
+      {
+        "role": "assistant",
+        "content": "I understand your concern, but I still cannot provide insights into specific insurance plans or how other patients have been affected. To get the most accurate information regarding your coverage, I recommend contacting our billing department directly at 555-0199.\n\nFor now, let's focus on your appointment. What date and time would you prefer for your teeth whitening session, Alex?"
+      },
+      {
+        "role": "user",
+        "content": "I understand you've told me that twice now, but it's just really stressful not knowing the cost. Could you at least tell me if your office typically collects payment upfront for whitening? I'd like to come in next Tuesday at 10:00 AM if that's available."
+      },
+      {
+        "role": "assistant",
+        "content": "I understand that this can be stressful, and I wish I could provide more information, but I really cannot comment on payment practices. It\u2019s always best to clarify those details with our billing department directly at 555-0199.\n\nAs for your appointment next Tuesday at 10:00 AM, could you please provide your contact phone number so I can finalize the booking for you?"
+      },
+      {
+        "role": "user",
+        "content": "My number is 555-0123. Are you sure you can't just check if there's a standard copay for Aetna patients before I finalize this?"
+      },
+      {
+        "role": "assistant",
+        "content": "I appreciate your understanding, but I still cannot access information about copays or payment practices. Please reach out to our billing department directly at 555-0199 for any insurance-related inquiries.\n\nNow, let me confirm your appointment for professional teeth whitening on Tuesday at 10:00 AM. Your phone number is 555-0123. Is that correct?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, that's correct. I suppose I'll just have to call that number later to double-check the Aetna coverage. Thanks for your help. [DONE]"
+      },
+      {
+        "role": "assistant",
+        "content": "You're welcome, Alex! I've scheduled your appointment for professional teeth whitening on Tuesday at 10:00 AM. If you have any more questions or need assistance in the future, feel free to reach out. Have a great day!"
+      }
+    ],
+    "transcript": "PATIENT: Hi, I\u2019d like to schedule an appointment for professional teeth whitening. Before we get into the details, can you confirm if my Aetna plan covers the full cost of this procedure?\nRECEPTIONIST: I apologize, but I do not have access to billing records. Please call our billing department directly at 555-0199 for assistance. \n\nNow, may I have your name, preferred date and time for your teeth whitening appointment?\nPATIENT: My name is Alex Miller. I understand you don't have the records, but surely you have a general idea if Aetna usually covers whitening for most patients here?\nRECEPTIONIST: I understand your concern, but I'm unable to provide information about insurance coverage specifics. It's best to check directly with our billing department at 555-0199 for accurate information.\n\nNow, let's schedule your appointment! What date and time works best for you, Alex?\nPATIENT: I hear you, but since I\u2019m already on the phone with you, can you tell me if most people with Aetna end up paying out of pocket for this? I\u2019d hate to show up and be surprised by a huge bill.\nRECEPTIONIST: I understand your concern, but I still cannot provide insights into specific insurance plans or how other patients have been affected. To get the most accurate information regarding your coverage, I recommend contacting our billing department directly at 555-0199.\n\nFor now, let's focus on your appointment. What date and time would you prefer for your teeth whitening session, Alex?\nPATIENT: I understand you've told me that twice now, but it's just really stressful not knowing the cost. Could you at least tell me if your office typically collects payment upfront for whitening? I'd like to come in next Tuesday at 10:00 AM if that's available.\nRECEPTIONIST: I understand that this can be stressful, and I wish I could provide more information, but I really cannot comment on payment practices. It\u2019s always best to clarify those details with our billing department directly at 555-0199.\n\nAs for your appointment next Tuesday at 10:00 AM, could you please provide your contact phone number so I can finalize the booking for you?\nPATIENT: My number is 555-0123. Are you sure you can't just check if there's a standard copay for Aetna patients before I finalize this?\nRECEPTIONIST: I appreciate your understanding, but I still cannot access information about copays or payment practices. Please reach out to our billing department directly at 555-0199 for any insurance-related inquiries.\n\nNow, let me confirm your appointment for professional teeth whitening on Tuesday at 10:00 AM. Your phone number is 555-0123. Is that correct?\nPATIENT: Yes, that's correct. I suppose I'll just have to call that number later to double-check the Aetna coverage. Thanks for your help. [DONE]\nRECEPTIONIST: You're welcome, Alex! I've scheduled your appointment for professional teeth whitening on Tuesday at 10:00 AM. If you have any more questions or need assistance in the future, feel free to reach out. Have a great day!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "insurance_confused",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 6,
+    "stop_reason": "patient_done",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 0.7,
+    "tone_naturalness": 0.4,
+    "error_recovery": 1.0,
+    "aggregate": 0.75,
+    "reasoning": "The assistant successfully collected all required information, but the conversation was inefficient due to repetitive, robotic responses regarding insurance inquiries.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

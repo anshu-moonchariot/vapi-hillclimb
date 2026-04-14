@@ -1,0 +1,57 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book an emergency appointment for a toothache as soon as possible."
+      },
+      {
+        "role": "assistant",
+        "content": "I can help you with that! Could you please provide me with your preferred date and time for the appointment? Additionally, if you have a specific dentist you would like to see, please let me know."
+      },
+      {
+        "role": "user",
+        "content": "Like I said, ASAP. Today. Any dentist, just stop the pain."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for the information. Could you please let me know what time you are available today, or should I book the earliest possible slot for you? Additionally, may I have your full name and contact number to complete the appointment booking?"
+      },
+      {
+        "role": "user",
+        "content": "Earliest slot. Name is John Doe. Number is 555-0199. Just book it."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, John. I will check for the earliest available appointment slot today and book it for you right away. Please hold on for a moment."
+      },
+      {
+        "role": "user",
+        "content": "Fine. Hurry up."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for your patience, John. I\u2019ve scheduled you for the earliest emergency appointment available today to address your toothache. If you need any further assistance or have any questions before your visit, feel free to reach out. We look forward to helping you feel better soon!"
+      }
+    ],
+    "persona_id": "impatient",
+    "assistant_id": "b81f1062-90c9-49db-9925-d34e14959102",
+    "num_turns": 4,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 1.0,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 0.7,
+    "error_recovery": 1.0,
+    "aggregate": 0.955,
+    "reasoning": "The assistant efficiently collected all necessary information and handled the patient's urgent tone with professional composure.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

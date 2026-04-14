@@ -1,0 +1,57 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book a checkup, but initially asks for dates the office is closed or gives conflicting preferences."
+      },
+      {
+        "role": "assistant",
+        "content": "I\u2019d be happy to help you schedule a checkup! Our office is closed on weekends, but we\u2019re open Monday through Friday. Could you please let me know your preferred date and time during those days? Also, what is the reason for your visit?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, I see. In that case, can I come in on Christmas Day? I need a routine checkup and cleaning."
+      },
+      {
+        "role": "assistant",
+        "content": "Our office is closed on Christmas Day. Would you be available for a routine checkup and cleaning on a weekday close to that date? Please let me know your preferred date and time."
+      },
+      {
+        "role": "user",
+        "content": "How about midnight on New Year's Eve instead? If that's also an issue, I suppose I could do next Tuesday at 3:00 PM."
+      },
+      {
+        "role": "assistant",
+        "content": "We\u2019re not open at midnight on New Year's Eve. Next Tuesday at 3:00 PM works perfectly. I'll schedule your routine checkup and cleaning for then. May I have your full name and a contact number, please?"
+      },
+      {
+        "role": "user",
+        "content": "My name is Alex Miller and you can reach me at 555-0199."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex. Your checkup and cleaning appointment is set for next Tuesday at 3:00 PM. We look forward to seeing you then! If you have any questions before your visit, feel free to reach out."
+      }
+    ],
+    "persona_id": "bad_date",
+    "assistant_id": "b81f1062-90c9-49db-9925-d34e14959102",
+    "num_turns": 4,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 0.8,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.96,
+    "reasoning": "The assistant handled the user's intentionally difficult and off-topic scheduling requests with professional patience and successfully collected all required information.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

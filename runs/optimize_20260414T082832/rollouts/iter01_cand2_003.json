@@ -1,0 +1,65 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book a teeth whitening appointment, but repeatedly asks about insurance coverage."
+      },
+      {
+        "role": "assistant",
+        "content": "Hello! To book your teeth whitening appointment, may I have your name, the reason for your visit, and your preferred dates and times? For insurance coverage questions, please contact our billing department directly."
+      },
+      {
+        "role": "user",
+        "content": "My name is Alex Johnson. I want to schedule a teeth whitening session, but before we lock in a date, are you sure my Aetna plan doesn't cover this as a preventative service?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex! I can help you schedule your teeth whitening session. However, for questions about your Aetna plan and coverage, please reach out to our billing department. Now, could you please provide your preferred dates and times for the appointment?"
+      },
+      {
+        "role": "user",
+        "content": "I understand, but wouldn't it be easier if you checked the system for me so I don't have to call them? I'm looking at next Tuesday morning, but I'm worried about the out-of-pocket cost if Aetna won't pitch in."
+      },
+      {
+        "role": "assistant",
+        "content": "I understand your concern, Alex, but I'm unable to check insurance details. Please contact our billing department for that information. As for your appointment, I can schedule you for next Tuesday morning. What time works best for you?"
+      },
+      {
+        "role": "user",
+        "content": "Fine, I'll call them later, but are you positive there's no way to see if Aetna covers even a portion of it? I'd like to come in at 9:00 AM if that works."
+      },
+      {
+        "role": "assistant",
+        "content": "I appreciate your understanding, Alex. Unfortunately, I can't access insurance information. Please do reach out to our billing department for assistance. I can confirm your teeth whitening appointment for next Tuesday at 9:00 AM. Would you like me to finalize that for you?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, please finalize it. I just really hope Aetna realizes how important this is for my dental health, but I'll call them to confirm."
+      },
+      {
+        "role": "assistant",
+        "content": "Your teeth whitening appointment is confirmed for next Tuesday at 9:00 AM, Alex. We look forward to seeing you then! If you need anything else, feel free to reach out."
+      }
+    ],
+    "persona_id": "insurance_confused",
+    "assistant_id": "60c2ef02-ea01-4105-b782-d4113d84c519",
+    "num_turns": 5,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.8,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.8725,
+    "reasoning": "The assistant successfully managed the booking and maintained a professional tone while consistently redirecting the user's persistent insurance questions, though it missed collecting the contact information slot.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

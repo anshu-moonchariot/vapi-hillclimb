@@ -1,0 +1,49 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book an emergency appointment for a toothache as soon as possible."
+      },
+      {
+        "role": "assistant",
+        "content": "I'm sorry to hear you're experiencing a toothache. Let me check our earliest available appointment for you. Could you please provide your full name and a contact number?"
+      },
+      {
+        "role": "user",
+        "content": "Alex Rivers. 555-0199. Just get me in."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex. The earliest emergency appointment we have available is today at 3:00 PM. Shall I go ahead and book that for you?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, 3:00 PM works. Just confirm it."
+      },
+      {
+        "role": "assistant",
+        "content": "Your emergency appointment is confirmed for today at 3:00 PM. If you have any further questions or need assistance, feel free to contact us. We look forward to seeing you then!"
+      }
+    ],
+    "persona_id": "impatient",
+    "assistant_id": "331963b7-422a-4c2a-97d2-5be94cbbe9f7",
+    "num_turns": 3,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 1.0,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 1.0,
+    "reasoning": "The assistant efficiently collected all required information and confirmed the appointment in a professional, natural manner within a very short turn count.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, I\u2019m calling because I\u2019m long overdue for a dental checkup and need to get an appointment scheduled. Do you have any openings on Christmas Day?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for reaching out! I can help you with scheduling an appointment for your checkup. Can I get your full name, please?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, sure, it\u2019s Alex Rivers. Are you really closed on Christmas? That's the only day I have off work."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks, Alex! Yes, our office is typically closed on Christmas Day. Could you please provide me with your phone number and let me know if you have another preferred date and time for your dental checkup?"
+      },
+      {
+        "role": "user",
+        "content": "My number is 555-0192. If you're closed then, could we do it at 3:00 AM this Sunday? That\u2019s the only other time I\u2019m free before my shifts start."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for providing your phone number, Alex. Just to clarify, you would like to schedule your dental checkup for this Sunday at 3:00 AM. Could you please confirm the reason for your visit\u2014 is it for a regular cleaning, exam, or something else?"
+      },
+      {
+        "role": "user",
+        "content": "I'm looking for a regular cleaning and exam. Wait, I just realized you probably aren't open at 3:00 AM either, are you?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for letting me know, Alex. You're right, our office doesn't open at 3:00 AM. Our usual hours start at 8:00 AM. Would you be able to come in any time from 8:00 AM onward on Sunday, or is there another day that might work better for you?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, I forgot you're closed on Sundays too! Could I just come in next Tuesday at 9:00 AM instead?"
+      },
+      {
+        "role": "assistant",
+        "content": "Tuesday at 9:00 AM works perfectly. Just to summarize, Alex Rivers, phone number 555-0192, you'd like to schedule a regular cleaning and exam for Tuesday at 9:00 AM. Is that correct?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, that sounds perfect. Tuesday at 9:00 AM works great for me. Thanks for helping me figure this out! [DONE]"
+      },
+      {
+        "role": "assistant",
+        "content": "Your appointment for a regular cleaning and exam is scheduled for Tuesday at 9:00 AM. Thank you, Alex! We look forward to seeing you then. Have a great day!"
+      }
+    ],
+    "transcript": "PATIENT: Hi, I\u2019m calling because I\u2019m long overdue for a dental checkup and need to get an appointment scheduled. Do you have any openings on Christmas Day?\nRECEPTIONIST: Thank you for reaching out! I can help you with scheduling an appointment for your checkup. Can I get your full name, please?\nPATIENT: Oh, sure, it\u2019s Alex Rivers. Are you really closed on Christmas? That's the only day I have off work.\nRECEPTIONIST: Thanks, Alex! Yes, our office is typically closed on Christmas Day. Could you please provide me with your phone number and let me know if you have another preferred date and time for your dental checkup?\nPATIENT: My number is 555-0192. If you're closed then, could we do it at 3:00 AM this Sunday? That\u2019s the only other time I\u2019m free before my shifts start.\nRECEPTIONIST: Thank you for providing your phone number, Alex. Just to clarify, you would like to schedule your dental checkup for this Sunday at 3:00 AM. Could you please confirm the reason for your visit\u2014 is it for a regular cleaning, exam, or something else?\nPATIENT: I'm looking for a regular cleaning and exam. Wait, I just realized you probably aren't open at 3:00 AM either, are you?\nRECEPTIONIST: Thank you for letting me know, Alex. You're right, our office doesn't open at 3:00 AM. Our usual hours start at 8:00 AM. Would you be able to come in any time from 8:00 AM onward on Sunday, or is there another day that might work better for you?\nPATIENT: Oh, I forgot you're closed on Sundays too! Could I just come in next Tuesday at 9:00 AM instead?\nRECEPTIONIST: Tuesday at 9:00 AM works perfectly. Just to summarize, Alex Rivers, phone number 555-0192, you'd like to schedule a regular cleaning and exam for Tuesday at 9:00 AM. Is that correct?\nPATIENT: Yes, that sounds perfect. Tuesday at 9:00 AM works great for me. Thanks for helping me figure this out! [DONE]\nRECEPTIONIST: Your appointment for a regular cleaning and exam is scheduled for Tuesday at 9:00 AM. Thank you, Alex! We look forward to seeing you then. Have a great day!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "bad_date",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 6,
+    "stop_reason": "patient_done",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.9,
+    "reasoning": "The assistant handled the patient's unrealistic scheduling requests with patience and professionalism, successfully collecting all required information despite the back-and-forth.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi there, I\u2019m calling to schedule a routine dental checkup and cleaning. Do you have any openings on Christmas Day?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for calling. May I have your name, please? Also, could you provide a preferred time on Christmas Day for the checkup and cleaning? However, I must inform you that our office is usually closed on Christmas Day. Would you like me to check availability on a different date close to that?"
+      }
+    ],
+    "transcript": "PATIENT: Hi there, I\u2019m calling to schedule a routine dental checkup and cleaning. Do you have any openings on Christmas Day?\nRECEPTIONIST: Thank you for calling. May I have your name, please? Also, could you provide a preferred time on Christmas Day for the checkup and cleaning? However, I must inform you that our office is usually closed on Christmas Day. Would you like me to check availability on a different date close to that?",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "bad_date",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 1,
+    "stop_reason": "receptionist_closed",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.25,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.6375,
+    "reasoning": "The assistant handled the impossible date request gracefully and professionally, though the booking process is still in the early stages.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

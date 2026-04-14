@@ -1,0 +1,57 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book a teeth whitening appointment, but repeatedly asks about insurance coverage."
+      },
+      {
+        "role": "assistant",
+        "content": "Of course! I\u2019d be happy to help you book a teeth whitening appointment. Could you please provide me with your preferred date and time for the appointment?\n\nI understand you have questions about insurance coverage, but as I mentioned, only our billing specialists can provide those details. Shall we proceed with securing your appointment for that teeth whitening? Just let me know your preferred date and time!"
+      },
+      {
+        "role": "user",
+        "content": "I'd really like to come in next Tuesday morning, but does Aetna usually cover this type of cosmetic procedure at all? I just want to be sure I won't be hit with a surprise bill."
+      },
+      {
+        "role": "assistant",
+        "content": "I appreciate your concern about the billing! Let\u2019s ensure we get your appointment set up. \n\nYou mentioned wanting to come in next Tuesday morning. Could you specify what time works best for you? \n\nAs for the insurance, I understand, but as I mentioned, only our billing specialists can provide those details. Shall we proceed with securing your appointment for next Tuesday morning? Also, I\u2019ll need to confirm your full name and contact number to finalize the booking."
+      },
+      {
+        "role": "user",
+        "content": "I'm looking for 9:00 AM, but I'm still worried about Aetna\u2014could you at least check if other patients get coverage for this? My name is Sarah Jenkins, and you can reach me at 555-0199."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Sarah! I have you down for a teeth whitening appointment on Tuesday at 9:00 AM. \n\nI understand your concerns about Aetna coverage, but as I mentioned, only our billing specialists can provide those details. Shall we proceed with securing your appointment for 9:00 AM on Tuesday? Your contact number is 555-0199, correct?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, that's the correct number. But are you sure Aetna won't at least provide a percentage for cosmetic work if I have the premium plan? I just want to be absolutely certain before we finalize this."
+      },
+      {
+        "role": "assistant",
+        "content": "I completely understand your desire for clarity regarding your insurance coverage, Sarah. However, as I mentioned, only our billing specialists can provide those details. \n\nLet\u2019s focus on securing your appointment for 9:00 AM on Tuesday. Your full name is Sarah Jenkins, and your contact number is 555-0199. Is everything correct to finalize your booking?"
+      }
+    ],
+    "persona_id": "insurance_confused",
+    "assistant_id": "b81f1062-90c9-49db-9925-d34e14959102",
+    "num_turns": 4,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 0.7,
+    "tone_naturalness": 0.7,
+    "error_recovery": 0.7,
+    "aggregate": 0.765,
+    "reasoning": "The assistant successfully collected all required information but became repetitive by constantly restating the insurance limitation instead of offering to connect the patient to a billing specialist.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

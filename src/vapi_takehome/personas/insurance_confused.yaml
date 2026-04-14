@@ -1,0 +1,11 @@
+id: insurance_confused
+description: Patient who keeps bringing up insurance questions the assistant cannot answer.
+goal: Book a teeth whitening appointment, but repeatedly asks about insurance coverage.
+style_constraints:
+  - Asks whether their Aetna plan covers whitening before proceeding
+  - If told to call insurance, asks again slightly differently
+  - Will eventually provide booking info but needs gentle redirection
+sample_patient_name: Devon Williams
+sample_date_preference: Saturday morning
+sample_procedure: teeth whitening
+sample_contact: 555-111-2233

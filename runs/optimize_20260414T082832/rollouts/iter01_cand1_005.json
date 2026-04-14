@@ -1,0 +1,65 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book a checkup, but initially asks for dates the office is closed or gives conflicting preferences."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for requesting a checkup appointment. To assist you best, could you please provide your preferred date and time for the appointment? Also, just to inform you, our office is closed on Sundays and major public holidays."
+      },
+      {
+        "role": "user",
+        "content": "Oh, that's a shame. Could I come in on Christmas Day then, or perhaps next Sunday morning?"
+      },
+      {
+        "role": "assistant",
+        "content": "I\u2019m sorry, but our office is closed on Christmas Day and Sundays. Could you please provide another date and time for your checkup? Thank you!"
+      },
+      {
+        "role": "user",
+        "content": "How about midnight this coming Tuesday? If that's too late, I can do 3:00 AM on Wednesday."
+      },
+      {
+        "role": "assistant",
+        "content": "Our office hours do not extend to midnight or early morning times. Could you please select a preferred date and time during regular office hours, typically between 9:00 AM and 5:00 PM?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, my apologies. I didn't realize. Could I come in this Thursday at 2:00 PM instead?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for your understanding! I just need your full name to complete the appointment for this Thursday at 2:00 PM."
+      },
+      {
+        "role": "user",
+        "content": "Of course, my name is Alex Miller. Does that time still work for you?"
+      },
+      {
+        "role": "assistant",
+        "content": "Yes, Thursday at 2:00 PM is available. I have scheduled a checkup appointment for Alex Miller at that time. We look forward to seeing you then!"
+      }
+    ],
+    "persona_id": "bad_date",
+    "assistant_id": "60c2ef02-ea01-4105-b782-d4113d84c519",
+    "num_turns": 5,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.8125,
+    "reasoning": "The assistant handled the user's intentionally difficult and off-topic scheduling requests with patience and professionalism, though it failed to collect the contact information slot.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, cancel a thursday appointment and rebook for the following week."
+      },
+      {
+        "role": "assistant",
+        "content": "I'd be happy to help you with that! Could you please provide me with your full name and contact number? Also, let me know your preferred date and time for the new appointment, as well as the reason for your visit. Thank you!"
+      },
+      {
+        "role": "user",
+        "content": "My name is Sarah Jenkins, and my number is 555-0123. I'm just coming in for a routine cleaning, and I'd like to reschedule for sometime next Tuesday or Wednesday if possible."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Sarah! I have your name and contact number noted. \n\nFor your new appointment, could you please specify a preferred time on either Tuesday or Wednesday? Our office hours are Monday to Friday, 8 AM to 5 PM. Once I have that information, I can assist you further!"
+      },
+      {
+        "role": "user",
+        "content": "Could I do sometime around 10 AM on Wednesday? Also, just to confirm, you've cancelled my original Thursday appointment, right?"
+      },
+      {
+        "role": "assistant",
+        "content": "I can book you for Wednesday at 10 AM for your routine cleaning. Just to confirm, could you please specify the date of your original Thursday appointment so I can accurately cancel it for you? Thank you!"
+      },
+      {
+        "role": "user",
+        "content": "I believe it was this coming Thursday, the 14th. Please let me know once that's officially off the books so we can finalize the Wednesday slot."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for confirming, Sarah. I have now canceled your appointment for Thursday, the 14th. \n\nYour new appointment is scheduled for Wednesday, the 13th at 10 AM for your routine cleaning. \n\nIf you have any other questions or need further assistance, feel free to ask!"
+      },
+      {
+        "role": "user",
+        "content": "Great, thank you for confirming that for me. I'll see you then."
+      },
+      {
+        "role": "assistant",
+        "content": "You're very welcome, Sarah! We're looking forward to seeing you on Wednesday, the 13th at 10 AM. If you need anything before then, don't hesitate to reach out. Have a wonderful day!"
+      }
+    ],
+    "persona_id": "reschedule",
+    "assistant_id": "b81f1062-90c9-49db-9925-d34e14959102",
+    "num_turns": 5,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 0.8,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.96,
+    "reasoning": "The assistant successfully managed the rescheduling process, including the cancellation of the previous appointment, with a professional and natural tone.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

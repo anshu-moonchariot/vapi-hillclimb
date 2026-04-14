@@ -1,0 +1,57 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book a checkup, but initially asks for dates the office is closed or gives conflicting preferences."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for choosing us for your checkup. Could you please provide your preferred time window for the appointment? This will help me find the best available slot for you."
+      },
+      {
+        "role": "user",
+        "content": "I would like to come in on Christmas Day, please. If that's not possible, then any Saturday at 3:00 AM works for me."
+      },
+      {
+        "role": "assistant",
+        "content": "Our office is closed on Christmas Day. Also, we do not have appointments at 3:00 AM. However, we can offer you Saturday appointments at 9:00 AM or 11:00 AM. Would either of these work for you?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, my mistake. I suppose I can do Tuesday at 2:00 PM instead, as long as that works for you?"
+      },
+      {
+        "role": "assistant",
+        "content": "Let me check our availability for Tuesday at 2:00 PM. Unfortunately, we do not have an opening at that time. However, we do have slots available at 1:00 PM and 3:00 PM. Would either of those times work for you?"
+      },
+      {
+        "role": "user",
+        "content": "I see, let's go with 3:00 PM then. My name is Alex Smith, and I need a routine checkup."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex. I have you scheduled for a routine checkup on Tuesday at 3:00 PM. If you have any questions or need to discuss insurance, please contact our billing department at [Insert Phone Number]. Is there anything else I can assist you with today?"
+      }
+    ],
+    "persona_id": "bad_date",
+    "assistant_id": "b81f1062-90c9-49db-9925-d34e14959102",
+    "num_turns": 4,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.8,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.8725,
+    "reasoning": "The assistant handled complex scheduling constraints and user errors with high professionalism, though it missed collecting the contact information slot.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

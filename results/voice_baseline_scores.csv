@@ -1,0 +1,6 @@
+persona,score,booked
+simple_booking,0.716,True
+reschedule,0.025,False
+insurance_confused,0.149,False
+impatient,0.904,True
+bad_date,0.904,True

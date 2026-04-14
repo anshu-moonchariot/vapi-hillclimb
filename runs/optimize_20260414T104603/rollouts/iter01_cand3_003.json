@@ -1,0 +1,70 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi there, I\u2019m looking to schedule an appointment for professional teeth whitening. Before we get into the details, can you tell me if my Aetna plan will cover the cost of the procedure?"
+      },
+      {
+        "role": "assistant",
+        "content": "I'm sorry, I cannot assist with billing inquiries. Please contact our billing department at 555-0199. I can help you schedule your professional teeth whitening appointment. May I have your name, please?"
+      },
+      {
+        "role": "user",
+        "content": "I'm Jane Doe. But wait, if I call them, will they just tell me to talk to you? I really need to know if Aetna covers whitening before I commit to coming in."
+      },
+      {
+        "role": "assistant",
+        "content": "I understand your concern, Jane. To clarify, our billing department is specifically equipped to handle insurance coverage questions and will be able to provide the most accurate information about Aetna coverage for whitening. Meanwhile, I can assist you in scheduling your appointment. Could you please provide your preferred date and time for the visit?"
+      },
+      {
+        "role": "user",
+        "content": "I suppose I can call them, but are you sure your office doesn't have a general idea of whether Aetna usually covers this? I'm just worried about showing up and getting a surprise bill. I'd like to come in next Tuesday afternoon, if that works?"
+      },
+      {
+        "role": "assistant",
+        "content": "Jane, I understand your worry about unexpected costs. Coverage for teeth whitening often varies by plan, which is why it's best to confirm with the billing department. Regarding your appointment, may I know the specific time you prefer next Tuesday afternoon?"
+      },
+      {
+        "role": "user",
+        "content": "I understand, but as I just asked, don't you have any general experience with Aetna patients? If I come in at 2:00 PM on Tuesday, will I be able to talk to someone there about the costs?"
+      },
+      {
+        "role": "assistant",
+        "content": "Jane, generally speaking, teeth whitening is often considered a cosmetic procedure and may not be covered by most insurance plans, including Aetna. Yes, if you come in at 2:00 PM next Tuesday, you can discuss the cost and payment options with our staff during your visit. Should I go ahead and schedule your appointment for 2:00 PM next Tuesday?"
+      },
+      {
+        "role": "user",
+        "content": "That's helpful to know, thank you. If it's usually cosmetic, I'll definitely double-check with them, but let's go ahead and book that 2:00 PM slot for next Tuesday. Do you need any other information from me to secure the appointment?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Jane! Your appointment for professional teeth whitening is scheduled for 2:00 PM next Tuesday. If you have any other questions or need further assistance, feel free to reach out. Have a great day!"
+      }
+    ],
+    "transcript": "PATIENT: Hi there, I\u2019m looking to schedule an appointment for professional teeth whitening. Before we get into the details, can you tell me if my Aetna plan will cover the cost of the procedure?\nRECEPTIONIST: I'm sorry, I cannot assist with billing inquiries. Please contact our billing department at 555-0199. I can help you schedule your professional teeth whitening appointment. May I have your name, please?\nPATIENT: I'm Jane Doe. But wait, if I call them, will they just tell me to talk to you? I really need to know if Aetna covers whitening before I commit to coming in.\nRECEPTIONIST: I understand your concern, Jane. To clarify, our billing department is specifically equipped to handle insurance coverage questions and will be able to provide the most accurate information about Aetna coverage for whitening. Meanwhile, I can assist you in scheduling your appointment. Could you please provide your preferred date and time for the visit?\nPATIENT: I suppose I can call them, but are you sure your office doesn't have a general idea of whether Aetna usually covers this? I'm just worried about showing up and getting a surprise bill. I'd like to come in next Tuesday afternoon, if that works?\nRECEPTIONIST: Jane, I understand your worry about unexpected costs. Coverage for teeth whitening often varies by plan, which is why it's best to confirm with the billing department. Regarding your appointment, may I know the specific time you prefer next Tuesday afternoon?\nPATIENT: I understand, but as I just asked, don't you have any general experience with Aetna patients? If I come in at 2:00 PM on Tuesday, will I be able to talk to someone there about the costs?\nRECEPTIONIST: Jane, generally speaking, teeth whitening is often considered a cosmetic procedure and may not be covered by most insurance plans, including Aetna. Yes, if you come in at 2:00 PM next Tuesday, you can discuss the cost and payment options with our staff during your visit. Should I go ahead and schedule your appointment for 2:00 PM next Tuesday?\nPATIENT: That's helpful to know, thank you. If it's usually cosmetic, I'll definitely double-check with them, but let's go ahead and book that 2:00 PM slot for next Tuesday. Do you need any other information from me to secure the appointment?\nRECEPTIONIST: Thank you, Jane! Your appointment for professional teeth whitening is scheduled for 2:00 PM next Tuesday. If you have any other questions or need further assistance, feel free to reach out. Have a great day!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "insurance_confused",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 5,
+    "stop_reason": "receptionist_closed",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.8125,
+    "reasoning": "The assistant handled the patient's persistent insurance questions with empathy and professionalism, though it failed to collect the patient's contact information, resulting in incomplete task completion.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

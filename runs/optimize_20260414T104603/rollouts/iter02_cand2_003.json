@@ -1,0 +1,70 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi there, I\u2019d like to schedule an appointment for professional teeth whitening. Before we get started, can you tell me if my Aetna plan covers this procedure?"
+      },
+      {
+        "role": "assistant",
+        "content": "I apologize, but I do not have access to billing records. Please call our billing department directly at 555-0199 for assistance with insurance coverage. Meanwhile, may I have your name, the reason for your visit, and your preferred date and time for the teeth whitening appointment?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, I see. But usually, don't offices like yours have a general idea if Aetna covers cosmetic stuff like whitening? I'm just trying to make sure I won't get hit with a huge bill before I come in."
+      },
+      {
+        "role": "assistant",
+        "content": "I understand your concern, and while coverage can vary, I\u2019m unable to provide specifics about insurance plans. It\u2019s best to check directly with your insurance provider or our billing department at 555-0199 for the most accurate information. Meanwhile, I\u2019d be happy to help you schedule your teeth whitening appointment. May I have your name and your preferred date and time?"
+      },
+      {
+        "role": "user",
+        "content": "I understand, but wouldn't you at least know if Aetna typically covers any portion of whitening for most patients? My name is Alex Rivers, and I was hoping to come in next Tuesday morning if you have an opening."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for sharing your name, Alex. Regarding the typical coverage of Aetna for whitening, I\u2019m still not able to provide details specific to insurance plans. \n\nNow, for your appointment: next Tuesday morning sounds good. Could you please specify a preferred time in the morning, such as 9 AM or 10 AM? This will help me check our availability.\nThanks, Alex. To finalize your appointment, I need to confirm: you want to schedule professional teeth whitening on Tuesday morning. Could you please specify the exact time you prefer? For example, 9:00 AM or 10:00 AM?"
+      },
+      {
+        "role": "user",
+        "content": "I'll take 9:00 AM, but are you sure there's no way to check if my Aetna plan helps with the cost at all? I just really don't want any surprises when I check out."
+      },
+      {
+        "role": "assistant",
+        "content": "I completely understand your concern about billing, but I truly don\u2019t have access to insurance details to confirm coverage. The best way to avoid surprises is to contact your Aetna plan directly or call our billing department at 555-0199 for detailed information. \n\nMeanwhile, I\u2019ve noted your preference for 9:00 AM next Tuesday for professional teeth whitening. Just to confirm: Your name is Alex Rivers, the appointment is for professional teeth whitening, on next Tuesday at 9:00 AM. Is that correct?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, that is correct. I guess I'll have to call Aetna myself, but I just wanted to be absolutely certain there wasn't a general policy about this procedure. Thank you for booking that time for me. \n\n[DONE]"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for your understanding, Alex! I\u2019ve successfully booked your appointment for professional teeth whitening next Tuesday at 9:00 AM. If you have any further questions or concerns, feel free to reach out. Have a great day!"
+      }
+    ],
+    "transcript": "PATIENT: Hi there, I\u2019d like to schedule an appointment for professional teeth whitening. Before we get started, can you tell me if my Aetna plan covers this procedure?\nRECEPTIONIST: I apologize, but I do not have access to billing records. Please call our billing department directly at 555-0199 for assistance with insurance coverage. Meanwhile, may I have your name, the reason for your visit, and your preferred date and time for the teeth whitening appointment?\nPATIENT: Oh, I see. But usually, don't offices like yours have a general idea if Aetna covers cosmetic stuff like whitening? I'm just trying to make sure I won't get hit with a huge bill before I come in.\nRECEPTIONIST: I understand your concern, and while coverage can vary, I\u2019m unable to provide specifics about insurance plans. It\u2019s best to check directly with your insurance provider or our billing department at 555-0199 for the most accurate information. Meanwhile, I\u2019d be happy to help you schedule your teeth whitening appointment. May I have your name and your preferred date and time?\nPATIENT: I understand, but wouldn't you at least know if Aetna typically covers any portion of whitening for most patients? My name is Alex Rivers, and I was hoping to come in next Tuesday morning if you have an opening.\nRECEPTIONIST: Thanks for sharing your name, Alex. Regarding the typical coverage of Aetna for whitening, I\u2019m still not able to provide details specific to insurance plans. \n\nNow, for your appointment: next Tuesday morning sounds good. Could you please specify a preferred time in the morning, such as 9 AM or 10 AM? This will help me check our availability.\nThanks, Alex. To finalize your appointment, I need to confirm: you want to schedule professional teeth whitening on Tuesday morning. Could you please specify the exact time you prefer? For example, 9:00 AM or 10:00 AM?\nPATIENT: I'll take 9:00 AM, but are you sure there's no way to check if my Aetna plan helps with the cost at all? I just really don't want any surprises when I check out.\nRECEPTIONIST: I completely understand your concern about billing, but I truly don\u2019t have access to insurance details to confirm coverage. The best way to avoid surprises is to contact your Aetna plan directly or call our billing department at 555-0199 for detailed information. \n\nMeanwhile, I\u2019ve noted your preference for 9:00 AM next Tuesday for professional teeth whitening. Just to confirm: Your name is Alex Rivers, the appointment is for professional teeth whitening, on next Tuesday at 9:00 AM. Is that correct?\nPATIENT: Yes, that is correct. I guess I'll have to call Aetna myself, but I just wanted to be absolutely certain there wasn't a general policy about this procedure. Thank you for booking that time for me. \n\n[DONE]\nRECEPTIONIST: Thank you for your understanding, Alex! I\u2019ve successfully booked your appointment for professional teeth whitening next Tuesday at 9:00 AM. If you have any further questions or concerns, feel free to reach out. Have a great day!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "insurance_confused",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 5,
+    "stop_reason": "patient_done",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 0.7,
+    "tone_naturalness": 0.7,
+    "error_recovery": 0.7,
+    "aggregate": 0.695,
+    "reasoning": "The assistant failed to collect the patient's contact information, and the conversation was slightly inefficient due to repetitive insurance disclaimers.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

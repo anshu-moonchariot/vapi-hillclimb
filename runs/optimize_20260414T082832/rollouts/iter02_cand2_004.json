@@ -1,0 +1,81 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book an emergency appointment for a toothache as soon as possible."
+      },
+      {
+        "role": "assistant",
+        "content": "I'm sorry to hear you're experiencing a toothache! To help you as quickly as possible, could I have your name and let me know when you're available today or in the next day or two? That way, I can find the earliest emergency slot for you."
+      },
+      {
+        "role": "user",
+        "content": "Alex Reed"
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks, Alex! Just to confirm, your reason for the visit is a toothache, correct? Also, could you please let me know your preferred time or times that work for you for an emergency appointment?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, toothache. ASAP. I'm free whenever you have a spot."
+      },
+      {
+        "role": "assistant",
+        "content": "Got it, Alex. I'll check for the earliest available emergency appointment and get you scheduled as soon as possible. One moment, please."
+      },
+      {
+        "role": "user",
+        "content": "Fine. Hurry up."
+      },
+      {
+        "role": "assistant",
+        "content": "I completely understand, Alex, and I'll do my best to get you an appointment quickly. Can you please provide a phone number where we can reach you in case we need to confirm details or notify you about the appointment?"
+      },
+      {
+        "role": "user",
+        "content": "555-0129. Just tell me when to come in."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex! I've noted your phone number. Let me quickly check for the earliest available emergency slot and I'll get back to you shortly with the appointment details. Please hang tight for just a moment."
+      },
+      {
+        "role": "user",
+        "content": "Just tell me the time already."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for your patience, Alex! We have an emergency appointment available today at 3:30 PM. Does that work for you?"
+      },
+      {
+        "role": "user",
+        "content": "3:30 works. See you then."
+      },
+      {
+        "role": "assistant",
+        "content": "Great! I've scheduled your emergency appointment for today at 3:30 PM. If you have any questions or need to reach us before your visit, feel free to call. We look forward to seeing you then, Alex! Take care!"
+      }
+    ],
+    "persona_id": "impatient",
+    "assistant_id": "60c2ef02-ea01-4105-b782-d4113d84c519",
+    "num_turns": 7,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.9,
+    "reasoning": "The assistant successfully collected all required information and maintained a professional, empathetic tone, though it required several turns to finalize the booking.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

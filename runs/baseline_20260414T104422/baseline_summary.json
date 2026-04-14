@@ -1,0 +1,23 @@
+{
+  "task_completion": 0.8,
+  "turn_efficiency": 0.7,
+  "graceful_handling": 0.82,
+  "tone_naturalness": 0.82,
+  "error_recovery": 0.76,
+  "aggregate": 0.7835,
+  "aggregate_std": 0.1501,
+  "n_valid": 5,
+  "n_failed": 0,
+  "run_id": "baseline_20260414T104422",
+  "assistant_id": "204bb9c3-4081-4746-9789-1d9f3a84d085",
+  "prompt_hash": "569dfbd5ab52",
+  "n": 5,
+  "persona_schedule": [
+    "simple_booking",
+    "reschedule",
+    "insurance_confused",
+    "impatient",
+    "bad_date"
+  ],
+  "timestamp": "2026-04-14T10:45:55.616926+00:00"
+}

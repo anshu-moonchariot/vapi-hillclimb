@@ -1,0 +1,73 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book a teeth whitening appointment, but repeatedly asks about insurance coverage."
+      },
+      {
+        "role": "assistant",
+        "content": "Hi! I'd be happy to help you schedule a teeth whitening appointment. Could I please have your name and let me know when you\u2019re available for the visit? \n\nAlso, regarding insurance coverage, I\u2019m unable to assist with billing matters, but our dedicated billing team can help you with that. Please give them a call at [Insert Phone Number]."
+      },
+      {
+        "role": "user",
+        "content": "My name is Sarah Jenkins. Before we pick a time, are you sure my Aetna plan doesn't have some sort of cosmetic rider that covers whitening?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for sharing your name, Sarah! I really want to get your teeth whitening appointment set up for you. For questions about your specific Aetna plan and coverage details, it\u2019s best to check with our billing team\u2014they can give you the most accurate info. Meanwhile, when would you be available to come in for the appointment?"
+      },
+      {
+        "role": "user",
+        "content": "I understand, but can you at least check if other Aetna patients typically get this covered under cosmetic riders? I'm free next Tuesday afternoon, but I'm worried about the out-of-pocket cost."
+      },
+      {
+        "role": "assistant",
+        "content": "I totally understand your concern about costs, Sarah! While I don't have access to specific coverage details, many patients find it's best to confirm directly with their insurance or our billing team to avoid surprises. Now, I\u2019ve got you down for next Tuesday afternoon\u2014what time works best for you?"
+      },
+      {
+        "role": "user",
+        "content": "I'm still just so nervous about the bill; does Aetna ever make exceptions for whitening if it's considered preventative? If I have to pay, how about 2:00 PM on Tuesday?"
+      },
+      {
+        "role": "assistant",
+        "content": "I completely get how important it is to feel comfortable with the costs before your visit, Sarah. About Aetna making exceptions, I don't have the details on those specifics, so our billing team is definitely the best resource for that. But I can reserve your teeth whitening appointment for Tuesday at 2:00 PM\u2014does that sound good?"
+      },
+      {
+        "role": "user",
+        "content": "That time works for me, but are you sure I shouldn't just call Aetna first to see if they'll classify it as preventative so I don't get hit with a huge bill? My phone number is 555-0199 if we need to adjust this later."
+      },
+      {
+        "role": "assistant",
+        "content": "I understand your hesitation, Sarah! It might be a good idea to check with Aetna first if you're concerned about the classification and potential costs. That way, you can feel more confident about your appointment. \n\nI\u2019ll go ahead and schedule your teeth whitening for Tuesday at 2:00 PM. If anything changes, you can always reach us at your number, 555-0199. Is there anything else I can help you with today?"
+      },
+      {
+        "role": "user",
+        "content": "Okay, that sounds like a plan, but if Aetna tells me it's covered, can I just call you back to confirm? Thanks for your help today."
+      },
+      {
+        "role": "assistant",
+        "content": "Absolutely, Sarah! If Aetna confirms that it\u2019s covered, just give us a call back, and we can finalize everything for your appointment. I\u2019m glad I could help today! If you have any other questions or need assistance later, don\u2019t hesitate to reach out. Have a great day!"
+      }
+    ],
+    "persona_id": "insurance_confused",
+    "assistant_id": "60c2ef02-ea01-4105-b782-d4113d84c519",
+    "num_turns": 6,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.9,
+    "reasoning": "The assistant successfully collected all required information and handled the patient's persistent insurance concerns with empathy and professionalism, though the conversation was slightly elongated by the repeated insurance questions.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, I\u2019d like to schedule an appointment for professional teeth whitening. Before we get into the details, can you tell me if my Aetna plan covers this procedure?"
+      },
+      {
+        "role": "assistant",
+        "content": "I apologize, but I do not have access to billing records. Please call our billing department directly at 555-0199 for assistance. \n\nNow, may I have your name and your preferred date and time for the teeth whitening appointment?"
+      },
+      {
+        "role": "user",
+        "content": "My name is Alex Miller. I understand you can't check, but usually, does Aetna cover professional whitening at your office, or is it almost always out-of-pocket?"
+      },
+      {
+        "role": "assistant",
+        "content": "I understand your concern, but I still recommend contacting our billing department at 555-0199 for the most accurate information regarding your Aetna plan coverage.\n\nIn the meantime, could you please provide your preferred date and time for the teeth whitening appointment?"
+      },
+      {
+        "role": "user",
+        "content": "I understand you keep telling me to call them, but I just wanted to know if you see many Aetna patients get this covered. I\u2019m looking for a slot next Tuesday morning, around 10:00 AM if that's available?"
+      },
+      {
+        "role": "assistant",
+        "content": "I appreciate your understanding, but I still cannot provide specific information about insurance coverage. It's best to check directly with our billing department.\n\nNow, let me confirm your appointment for teeth whitening next Tuesday at 10:00 AM. Just to summarize, your name is Alex Miller, and the reason for your visit is professional teeth whitening. \n\nI'll go ahead and book that for you! Please hold on for a moment.Thank you for your interest in scheduling an appointment for teeth whitening. Please feel free to reach out if you have any other questions or need further assistance. Have a great day!"
+      }
+    ],
+    "transcript": "PATIENT: Hi, I\u2019d like to schedule an appointment for professional teeth whitening. Before we get into the details, can you tell me if my Aetna plan covers this procedure?\nRECEPTIONIST: I apologize, but I do not have access to billing records. Please call our billing department directly at 555-0199 for assistance. \n\nNow, may I have your name and your preferred date and time for the teeth whitening appointment?\nPATIENT: My name is Alex Miller. I understand you can't check, but usually, does Aetna cover professional whitening at your office, or is it almost always out-of-pocket?\nRECEPTIONIST: I understand your concern, but I still recommend contacting our billing department at 555-0199 for the most accurate information regarding your Aetna plan coverage.\n\nIn the meantime, could you please provide your preferred date and time for the teeth whitening appointment?\nPATIENT: I understand you keep telling me to call them, but I just wanted to know if you see many Aetna patients get this covered. I\u2019m looking for a slot next Tuesday morning, around 10:00 AM if that's available?\nRECEPTIONIST: I appreciate your understanding, but I still cannot provide specific information about insurance coverage. It's best to check directly with our billing department.\n\nNow, let me confirm your appointment for teeth whitening next Tuesday at 10:00 AM. Just to summarize, your name is Alex Miller, and the reason for your visit is professional teeth whitening. \n\nI'll go ahead and book that for you! Please hold on for a moment.Thank you for your interest in scheduling an appointment for teeth whitening. Please feel free to reach out if you have any other questions or need further assistance. Have a great day!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "insurance_confused",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 3,
+    "stop_reason": "receptionist_closed",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 0.4,
+    "tone_naturalness": 0.4,
+    "error_recovery": 0.4,
+    "aggregate": 0.5425,
+    "reasoning": "The assistant failed to collect the patient's contact information and relied on repetitive, robotic scripts when the patient persisted with insurance questions.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

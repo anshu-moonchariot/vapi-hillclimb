@@ -1,0 +1,57 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book a checkup, but initially asks for dates the office is closed or gives conflicting preferences."
+      },
+      {
+        "role": "assistant",
+        "content": "Hello! I\u2019d be happy to assist you with scheduling your checkup. Before we proceed, could you please let me know your preferred date and time for the appointment? \n\nAdditionally, I can inform you about our office hours to avoid any conflicts. Our office is typically open Monday through Friday from 8 AM to 5 PM, and we are closed on weekends and major holidays. \n\nOnce I have your preferred date and time, I can also help confirm the reason for your visit. Thank you!"
+      },
+      {
+        "role": "user",
+        "content": "Oh, I see. In that case, could I come in on Christmas Day? If that's not possible, how about this coming Sunday at 2 PM?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for your understanding! Unfortunately, we are closed on Christmas Day and also on Sundays. \n\nCould you please provide me with another date and time that works for you during our regular office hours, which are Monday through Friday from 8 AM to 5 PM? Once I have that, I can also confirm the reason for your visit. \n\nAlso, may I have your full name and contact number to ensure we have everything needed for your appointment? Thank you!"
+      },
+      {
+        "role": "user",
+        "content": "My name is Alex Rivers and my number is 555-0123. If I can't do Sunday, how about midnight this Tuesday? I really need an after-hours slot."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex Rivers, for providing your information! I appreciate your flexibility. However, we do not offer appointments at midnight or after regular office hours. \n\nCould you please let me know if you are available during our regular hours on Tuesday? We have openings from 8 AM to 5 PM. Once we find a suitable time, I can also confirm that this is for a checkup. \n\nThank you for your understanding!"
+      },
+      {
+        "role": "user",
+        "content": "Fine, if midnight doesn't work, how about 10 AM this Tuesday? And yes, it is just for a routine checkup."
+      },
+      {
+        "role": "assistant",
+        "content": "Great choice, Alex! I have you scheduled for a routine checkup this Tuesday at 10 AM. \n\nJust to confirm, your full name is Alex Rivers, and your contact number is 555-0123. Is that correct? If everything looks good, I\u2019ll finalize the appointment for you!"
+      }
+    ],
+    "persona_id": "bad_date",
+    "assistant_id": "b81f1062-90c9-49db-9925-d34e14959102",
+    "num_turns": 4,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 0.8,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.97,
+    "reasoning": "The assistant successfully collected all required information while maintaining a professional, patient, and helpful tone despite the user's repeated attempts to book outside of business hours.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

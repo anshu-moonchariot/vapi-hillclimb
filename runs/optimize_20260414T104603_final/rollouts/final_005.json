@@ -1,0 +1,70 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, I'm looking to schedule a routine dental checkup and cleaning. Do you have any openings on Christmas Day?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for reaching out! May I have your name, please? Also, Christmas Day is a holiday, and our office is typically closed. Would you like to choose another date and time for your routine dental checkup and cleaning?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, my name is Alex Miller. Since you're closed then, how about midnight this coming Sunday? I\u2019m a night owl and that\u2019s when I\u2019m most free."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex. We appreciate your flexibility, but our office hours do not extend to midnight. Could you please provide another time on Sunday that works for you during our regular operating hours?"
+      },
+      {
+        "role": "user",
+        "content": "I apologize, I didn't realize you were closed on Sundays too. Could we do sometime next Tuesday, perhaps around 3:00 AM?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for letting me know, Alex. Our office also does not operate during the early morning hours like 3:00 AM. Could you kindly choose a time on Tuesday during our regular daytime hours? Typically, we see patients from 9:00 AM to 6:00 PM. What time would work best for you within that range?"
+      },
+      {
+        "role": "user",
+        "content": "My apologies, I seem to be struggling with your hours! How about next Tuesday at 3:00 PM instead?"
+      },
+      {
+        "role": "assistant",
+        "content": "No worries, Alex! I have you down for a routine dental checkup and cleaning on next Tuesday at 3:00 PM. Please let me know if that is correct or if you would like to make any changes."
+      },
+      {
+        "role": "user",
+        "content": "That sounds perfect, thank you so much for your patience with me. I'll see you then! [DONE]"
+      },
+      {
+        "role": "assistant",
+        "content": "You're very welcome, Alex! We're looking forward to seeing you next Tuesday at 3:00 PM for your checkup and cleaning. Have a wonderful day!"
+      }
+    ],
+    "transcript": "PATIENT: Hi, I'm looking to schedule a routine dental checkup and cleaning. Do you have any openings on Christmas Day?\nRECEPTIONIST: Thank you for reaching out! May I have your name, please? Also, Christmas Day is a holiday, and our office is typically closed. Would you like to choose another date and time for your routine dental checkup and cleaning?\nPATIENT: Oh, my name is Alex Miller. Since you're closed then, how about midnight this coming Sunday? I\u2019m a night owl and that\u2019s when I\u2019m most free.\nRECEPTIONIST: Thank you, Alex. We appreciate your flexibility, but our office hours do not extend to midnight. Could you please provide another time on Sunday that works for you during our regular operating hours?\nPATIENT: I apologize, I didn't realize you were closed on Sundays too. Could we do sometime next Tuesday, perhaps around 3:00 AM?\nRECEPTIONIST: Thank you for letting me know, Alex. Our office also does not operate during the early morning hours like 3:00 AM. Could you kindly choose a time on Tuesday during our regular daytime hours? Typically, we see patients from 9:00 AM to 6:00 PM. What time would work best for you within that range?\nPATIENT: My apologies, I seem to be struggling with your hours! How about next Tuesday at 3:00 PM instead?\nRECEPTIONIST: No worries, Alex! I have you down for a routine dental checkup and cleaning on next Tuesday at 3:00 PM. Please let me know if that is correct or if you would like to make any changes.\nPATIENT: That sounds perfect, thank you so much for your patience with me. I'll see you then! [DONE]\nRECEPTIONIST: You're very welcome, Alex! We're looking forward to seeing you next Tuesday at 3:00 PM for your checkup and cleaning. Have a wonderful day!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "bad_date",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 5,
+    "stop_reason": "patient_done",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.8125,
+    "reasoning": "The assistant was exceptionally patient and professional in handling the user's unrealistic scheduling requests, though it failed to collect the patient's contact information.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

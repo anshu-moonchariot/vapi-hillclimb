@@ -1,0 +1,65 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book a checkup, but initially asks for dates the office is closed or gives conflicting preferences."
+      },
+      {
+        "role": "assistant",
+        "content": "Sure! I can help you with that. May I have your name, please? \n\nAlso, could you let me know what dates you are considering for your checkup? I can inform you about our office hours and any days we are closed."
+      },
+      {
+        "role": "user",
+        "content": "My name is Jordan Smith. I was hoping to come in on Christmas Day since I have the day off work."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Jordan. Our office is closed on Christmas Day. Could you please provide alternative dates you'd be available for the checkup?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, I see. What about this coming Sunday morning then? I really need a weekend slot."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for letting me know, Jordan. Our office is closed on Sundays as well. Do you have any availability on Saturday or a weekday morning instead?"
+      },
+      {
+        "role": "user",
+        "content": "Well, if you're closed Saturdays too, I suppose I could do a Tuesday morning. How about next Tuesday at 9:00 AM?"
+      },
+      {
+        "role": "assistant",
+        "content": "Great! I can book you for a checkup next Tuesday at 9:00 AM. \n\nJust to confirm, your appointment is scheduled for Tuesday at 9:00 AM, Jordan Smith. \n\nIs there anything else I can assist you with?"
+      },
+      {
+        "role": "user",
+        "content": "That sounds perfect, thank you for your help."
+      },
+      {
+        "role": "assistant",
+        "content": "You're welcome, Jordan! I'm glad I could help. If you have any other questions or need assistance in the future, feel free to reach out. Have a great day!"
+      }
+    ],
+    "persona_id": "bad_date",
+    "assistant_id": "8d2af98e-7c94-49ea-8d67-25495fcda0fb",
+    "num_turns": 5,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.8,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.8725,
+    "reasoning": "The assistant handled scheduling conflicts gracefully and maintained a professional tone, though it failed to collect the patient's contact information.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

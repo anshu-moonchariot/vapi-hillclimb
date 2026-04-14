@@ -1,0 +1,29 @@
+{
+  "rollout": {
+    "messages": [],
+    "transcript": "",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "reschedule",
+    "assistant_id": "2fa901c6-7ceb-4264-bc07-dd1e6be2a423",
+    "call_id": "019d8b7d-093d-7000-8ec5-4aebbc64730c",
+    "num_turns": 0,
+    "stop_reason": "call.start.error-get-transport",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.0,
+    "turn_efficiency": 0.0,
+    "graceful_handling": 0.0,
+    "tone_naturalness": 0.0,
+    "error_recovery": 0.0,
+    "aggregate": 0.0,
+    "reasoning": "",
+    "failed": true,
+    "error": "No transcript or messages provided",
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

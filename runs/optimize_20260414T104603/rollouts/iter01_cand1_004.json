@@ -1,0 +1,54 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Need an emergency appointment. Toothache is killing me. Can you fit me in today?"
+      },
+      {
+        "role": "assistant",
+        "content": "I'm sorry to hear about your toothache. May I have your name, please? Also, what time today would work best for you for the emergency appointment?"
+      },
+      {
+        "role": "user",
+        "content": "Alex Miller. ASAP today, I don't care when, just get me in."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex. I will schedule you for the earliest available emergency appointment today for your toothache. Let me check the schedule and confirm the time for you.\nAlex, we have an appointment available at 10:30 AM today. Does that work for you?"
+      },
+      {
+        "role": "user",
+        "content": "That works. Put me down. See you then. [DONE]"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex. I have you scheduled for an emergency appointment today at 10:30 AM for your toothache. We look forward to seeing you then and helping you feel better soon! If you need anything else, just let us know."
+      }
+    ],
+    "transcript": "PATIENT: Need an emergency appointment. Toothache is killing me. Can you fit me in today?\nRECEPTIONIST: I'm sorry to hear about your toothache. May I have your name, please? Also, what time today would work best for you for the emergency appointment?\nPATIENT: Alex Miller. ASAP today, I don't care when, just get me in.\nRECEPTIONIST: Thank you, Alex. I will schedule you for the earliest available emergency appointment today for your toothache. Let me check the schedule and confirm the time for you.\nAlex, we have an appointment available at 10:30 AM today. Does that work for you?\nPATIENT: That works. Put me down. See you then. [DONE]\nRECEPTIONIST: Thank you, Alex. I have you scheduled for an emergency appointment today at 10:30 AM for your toothache. We look forward to seeing you then and helping you feel better soon! If you need anything else, just let us know.",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "impatient",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 3,
+    "stop_reason": "patient_done",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 1.0,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.9125,
+    "reasoning": "The assistant efficiently scheduled the appointment but failed to collect the patient's contact information, resulting in a partial score for task completion.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

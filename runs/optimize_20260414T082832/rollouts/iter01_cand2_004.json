@@ -1,0 +1,57 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book an emergency appointment for a toothache as soon as possible."
+      },
+      {
+        "role": "assistant",
+        "content": "Can you please provide your name and your availability today so I can check the earliest emergency appointment for your toothache?"
+      },
+      {
+        "role": "user",
+        "content": "Alex Reed. I'm free right now. Can you fit me in?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex. I\u2019m checking for the earliest available slot now. Please hold on a moment."
+      },
+      {
+        "role": "user",
+        "content": "Just hurry. It's really throbbing."
+      },
+      {
+        "role": "assistant",
+        "content": "Alex, we have an opening in 30 minutes. Shall I book you in for that emergency appointment?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, book it. I'll be there."
+      },
+      {
+        "role": "assistant",
+        "content": "Your appointment is confirmed for 30 minutes from now. Please arrive a few minutes early. We look forward to seeing you, Alex!"
+      }
+    ],
+    "persona_id": "impatient",
+    "assistant_id": "60c2ef02-ea01-4105-b782-d4113d84c519",
+    "num_turns": 4,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 1.0,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.9125,
+    "reasoning": "The assistant efficiently handled the emergency request with a professional tone, though it failed to collect the patient's contact information.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

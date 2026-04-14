@@ -1,0 +1,29 @@
+{
+  "rollout": {
+    "messages": [],
+    "transcript": "",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "insurance_confused",
+    "assistant_id": "b07feb3d-1b8c-4f3d-9b58-74d91fe5bb3d",
+    "call_id": "",
+    "num_turns": 0,
+    "stop_reason": "openrouter_error",
+    "failed": true,
+    "error": "complete_text() got an unexpected keyword argument 'user'"
+  },
+  "score": {
+    "task_completion": 0.0,
+    "turn_efficiency": 0.0,
+    "graceful_handling": 0.0,
+    "tone_naturalness": 0.0,
+    "error_recovery": 0.0,
+    "aggregate": 0.0,
+    "reasoning": "",
+    "failed": true,
+    "error": "complete_text() got an unexpected keyword argument 'user'",
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

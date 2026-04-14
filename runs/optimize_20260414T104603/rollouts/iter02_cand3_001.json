@@ -1,0 +1,70 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, I'm calling to schedule a routine cleaning appointment for next week, please."
+      },
+      {
+        "role": "assistant",
+        "content": "I'd be happy to help you schedule that appointment! May I have your name, please?"
+      },
+      {
+        "role": "user",
+        "content": "My name is Alex Miller. I'm looking to come in sometime next week for a routine cleaning."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex! Could you please provide me with your preferred date and time for the appointment next week?"
+      },
+      {
+        "role": "user",
+        "content": "I'm wide open next Tuesday or Wednesday, preferably in the morning around 9:00 or 10:00 AM. Do you have anything available then?"
+      },
+      {
+        "role": "assistant",
+        "content": "Our office hours are Monday to Friday, 8:00 AM to 5:00 PM, so your preferred times on Tuesday or Wednesday morning fall within our operating hours. To confirm, would you like to book your routine cleaning for 9:00 AM or 10:00 AM on Tuesday or Wednesday?"
+      },
+      {
+        "role": "user",
+        "content": "Let's go with Tuesday at 9:00 AM, please. Does that time work for you?"
+      },
+      {
+        "role": "assistant",
+        "content": "Yes, Tuesday at 9:00 AM works perfectly! To summarize, I have scheduled your routine cleaning appointment for Tuesday at 9:00 AM under the name Alex Miller. \n\nWould you like to confirm this appointment?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, that works for me. Please confirm the appointment for Tuesday at 9:00 AM."
+      },
+      {
+        "role": "assistant",
+        "content": "Your routine cleaning appointment is confirmed for Tuesday at 9:00 AM under the name Alex Miller. We look forward to seeing you then! If you have any other questions or need to reschedule, feel free to reach out. Have a great day!"
+      }
+    ],
+    "transcript": "PATIENT: Hi, I'm calling to schedule a routine cleaning appointment for next week, please.\nRECEPTIONIST: I'd be happy to help you schedule that appointment! May I have your name, please?\nPATIENT: My name is Alex Miller. I'm looking to come in sometime next week for a routine cleaning.\nRECEPTIONIST: Thank you, Alex! Could you please provide me with your preferred date and time for the appointment next week?\nPATIENT: I'm wide open next Tuesday or Wednesday, preferably in the morning around 9:00 or 10:00 AM. Do you have anything available then?\nRECEPTIONIST: Our office hours are Monday to Friday, 8:00 AM to 5:00 PM, so your preferred times on Tuesday or Wednesday morning fall within our operating hours. To confirm, would you like to book your routine cleaning for 9:00 AM or 10:00 AM on Tuesday or Wednesday?\nPATIENT: Let's go with Tuesday at 9:00 AM, please. Does that time work for you?\nRECEPTIONIST: Yes, Tuesday at 9:00 AM works perfectly! To summarize, I have scheduled your routine cleaning appointment for Tuesday at 9:00 AM under the name Alex Miller. \n\nWould you like to confirm this appointment?\nPATIENT: Yes, that works for me. Please confirm the appointment for Tuesday at 9:00 AM.\nRECEPTIONIST: Your routine cleaning appointment is confirmed for Tuesday at 9:00 AM under the name Alex Miller. We look forward to seeing you then! If you have any other questions or need to reschedule, feel free to reach out. Have a great day!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "simple_booking",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 5,
+    "stop_reason": "receptionist_closed",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 1.0,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.9125,
+    "reasoning": "The assistant successfully completed the booking in a natural and efficient manner, though it failed to collect the required contact information.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

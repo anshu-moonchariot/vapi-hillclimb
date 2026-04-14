@@ -1,0 +1,65 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book a checkup, but initially asks for dates the office is closed or gives conflicting preferences."
+      },
+      {
+        "role": "assistant",
+        "content": "Hello! I\u2019d be happy to help you book a checkup. Could you please let me know your preferred dates or if there are any days you\u2019d like to avoid? Also, our office is closed on Sundays and major holidays."
+      },
+      {
+        "role": "user",
+        "content": "Oh, I was hoping to come in on Christmas Day since I'm off work. If that's not possible, could I do next Sunday morning instead?"
+      },
+      {
+        "role": "assistant",
+        "content": "Unfortunately, our office is closed on Christmas Day and Sundays. Would a weekday morning or afternoon appointment work for you instead? Please let me know your availability!"
+      },
+      {
+        "role": "user",
+        "content": "That's annoying. How about midnight on Tuesday? I really need an appointment outside of standard business hours."
+      },
+      {
+        "role": "assistant",
+        "content": "I understand that finding a convenient time can be challenging, but our office operates during standard business hours and does not offer appointments at midnight. We typically have availability during weekdays. Could you let me know if there\u2019s a specific day and time during our regular hours that would work for you?"
+      },
+      {
+        "role": "user",
+        "content": "Fine, what about 9:00 AM this coming Wednesday? I suppose I can take a long break from work for that."
+      },
+      {
+        "role": "assistant",
+        "content": "Great! I can book you for a checkup at 9:00 AM this coming Wednesday. Can I have your name and contact information to confirm the appointment?"
+      },
+      {
+        "role": "user",
+        "content": "It's Alex Rivers, and you can reach me at 555-0192."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex. Your checkup appointment is scheduled for 9:00 AM this coming Wednesday. We look forward to seeing you then! If you have any questions, feel free to reach out. Have a great day!"
+      }
+    ],
+    "persona_id": "bad_date",
+    "assistant_id": "331963b7-422a-4c2a-97d2-5be94cbbe9f7",
+    "num_turns": 5,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.9,
+    "reasoning": "The assistant successfully collected all required information and handled the patient's difficult requests with professional grace, though the process took several turns due to the patient's unrealistic scheduling demands.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

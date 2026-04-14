@@ -1,0 +1,57 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book a teeth whitening appointment, but repeatedly asks about insurance coverage."
+      },
+      {
+        "role": "assistant",
+        "content": "Of course! I\u2019d be happy to help you schedule a teeth whitening appointment. Could you please provide me with your preferred date and time for the visit? \n\nAs mentioned, our billing team handles all insurance specifics, so let\u2019s focus on getting your appointment set up. Also, could I have your full name and contact number, please?"
+      },
+      {
+        "role": "user",
+        "content": "I'm looking for next Tuesday morning, but before we lock that in, are you sure my Aetna plan doesn't have any cosmetic whitening riders? My name is Sarah Jenkins and you can reach me at 555-0199."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for providing your name and contact number, Sarah! I can't verify your insurance coverage, but as mentioned, our billing team handles all insurance specifics. \n\nNow, let\u2019s go ahead and finalize your appointment for next Tuesday morning. What time works best for you?"
+      },
+      {
+        "role": "user",
+        "content": "I'd really like to know if there's any way to check if Aetna covers even a portion of this before I commit? If not, I suppose 9:00 AM works for next Tuesday."
+      },
+      {
+        "role": "assistant",
+        "content": "I understand your concern, Sarah. However, as mentioned earlier, our billing team is the best resource for specific insurance coverage inquiries.\n\nLet\u2019s confirm your teeth whitening appointment for next Tuesday at 9:00 AM. Is there anything else you\u2019d like us to note regarding your appointment?"
+      },
+      {
+        "role": "user",
+        "content": "I guess that's fine, but do you think the billing team will be able to tell me if Aetna covers cosmetic procedures when I get there? I'm Sarah Jenkins, and I'll see you Tuesday at 9:00 AM."
+      },
+      {
+        "role": "assistant",
+        "content": "Yes, the billing team should be able to assist you with any questions regarding your Aetna coverage when you arrive. \n\nI have you scheduled for your teeth whitening appointment on Tuesday at 9:00 AM, Sarah Jenkins. If you have any other questions or need further assistance before your visit, feel free to reach out. We look forward to seeing you then!"
+      }
+    ],
+    "persona_id": "insurance_confused",
+    "assistant_id": "b81f1062-90c9-49db-9925-d34e14959102",
+    "num_turns": 4,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 1.0,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 1.0,
+    "reasoning": "The assistant efficiently collected all required information while maintaining a professional, patient, and helpful tone despite the user's repeated off-topic questions about insurance.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

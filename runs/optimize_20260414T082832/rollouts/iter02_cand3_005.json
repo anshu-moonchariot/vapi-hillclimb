@@ -1,0 +1,81 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book a checkup, but initially asks for dates the office is closed or gives conflicting preferences."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for reaching out! I\u2019d be happy to help you book your checkup. Could you please confirm your name for me? \n\nAlso, could you let me know your preferred date and time for the appointment? If you have any specific days in mind, I can check our availability for you. If you're unsure, I can provide you with our office hours to help you decide."
+      },
+      {
+        "role": "user",
+        "content": "Alex Miller"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex Miller! Now, could you please let me know your preferred date and time for the checkup? If you\u2019re unsure, I can provide you with our available days and times."
+      },
+      {
+        "role": "user",
+        "content": "I'd like to come in on Christmas Day, please. That's the only day I'm free."
+      },
+      {
+        "role": "assistant",
+        "content": "I appreciate your flexibility, Alex, but our office is closed on Christmas Day. Could you please provide another date that works for you? I can help you find a suitable time for your checkup."
+      },
+      {
+        "role": "user",
+        "content": "Oh, I didn't realize that. How about next Sunday at 3:00 AM instead?"
+      },
+      {
+        "role": "assistant",
+        "content": "I understand, Alex! However, our office does not open at 3:00 AM. Our regular office hours are [insert office hours]. Could you please choose a time during our operating hours? I\u2019m here to help you find a convenient time for your checkup!"
+      },
+      {
+        "role": "user",
+        "content": "Oh, my apologies. I guess I'm a bit confused. Could I come in on Tuesday, January 14th at 10:00 AM instead?"
+      },
+      {
+        "role": "assistant",
+        "content": "No problem at all, Alex! Just to clarify, Tuesday, January 14th is actually a Sunday. Would you like to choose a different date? Our next available Tuesday is [insert date]. Please let me know what works best for you!"
+      },
+      {
+        "role": "user",
+        "content": "Oh, my mistake again! Let's do Wednesday, January 15th at 10:00 AM instead. Does that work for your schedule?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for your patience, Alex! Yes, Wednesday, January 15th at 10:00 AM works perfectly. I\u2019ll go ahead and book that appointment for your checkup. \n\nJust to confirm, your appointment is scheduled for Wednesday, January 15th at 10:00 AM. If you have any other questions or need to update anything, feel free to let me know!"
+      },
+      {
+        "role": "user",
+        "content": "That sounds perfect, thank you so much for your help! I'll see you then."
+      },
+      {
+        "role": "assistant",
+        "content": "You're very welcome, Alex! I'm glad I could assist you. We look forward to seeing you on Wednesday, January 15th at 10:00 AM. If you have any questions before your appointment, don\u2019t hesitate to reach out. Have a great day!"
+      }
+    ],
+    "persona_id": "bad_date",
+    "assistant_id": "60c2ef02-ea01-4105-b782-d4113d84c519",
+    "num_turns": 7,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.8125,
+    "reasoning": "The assistant handled multiple user errors and scheduling conflicts with excellent patience and professionalism, though it failed to collect the required contact information.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

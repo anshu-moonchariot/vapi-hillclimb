@@ -1,0 +1,54 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi there, I\u2019m calling to schedule a routine dental checkup and cleaning. Do you have any openings on Christmas Day?"
+      },
+      {
+        "role": "assistant",
+        "content": "Hello! I can help you with that. May I have your name, please? Also, regarding the appointment, just to confirm, you're looking for a routine cleaning and checkup, right? As for Christmas Day, our office is usually closed then, but let me double-check for you.\nCould you please provide your name so I can check our schedule for the day you want? Also, since Christmas Day is a holiday, would you be open to a different date close to that day?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, sorry about that! My name is Alex Miller. If you're closed on Christmas, could I just come in at 3:00 AM on Sunday instead?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks, Alex. We actually don't have appointments that early. Could you please suggest a more typical time for your appointment, maybe during regular office hours? Also, which Sunday are you thinking of?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, I see. I'm sorry, I didn't realize that was too early! How about this coming Tuesday at 2:00 PM instead?"
+      },
+      {
+        "role": "assistant",
+        "content": "Got it, Alex. So, a routine dental checkup and cleaning for this coming Tuesday at 2:00 PM. I'll check availability for you now.\nYour appointment for a routine checkup and cleaning on Tuesday at 2:00 PM is booked, Alex. If you have any questions or need to reschedule, feel free to call us. Have a great day!"
+      }
+    ],
+    "transcript": "PATIENT: Hi there, I\u2019m calling to schedule a routine dental checkup and cleaning. Do you have any openings on Christmas Day?\nRECEPTIONIST: Hello! I can help you with that. May I have your name, please? Also, regarding the appointment, just to confirm, you're looking for a routine cleaning and checkup, right? As for Christmas Day, our office is usually closed then, but let me double-check for you.\nCould you please provide your name so I can check our schedule for the day you want? Also, since Christmas Day is a holiday, would you be open to a different date close to that day?\nPATIENT: Oh, sorry about that! My name is Alex Miller. If you're closed on Christmas, could I just come in at 3:00 AM on Sunday instead?\nRECEPTIONIST: Thanks, Alex. We actually don't have appointments that early. Could you please suggest a more typical time for your appointment, maybe during regular office hours? Also, which Sunday are you thinking of?\nPATIENT: Oh, I see. I'm sorry, I didn't realize that was too early! How about this coming Tuesday at 2:00 PM instead?\nRECEPTIONIST: Got it, Alex. So, a routine dental checkup and cleaning for this coming Tuesday at 2:00 PM. I'll check availability for you now.\nYour appointment for a routine checkup and cleaning on Tuesday at 2:00 PM is booked, Alex. If you have any questions or need to reschedule, feel free to call us. Have a great day!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "bad_date",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 3,
+    "stop_reason": "receptionist_closed",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 0.7,
+    "tone_naturalness": 0.7,
+    "error_recovery": 0.7,
+    "aggregate": 0.68,
+    "reasoning": "The assistant successfully booked the appointment but failed to collect the patient's contact information, and the conversation flow was slightly hindered by redundant questioning.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

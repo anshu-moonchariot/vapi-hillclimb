@@ -1,0 +1,70 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, I'm calling because I have an appointment this Thursday, but something has come up and I need to move it to sometime next week."
+      },
+      {
+        "role": "assistant",
+        "content": "I can help with that. May I have your name, please? Also, could you let me know the reason for your visit and your preferred date and time for the rescheduled appointment next week?"
+      },
+      {
+        "role": "user",
+        "content": "My name is Alex Miller, and I'm just coming in for a routine cleaning. I'm not entirely sure of the exact time on Thursday, but could we look for something on Tuesday or Wednesday of next week instead? Also, I'd like to make sure that Thursday slot is officially cancelled before we lock in a new one."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks, Alex. To assist you in rescheduling, could you please specify whether you'd prefer Tuesday or Wednesday, and if there's a particular time of day that works best for you on that day? Also, I will note to cancel your Thursday appointment once we finalize a new one for you."
+      },
+      {
+        "role": "user",
+        "content": "I'd prefer Wednesday if you have any morning slots available. Just to confirm, you'll definitely cancel the Thursday appointment as soon as we pick a time, right?"
+      },
+      {
+        "role": "assistant",
+        "content": "Yes, that's correct, Alex. We will cancel your Thursday appointment once we finalize your new appointment time. For Wednesday morning, we have available slots at 9:00 AM, 10:00 AM, and 11:00 AM. Which time would you prefer?"
+      },
+      {
+        "role": "user",
+        "content": "10:00 AM works perfectly for me. Just to be sure, that Thursday appointment is definitely cancelled now?"
+      },
+      {
+        "role": "assistant",
+        "content": "To confirm, Alex Miller, you would like to schedule a routine cleaning appointment on Wednesday at 10:00 AM, and you want your original Thursday appointment cancelled. Please confirm if all these details are correct so I can finalize the booking for you."
+      },
+      {
+        "role": "user",
+        "content": "Yes, that is correct. Please go ahead and confirm that, and let me know once that Thursday slot is officially off the books."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for confirming, Alex. Your routine cleaning appointment is now scheduled for Wednesday at 10:00 AM, and the Thursday appointment has been cancelled. If you need any further assistance, feel free to reach out. Have a great day!"
+      }
+    ],
+    "transcript": "PATIENT: Hi, I'm calling because I have an appointment this Thursday, but something has come up and I need to move it to sometime next week.\nRECEPTIONIST: I can help with that. May I have your name, please? Also, could you let me know the reason for your visit and your preferred date and time for the rescheduled appointment next week?\nPATIENT: My name is Alex Miller, and I'm just coming in for a routine cleaning. I'm not entirely sure of the exact time on Thursday, but could we look for something on Tuesday or Wednesday of next week instead? Also, I'd like to make sure that Thursday slot is officially cancelled before we lock in a new one.\nRECEPTIONIST: Thanks, Alex. To assist you in rescheduling, could you please specify whether you'd prefer Tuesday or Wednesday, and if there's a particular time of day that works best for you on that day? Also, I will note to cancel your Thursday appointment once we finalize a new one for you.\nPATIENT: I'd prefer Wednesday if you have any morning slots available. Just to confirm, you'll definitely cancel the Thursday appointment as soon as we pick a time, right?\nRECEPTIONIST: Yes, that's correct, Alex. We will cancel your Thursday appointment once we finalize your new appointment time. For Wednesday morning, we have available slots at 9:00 AM, 10:00 AM, and 11:00 AM. Which time would you prefer?\nPATIENT: 10:00 AM works perfectly for me. Just to be sure, that Thursday appointment is definitely cancelled now?\nRECEPTIONIST: To confirm, Alex Miller, you would like to schedule a routine cleaning appointment on Wednesday at 10:00 AM, and you want your original Thursday appointment cancelled. Please confirm if all these details are correct so I can finalize the booking for you.\nPATIENT: Yes, that is correct. Please go ahead and confirm that, and let me know once that Thursday slot is officially off the books.\nRECEPTIONIST: Thank you for confirming, Alex. Your routine cleaning appointment is now scheduled for Wednesday at 10:00 AM, and the Thursday appointment has been cancelled. If you need any further assistance, feel free to reach out. Have a great day!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "reschedule",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 5,
+    "stop_reason": "receptionist_closed",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.8,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.8725,
+    "reasoning": "The assistant successfully managed the rescheduling process and confirmed all details, though it missed collecting the patient's contact information as required by the rubric.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

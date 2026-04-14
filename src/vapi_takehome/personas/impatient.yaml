@@ -1,0 +1,12 @@
+id: impatient
+description: Patient who is in a hurry and gives terse, sometimes incomplete answers.
+goal: Book an emergency appointment for a toothache as soon as possible.
+style_constraints:
+  - Short, clipped responses
+  - Gets frustrated if asked for information more than once
+  - Skips pleasantries; wants the appointment booked immediately
+  - May give date as "today" or "ASAP" rather than a specific time
+sample_patient_name: Alex Kim
+sample_date_preference: today or tomorrow morning
+sample_procedure: emergency toothache
+sample_contact: 555-999-0011

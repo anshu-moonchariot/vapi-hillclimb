@@ -1,0 +1,62 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi there, I\u2019m calling because I have an appointment scheduled for this Thursday, but something urgent came up and I need to move it to sometime next week."
+      },
+      {
+        "role": "assistant",
+        "content": "I can help you with rescheduling. Could you please provide me with your full name and phone number to locate your appointment? Also, please let me know your preferred date and time for next week."
+      },
+      {
+        "role": "user",
+        "content": "My name is Alex Rivers, and my number is 555-0129. I don't have the exact time handy, but I think it was in the afternoon; could you please confirm that one is cancelled before we look at next week?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex. May I also know the reason for your original visit or the procedure scheduled? Additionally, I will check and confirm the status of your current appointment for Thursday before proceeding with rescheduling.\nAlex, I do not have direct access to the appointment system to confirm cancellations personally. However, what I can do is take the details for the rescheduling and book a new appointment for you next week. Could you please share the reason for your visit and your preferred date and time for next week? Once I have all the information, I'll summarize and confirm the new appointment for you."
+      },
+      {
+        "role": "user",
+        "content": "I'm coming in for a routine cleaning and check-up. Since you can't confirm the cancellation, I'm a bit hesitant to book a new one; can you double-check that Thursday's slot is removed from your system first?"
+      },
+      {
+        "role": "assistant",
+        "content": "I understand your concern, Alex. While I can't personally access or confirm appointment cancellations in the system, I recommend calling our appointment line directly at 555-0155 to verify the status of your Thursday appointment. Meanwhile, if you'd like, I can still assist you in booking a new appointment for your routine cleaning and check-up next week. Could you please provide your preferred date and time for next week if you'd want to proceed with booking?"
+      },
+      {
+        "role": "user",
+        "content": "That's a bit frustrating, but I understand. Let me call that number to get the Thursday slot cleared first, and then I'll call you back to book the cleaning for next Tuesday afternoon."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for understanding, Alex. Please feel free to call us back when you're ready to book your appointment. We're here to help whenever you need. Have a great day!"
+      }
+    ],
+    "transcript": "PATIENT: Hi there, I\u2019m calling because I have an appointment scheduled for this Thursday, but something urgent came up and I need to move it to sometime next week.\nRECEPTIONIST: I can help you with rescheduling. Could you please provide me with your full name and phone number to locate your appointment? Also, please let me know your preferred date and time for next week.\nPATIENT: My name is Alex Rivers, and my number is 555-0129. I don't have the exact time handy, but I think it was in the afternoon; could you please confirm that one is cancelled before we look at next week?\nRECEPTIONIST: Thank you, Alex. May I also know the reason for your original visit or the procedure scheduled? Additionally, I will check and confirm the status of your current appointment for Thursday before proceeding with rescheduling.\nAlex, I do not have direct access to the appointment system to confirm cancellations personally. However, what I can do is take the details for the rescheduling and book a new appointment for you next week. Could you please share the reason for your visit and your preferred date and time for next week? Once I have all the information, I'll summarize and confirm the new appointment for you.\nPATIENT: I'm coming in for a routine cleaning and check-up. Since you can't confirm the cancellation, I'm a bit hesitant to book a new one; can you double-check that Thursday's slot is removed from your system first?\nRECEPTIONIST: I understand your concern, Alex. While I can't personally access or confirm appointment cancellations in the system, I recommend calling our appointment line directly at 555-0155 to verify the status of your Thursday appointment. Meanwhile, if you'd like, I can still assist you in booking a new appointment for your routine cleaning and check-up next week. Could you please provide your preferred date and time for next week if you'd want to proceed with booking?\nPATIENT: That's a bit frustrating, but I understand. Let me call that number to get the Thursday slot cleared first, and then I'll call you back to book the cleaning for next Tuesday afternoon.\nRECEPTIONIST: Thank you for understanding, Alex. Please feel free to call us back when you're ready to book your appointment. We're here to help whenever you need. Have a great day!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "reschedule",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 4,
+    "stop_reason": "receptionist_closed",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.5,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 0.7,
+    "tone_naturalness": 0.7,
+    "error_recovery": 0.4,
+    "aggregate": 0.565,
+    "reasoning": "The assistant failed to complete the booking because it lacked the system permissions to verify the existing appointment, leading to a stalled workflow.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

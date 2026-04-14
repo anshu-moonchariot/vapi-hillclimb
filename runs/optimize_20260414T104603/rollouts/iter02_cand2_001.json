@@ -1,0 +1,70 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, I'm calling to schedule a routine cleaning for next week. I'm hoping to get on the books soon."
+      },
+      {
+        "role": "assistant",
+        "content": "I'd be happy to help you schedule your routine cleaning. Could you please tell me your name? Also, do you have a preferred date and time for your appointment next week?"
+      },
+      {
+        "role": "user",
+        "content": "My name is Alex Miller. I\u2019m looking for an appointment next Tuesday, preferably sometime in the morning."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex Miller! Just to confirm, you are looking for a routine cleaning appointment next Tuesday in the morning. Could you please specify a time frame that works best for you? For example, around 9 AM or 10 AM?"
+      },
+      {
+        "role": "user",
+        "content": "9 AM would be perfect for me if you have that slot available."
+      },
+      {
+        "role": "assistant",
+        "content": "Great! Here's what I have: Alex Miller, routine cleaning, next Tuesday at 9 AM. Could you please confirm that these details are correct?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, that is correct. Everything looks good to me."
+      },
+      {
+        "role": "assistant",
+        "content": "Your routine cleaning appointment for Alex Miller is confirmed for next Tuesday at 9 AM. We look forward to seeing you then! If you need any further assistance, feel free to reach out. Have a wonderful day!"
+      },
+      {
+        "role": "user",
+        "content": "Great, thank you so much for your help. Have a wonderful day! [DONE]"
+      },
+      {
+        "role": "assistant",
+        "content": "You're very welcome! Take care and have a wonderful day!"
+      }
+    ],
+    "transcript": "PATIENT: Hi, I'm calling to schedule a routine cleaning for next week. I'm hoping to get on the books soon.\nRECEPTIONIST: I'd be happy to help you schedule your routine cleaning. Could you please tell me your name? Also, do you have a preferred date and time for your appointment next week?\nPATIENT: My name is Alex Miller. I\u2019m looking for an appointment next Tuesday, preferably sometime in the morning.\nRECEPTIONIST: Thank you, Alex Miller! Just to confirm, you are looking for a routine cleaning appointment next Tuesday in the morning. Could you please specify a time frame that works best for you? For example, around 9 AM or 10 AM?\nPATIENT: 9 AM would be perfect for me if you have that slot available.\nRECEPTIONIST: Great! Here's what I have: Alex Miller, routine cleaning, next Tuesday at 9 AM. Could you please confirm that these details are correct?\nPATIENT: Yes, that is correct. Everything looks good to me.\nRECEPTIONIST: Your routine cleaning appointment for Alex Miller is confirmed for next Tuesday at 9 AM. We look forward to seeing you then! If you need any further assistance, feel free to reach out. Have a wonderful day!\nPATIENT: Great, thank you so much for your help. Have a wonderful day! [DONE]\nRECEPTIONIST: You're very welcome! Take care and have a wonderful day!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "simple_booking",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 5,
+    "stop_reason": "patient_done",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 1.0,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.9125,
+    "reasoning": "The assistant performed excellently in tone and efficiency, but failed to collect the required contact information slot.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

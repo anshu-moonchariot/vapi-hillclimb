@@ -1,0 +1,65 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book a checkup, but initially asks for dates the office is closed or gives conflicting preferences."
+      },
+      {
+        "role": "assistant",
+        "content": "Of course! I\u2019d be happy to help you schedule your checkup. Could you please tell me your name first? Also, could you let me know your preferred availability for the appointment? If you have any specific dates in mind, feel free to share those too!"
+      },
+      {
+        "role": "user",
+        "content": "My name is Alex Miller. I'd really like to come in on Christmas Day, since I'm off work then."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for sharing that, Alex! However, our office is closed on Christmas Day. Would you be able to choose another date around that time? Let me know your availability, and I\u2019ll do my best to find a suitable appointment for you!"
+      },
+      {
+        "role": "user",
+        "content": "Oh, I see. How about next Sunday then? I\u2019m completely free all day."
+      },
+      {
+        "role": "assistant",
+        "content": "Great! Just to confirm, next Sunday is [insert date]. I\u2019ll go ahead and check our availability for that day. Could you please let me know if this is for a routine checkup or if there\u2019s anything specific you\u2019d like us to address during your visit?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, are you closed on Sundays too? My mistake. I suppose I could come in on Tuesday morning, November 12th, at 9:00 AM instead. It's just for a routine checkup."
+      },
+      {
+        "role": "assistant",
+        "content": "No problem at all, Alex! Just to clarify, November 12th is actually a Sunday. If you meant Tuesday, that would be November 14th. Would you like me to check availability for Tuesday morning at 9:00 AM?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, my calendar must be wrong! Yes, please book me for Tuesday, November 14th at 9:00 AM for that routine checkup."
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for confirming, Alex! I\u2019ve scheduled your routine checkup for Tuesday, November 14th at 9:00 AM. If you have any other questions or need to make changes, just let me know. Looking forward to seeing you then!"
+      }
+    ],
+    "persona_id": "bad_date",
+    "assistant_id": "60c2ef02-ea01-4105-b782-d4113d84c519",
+    "num_turns": 5,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.8125,
+    "reasoning": "The assistant handled multiple patient errors and scheduling conflicts with grace and professionalism, though it missed collecting the contact information required by the rubric.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

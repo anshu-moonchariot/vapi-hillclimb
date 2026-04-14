@@ -1,0 +1,78 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, I have an appointment scheduled for this Thursday, but something unexpected came up and I need to move it to sometime next week. Could you help me with that?"
+      },
+      {
+        "role": "assistant",
+        "content": "I can certainly help with rescheduling your appointment. Could you please provide me with your full name and phone number to locate your current appointment? Also, please let me know your preferred date and time for next week."
+      },
+      {
+        "role": "user",
+        "content": "Sure, it's Alex Rivera and my number is 555-0123. I'm sorry, I don't have the exact time of the Thursday appointment handy, but could you please confirm that one is cancelled before we look at next week?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for the details, Alex. I don't have the ability to cancel appointments directly. However, I can help you book a new appointment for next week at your preferred date and time. Could you please share the reason for your visit and your preferred date and time next week? Once we finalize the new appointment, you can call us to confirm the cancellation of your previous one."
+      },
+      {
+        "role": "user",
+        "content": "Oh, I see. I'm just coming in for my routine cleaning and check-up. Would you have anything available next Tuesday or Wednesday morning?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex. Could you please specify a preferred time window on Tuesday or Wednesday morning, such as early morning or later morning hours? This will help me find the best available slot for you."
+      },
+      {
+        "role": "user",
+        "content": "I'd prefer something around 9:00 or 10:00 AM if that works. Also, just to be clear, I really need to make sure that Thursday slot is fully cancelled so I don't get charged a no-show fee\u2014can you confirm that's taken care of once I book this?"
+      },
+      {
+        "role": "assistant",
+        "content": "I understand your concern about the Thursday appointment, Alex. While I can assist you with booking your new appointment around 9:00 or 10:00 AM on Tuesday or Wednesday next week, I don't have access to cancel or confirm cancellation of existing appointments. You'll need to contact the office directly to ensure the Thursday appointment is cancelled to avoid any fees. \n\nTo move forward, would you prefer Tuesday or Wednesday at 9:00 or 10:00 AM? I'll check availability and book your new appointment."
+      },
+      {
+        "role": "user",
+        "content": "That's frustrating, but I understand. Let's go with Tuesday at 9:00 AM for the new slot, and I'll make sure to call the office back to handle the cancellation for Thursday. Is that time available?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for understanding, Alex. I have noted your preference for Tuesday at 9:00 AM for your routine cleaning and check-up. Before I confirm your appointment, could you please confirm your phone number for me? I want to make sure I have the correct contact details."
+      },
+      {
+        "role": "user",
+        "content": "It's 555-0123. Please let me know once that's locked in so I can get on with my day and call about that Thursday cancellation."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex. To summarize, I have scheduled your routine cleaning and check-up for Tuesday at 9:00 AM, and your contact number is 555-0123. Your appointment is now confirmed. We look forward to seeing you then! If you need any further assistance, feel free to reach out. Have a great day!"
+      }
+    ],
+    "transcript": "PATIENT: Hi, I have an appointment scheduled for this Thursday, but something unexpected came up and I need to move it to sometime next week. Could you help me with that?\nRECEPTIONIST: I can certainly help with rescheduling your appointment. Could you please provide me with your full name and phone number to locate your current appointment? Also, please let me know your preferred date and time for next week.\nPATIENT: Sure, it's Alex Rivera and my number is 555-0123. I'm sorry, I don't have the exact time of the Thursday appointment handy, but could you please confirm that one is cancelled before we look at next week?\nRECEPTIONIST: Thanks for the details, Alex. I don't have the ability to cancel appointments directly. However, I can help you book a new appointment for next week at your preferred date and time. Could you please share the reason for your visit and your preferred date and time next week? Once we finalize the new appointment, you can call us to confirm the cancellation of your previous one.\nPATIENT: Oh, I see. I'm just coming in for my routine cleaning and check-up. Would you have anything available next Tuesday or Wednesday morning?\nRECEPTIONIST: Thank you, Alex. Could you please specify a preferred time window on Tuesday or Wednesday morning, such as early morning or later morning hours? This will help me find the best available slot for you.\nPATIENT: I'd prefer something around 9:00 or 10:00 AM if that works. Also, just to be clear, I really need to make sure that Thursday slot is fully cancelled so I don't get charged a no-show fee\u2014can you confirm that's taken care of once I book this?\nRECEPTIONIST: I understand your concern about the Thursday appointment, Alex. While I can assist you with booking your new appointment around 9:00 or 10:00 AM on Tuesday or Wednesday next week, I don't have access to cancel or confirm cancellation of existing appointments. You'll need to contact the office directly to ensure the Thursday appointment is cancelled to avoid any fees. \n\nTo move forward, would you prefer Tuesday or Wednesday at 9:00 or 10:00 AM? I'll check availability and book your new appointment.\nPATIENT: That's frustrating, but I understand. Let's go with Tuesday at 9:00 AM for the new slot, and I'll make sure to call the office back to handle the cancellation for Thursday. Is that time available?\nRECEPTIONIST: Thank you for understanding, Alex. I have noted your preference for Tuesday at 9:00 AM for your routine cleaning and check-up. Before I confirm your appointment, could you please confirm your phone number for me? I want to make sure I have the correct contact details.\nPATIENT: It's 555-0123. Please let me know once that's locked in so I can get on with my day and call about that Thursday cancellation.\nRECEPTIONIST: Thank you, Alex. To summarize, I have scheduled your routine cleaning and check-up for Tuesday at 9:00 AM, and your contact number is 555-0123. Your appointment is now confirmed. We look forward to seeing you then! If you need any further assistance, feel free to reach out. Have a great day!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "reschedule",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 6,
+    "stop_reason": "receptionist_closed",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 0.7,
+    "error_recovery": 1.0,
+    "aggregate": 0.855,
+    "reasoning": "The assistant successfully collected all required information, but the process was inefficient due to the assistant's inability to handle the cancellation request, requiring multiple redundant explanations.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

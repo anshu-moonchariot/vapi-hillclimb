@@ -1,0 +1,17 @@
+{
+  "aggregate": 0.0,
+  "n_valid": 0,
+  "n_failed": 5,
+  "run_id": "baseline_20260414T104334",
+  "assistant_id": "b07feb3d-1b8c-4f3d-9b58-74d91fe5bb3d",
+  "prompt_hash": "569dfbd5ab52",
+  "n": 5,
+  "persona_schedule": [
+    "simple_booking",
+    "reschedule",
+    "insurance_confused",
+    "impatient",
+    "bad_date"
+  ],
+  "timestamp": "2026-04-14T10:43:34.648281+00:00"
+}

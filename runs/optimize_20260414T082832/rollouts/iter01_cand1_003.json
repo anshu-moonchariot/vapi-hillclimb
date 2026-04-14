@@ -1,0 +1,65 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book a teeth whitening appointment, but repeatedly asks about insurance coverage."
+      },
+      {
+        "role": "assistant",
+        "content": "I can help you with scheduling your teeth whitening appointment. Could you please provide your full name and your preferred date and time for the appointment? For insurance coverage questions, I recommend calling our billing department at [Phone Number] for assistance."
+      },
+      {
+        "role": "user",
+        "content": "My name is Sarah Jenkins, and I'd like to come in next Tuesday morning. Before I commit to that, are you sure my Aetna plan won't cover at least a portion of the whitening?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Sarah. I have noted your full name and preferred date as next Tuesday morning. Regarding insurance coverage, I am unable to access billing records; please call our billing department at [Phone Number] for assistance. Would you like me to book your teeth whitening appointment for next Tuesday morning now? If so, please specify a preferred time."
+      },
+      {
+        "role": "user",
+        "content": "I understand you can't see the records, but surely you've dealt with Aetna before? Are you certain there's no way to check if cosmetic procedures like whitening typically get any coverage under their plans?"
+      },
+      {
+        "role": "assistant",
+        "content": "I understand your concern, Sarah. However, I am unable to access or provide specific insurance coverage information. For detailed assistance, please contact our billing department at [Phone Number]. Meanwhile, could you please provide a specific time next Tuesday morning for your teeth whitening appointment?"
+      },
+      {
+        "role": "user",
+        "content": "I see, but if I call them and they say it depends on your office's billing code, can you at least tell me what code you use? I'm free at 9:00 AM, but I really want to be sure about the out-of-pocket cost first."
+      },
+      {
+        "role": "assistant",
+        "content": "I understand your need for clarity, Sarah, but I am unable to provide billing codes or specific cost information. I recommend discussing this with our billing department at [Phone Number] for accurate details. In the meantime, I can schedule your teeth whitening appointment for next Tuesday at 9:00 AM. Would you like me to proceed with that?"
+      },
+      {
+        "role": "user",
+        "content": "Fine, let's go ahead with the 9:00 AM slot then. But if I find out later that you guys use a certain code that would have been covered, I'm going to be very frustrated."
+      },
+      {
+        "role": "assistant",
+        "content": "I completely understand your frustration, Sarah, and I appreciate your patience. I have scheduled your teeth whitening appointment for next Tuesday at 9:00 AM. If you have any further questions or concerns, please feel free to reach out. Thank you, and we look forward to seeing you!"
+      }
+    ],
+    "persona_id": "insurance_confused",
+    "assistant_id": "60c2ef02-ea01-4105-b782-d4113d84c519",
+    "num_turns": 5,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 0.7,
+    "error_recovery": 1.0,
+    "aggregate": 0.78,
+    "reasoning": "The assistant successfully managed the booking while maintaining a professional tone despite the user's persistent, off-topic questions regarding insurance billing.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

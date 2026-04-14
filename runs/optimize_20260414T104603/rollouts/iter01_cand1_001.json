@@ -1,0 +1,62 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi there, I'd like to schedule a routine cleaning for sometime next week, please."
+      },
+      {
+        "role": "assistant",
+        "content": "Certainly! May I have your name, please? Also, do you have a preferred day and time for your cleaning next week?"
+      },
+      {
+        "role": "user",
+        "content": "My name is Alex Miller. I\u2019m looking for an appointment next Tuesday morning, ideally around 9:00 or 10:00 AM."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex. Just to confirm, you'd like to schedule a routine cleaning on next Tuesday morning around 9:00 or 10:00 AM. Is that correct? And do you have a preference between 9:00 and 10:00 AM?"
+      },
+      {
+        "role": "user",
+        "content": "That is correct. I would prefer the 9:00 AM slot if it is available."
+      },
+      {
+        "role": "assistant",
+        "content": "Great! I have scheduled your routine cleaning for next Tuesday at 9:00 AM. If you need to make any changes or have questions, feel free to reach out. We look forward to seeing you then, Alex!"
+      },
+      {
+        "role": "user",
+        "content": "Perfect, that works for me. Thanks for your help, see you then! [DONE]"
+      },
+      {
+        "role": "assistant",
+        "content": "You're very welcome, Alex! Have a wonderful day, and we'll see you next Tuesday at 9:00 AM. Goodbye!"
+      }
+    ],
+    "transcript": "PATIENT: Hi there, I'd like to schedule a routine cleaning for sometime next week, please.\nRECEPTIONIST: Certainly! May I have your name, please? Also, do you have a preferred day and time for your cleaning next week?\nPATIENT: My name is Alex Miller. I\u2019m looking for an appointment next Tuesday morning, ideally around 9:00 or 10:00 AM.\nRECEPTIONIST: Thank you, Alex. Just to confirm, you'd like to schedule a routine cleaning on next Tuesday morning around 9:00 or 10:00 AM. Is that correct? And do you have a preference between 9:00 and 10:00 AM?\nPATIENT: That is correct. I would prefer the 9:00 AM slot if it is available.\nRECEPTIONIST: Great! I have scheduled your routine cleaning for next Tuesday at 9:00 AM. If you need to make any changes or have questions, feel free to reach out. We look forward to seeing you then, Alex!\nPATIENT: Perfect, that works for me. Thanks for your help, see you then! [DONE]\nRECEPTIONIST: You're very welcome, Alex! Have a wonderful day, and we'll see you next Tuesday at 9:00 AM. Goodbye!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "simple_booking",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 4,
+    "stop_reason": "patient_done",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 1.0,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.9125,
+    "reasoning": "The assistant performed excellently in tone and efficiency, but missed collecting the patient's contact information, which was a required slot.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

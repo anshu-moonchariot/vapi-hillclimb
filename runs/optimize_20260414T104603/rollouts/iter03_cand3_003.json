@@ -1,0 +1,70 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, I\u2019m calling because I\u2019d like to schedule an appointment for teeth whitening. Before we get into the details, can you confirm if my Aetna plan covers this procedure?"
+      },
+      {
+        "role": "assistant",
+        "content": "I apologize, but I do not have access to billing records. Please call our billing department directly at 555-0199 for assistance. \n\nNow, may I have your full name and a reliable contact phone number to help schedule your teeth whitening appointment?"
+      },
+      {
+        "role": "user",
+        "content": "My name is Alex Rivers, and my number is 555-0123. But are you sure you can't just check the system to see if Aetna typically handles these cosmetic whitening costs?"
+      },
+      {
+        "role": "assistant",
+        "content": "I understand your concern, but I truly do not have access to billing records or insurance information. It's best to reach out to our billing department at 555-0199 for accurate details.\n\nNow, could you please let me know your preferred date and time for the teeth whitening appointment?"
+      },
+      {
+        "role": "user",
+        "content": "I understand, but I feel like you must have some idea if other Aetna patients get this covered? I\u2019m just trying to make sure I won't be hit with a surprise bill. I'd like to come in next Tuesday morning if that works."
+      },
+      {
+        "role": "assistant",
+        "content": "I completely understand wanting to avoid surprises with billing. However, to provide the most accurate information, our billing department is the best resource for insurance questions.\n\nThank you for sharing your preferred time. Could you please confirm the exact date next Tuesday that works for you, and the morning time you prefer? Also, just to confirm, your phone number is 555-0123?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, that's the right number. I'm looking at Tuesday the 15th around 9:00 AM, but are you positive there isn't a general policy about Aetna and whitening you could share? I'd hate to drive all the way there only to find out it's not covered."
+      },
+      {
+        "role": "assistant",
+        "content": "I appreciate your patience. Unfortunately, I don't have information about specific insurance policies, including general coverage by Aetna for whitening. For peace of mind, contacting our billing department at 555-0199 will provide the best guidance.\n\nSo, we have you as Alex Rivers, phone number 555-0123, for a teeth whitening appointment on Tuesday the 15th at 9:00 AM. Is that correct? Would you like me to book that appointment for you now?"
+      },
+      {
+        "role": "user",
+        "content": "As I mentioned, I really need to be sure about the Aetna coverage, but since you've already told me twice that you can't check, I suppose I'll just have to call the billing department later. Yes, that date and time work for me, so please go ahead and book it. Thanks for your help. [DONE]"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex Rivers. I've scheduled your teeth whitening appointment for Tuesday the 15th at 9:00 AM. If you have any other questions or need to reschedule, feel free to call us.\n\nHave a great day!Thank you, Alex Rivers. Your teeth whitening appointment is booked for Tuesday the 15th at 9:00 AM. If you have any other questions or need to reschedule, feel free to call us. Have a great day!"
+      }
+    ],
+    "transcript": "PATIENT: Hi, I\u2019m calling because I\u2019d like to schedule an appointment for teeth whitening. Before we get into the details, can you confirm if my Aetna plan covers this procedure?\nRECEPTIONIST: I apologize, but I do not have access to billing records. Please call our billing department directly at 555-0199 for assistance. \n\nNow, may I have your full name and a reliable contact phone number to help schedule your teeth whitening appointment?\nPATIENT: My name is Alex Rivers, and my number is 555-0123. But are you sure you can't just check the system to see if Aetna typically handles these cosmetic whitening costs?\nRECEPTIONIST: I understand your concern, but I truly do not have access to billing records or insurance information. It's best to reach out to our billing department at 555-0199 for accurate details.\n\nNow, could you please let me know your preferred date and time for the teeth whitening appointment?\nPATIENT: I understand, but I feel like you must have some idea if other Aetna patients get this covered? I\u2019m just trying to make sure I won't be hit with a surprise bill. I'd like to come in next Tuesday morning if that works.\nRECEPTIONIST: I completely understand wanting to avoid surprises with billing. However, to provide the most accurate information, our billing department is the best resource for insurance questions.\n\nThank you for sharing your preferred time. Could you please confirm the exact date next Tuesday that works for you, and the morning time you prefer? Also, just to confirm, your phone number is 555-0123?\nPATIENT: Yes, that's the right number. I'm looking at Tuesday the 15th around 9:00 AM, but are you positive there isn't a general policy about Aetna and whitening you could share? I'd hate to drive all the way there only to find out it's not covered.\nRECEPTIONIST: I appreciate your patience. Unfortunately, I don't have information about specific insurance policies, including general coverage by Aetna for whitening. For peace of mind, contacting our billing department at 555-0199 will provide the best guidance.\n\nSo, we have you as Alex Rivers, phone number 555-0123, for a teeth whitening appointment on Tuesday the 15th at 9:00 AM. Is that correct? Would you like me to book that appointment for you now?\nPATIENT: As I mentioned, I really need to be sure about the Aetna coverage, but since you've already told me twice that you can't check, I suppose I'll just have to call the billing department later. Yes, that date and time work for me, so please go ahead and book it. Thanks for your help. [DONE]\nRECEPTIONIST: Thank you, Alex Rivers. I've scheduled your teeth whitening appointment for Tuesday the 15th at 9:00 AM. If you have any other questions or need to reschedule, feel free to call us.\n\nHave a great day!Thank you, Alex Rivers. Your teeth whitening appointment is booked for Tuesday the 15th at 9:00 AM. If you have any other questions or need to reschedule, feel free to call us. Have a great day!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "insurance_confused",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 5,
+    "stop_reason": "patient_done",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 0.7,
+    "error_recovery": 1.0,
+    "aggregate": 0.855,
+    "reasoning": "The assistant successfully collected all required information, but the conversation was inefficient due to the patient repeatedly asking about insurance coverage despite the assistant's clear and consistent redirection.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

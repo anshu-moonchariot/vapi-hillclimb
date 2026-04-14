@@ -1,0 +1,78 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, I\u2019m calling to schedule a routine dental checkup and cleaning. Do you have any openings on Christmas Day?"
+      },
+      {
+        "role": "assistant",
+        "content": "May I please have your name for the appointment? Also, while I check on the availability, could you please provide a preferred time on Christmas Day for your routine dental checkup and cleaning?"
+      },
+      {
+        "role": "user",
+        "content": "My name is Alex Miller. I was hoping for a morning slot, maybe around 9:00 AM on Christmas Day?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex. I will check if we have a 9:00 AM slot available on Christmas Day for your routine dental checkup and cleaning. Please hold on for a moment.\nUnfortunately, our office is closed on Christmas Day. Would you be open to scheduling your appointment on another day close to Christmas, perhaps December 23rd or December 26th? Let me know what works best for you."
+      },
+      {
+        "role": "user",
+        "content": "Oh, I see. Well, how about a Sunday? I\u2019m free all day on the 29th, so could I come in then instead?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for that information, Alex. To confirm, you'd like to schedule your routine dental checkup and cleaning on Sunday, the 29th. Do you have a preferred time on that day?"
+      },
+      {
+        "role": "user",
+        "content": "Actually, I just realized Sunday doesn't work for me after all. Do you have any openings at 3:00 AM on Monday the 30th?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for letting me know, Alex. Our office does not have openings as early as 3:00 AM. Could you please provide a different time on Monday the 30th that would work for you? We have regular office hours starting in the morning."
+      },
+      {
+        "role": "user",
+        "content": "Oh, I'm sorry, I keep getting my schedule mixed up. Could I just come in at 3:00 PM on that Monday the 30th instead?"
+      },
+      {
+        "role": "assistant",
+        "content": "No problem at all, Alex! Just to confirm, you'd like to schedule your routine dental checkup and cleaning on Monday, the 30th at 3:00 PM. Is that correct?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, that's perfect. Monday the 30th at 3:00 PM works great for me. Thanks for your patience! [DONE]"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex. Your appointment for a routine dental checkup and cleaning is confirmed for Monday, the 30th at 3:00 PM. We look forward to seeing you then! If you need any further assistance, feel free to reach out. Have a wonderful day!"
+      }
+    ],
+    "transcript": "PATIENT: Hi, I\u2019m calling to schedule a routine dental checkup and cleaning. Do you have any openings on Christmas Day?\nRECEPTIONIST: May I please have your name for the appointment? Also, while I check on the availability, could you please provide a preferred time on Christmas Day for your routine dental checkup and cleaning?\nPATIENT: My name is Alex Miller. I was hoping for a morning slot, maybe around 9:00 AM on Christmas Day?\nRECEPTIONIST: Thank you, Alex. I will check if we have a 9:00 AM slot available on Christmas Day for your routine dental checkup and cleaning. Please hold on for a moment.\nUnfortunately, our office is closed on Christmas Day. Would you be open to scheduling your appointment on another day close to Christmas, perhaps December 23rd or December 26th? Let me know what works best for you.\nPATIENT: Oh, I see. Well, how about a Sunday? I\u2019m free all day on the 29th, so could I come in then instead?\nRECEPTIONIST: Thank you for that information, Alex. To confirm, you'd like to schedule your routine dental checkup and cleaning on Sunday, the 29th. Do you have a preferred time on that day?\nPATIENT: Actually, I just realized Sunday doesn't work for me after all. Do you have any openings at 3:00 AM on Monday the 30th?\nRECEPTIONIST: Thank you for letting me know, Alex. Our office does not have openings as early as 3:00 AM. Could you please provide a different time on Monday the 30th that would work for you? We have regular office hours starting in the morning.\nPATIENT: Oh, I'm sorry, I keep getting my schedule mixed up. Could I just come in at 3:00 PM on that Monday the 30th instead?\nRECEPTIONIST: No problem at all, Alex! Just to confirm, you'd like to schedule your routine dental checkup and cleaning on Monday, the 30th at 3:00 PM. Is that correct?\nPATIENT: Yes, that's perfect. Monday the 30th at 3:00 PM works great for me. Thanks for your patience! [DONE]\nRECEPTIONIST: Thank you, Alex. Your appointment for a routine dental checkup and cleaning is confirmed for Monday, the 30th at 3:00 PM. We look forward to seeing you then! If you need any further assistance, feel free to reach out. Have a wonderful day!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "bad_date",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 6,
+    "stop_reason": "patient_done",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.8125,
+    "reasoning": "The assistant handled multiple patient scheduling errors with excellent patience and professionalism, though it failed to collect the required contact information.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

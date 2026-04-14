@@ -1,0 +1,11 @@
+id: reschedule
+description: Patient who has an existing appointment and wants to move it.
+goal: Cancel a Thursday appointment and rebook for the following week.
+style_constraints:
+  - Mentions they already have an appointment
+  - May not have the exact original appointment time handy
+  - Wants confirmation that the old slot is cancelled before booking new one
+sample_patient_name: Maria Gonzalez
+sample_date_preference: any time next week except Friday
+sample_procedure: filling follow-up
+sample_contact: 555-876-5432

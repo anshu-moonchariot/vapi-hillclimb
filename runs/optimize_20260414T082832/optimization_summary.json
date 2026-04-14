@@ -1,0 +1,32 @@
+{
+  "run_id": "optimize_20260414T082832",
+  "optimizer_assistant_id": "60c2ef02-ea01-4105-b782-d4113d84c519",
+  "baseline_score": 0.902,
+  "final_score": 0.902,
+  "improvement": 0.0,
+  "iterations_run": 2,
+  "iteration_log": [
+    {
+      "t": 1,
+      "decision": "rejected",
+      "best_score_before": 0.902,
+      "iteration_best_score": 0.9045,
+      "best_score_after": 0.902,
+      "candidates_tried": 3,
+      "best_prompt_hash": "569dfbd5ab52",
+      "plateau_count": 1
+    },
+    {
+      "t": 2,
+      "decision": "rejected",
+      "best_score_before": 0.902,
+      "iteration_best_score": 0.874,
+      "best_score_after": 0.902,
+      "candidates_tried": 3,
+      "best_prompt_hash": "569dfbd5ab52",
+      "plateau_count": 2
+    }
+  ],
+  "final_prompt_hash": "569dfbd5ab52",
+  "timestamp": "2026-04-14T08:36:30.489186+00:00"
+}

@@ -1,0 +1,12 @@
+id: bad_date
+description: Patient who gives contradictory or impossible date preferences.
+goal: Book a checkup, but initially asks for dates the office is closed or gives conflicting preferences.
+style_constraints:
+  - First asks for "Christmas Day" or a weekend when the office may be closed
+  - When told that doesn't work, suggests another problematic time
+  - Eventually settles on a reasonable weekday time
+  - Tests whether assistant can gracefully redirect without losing booking info
+sample_patient_name: Priya Sharma
+sample_date_preference: starts with Sunday Dec 25, eventually accepts Wednesday afternoon
+sample_procedure: annual checkup
+sample_contact: priya.sharma@email.com

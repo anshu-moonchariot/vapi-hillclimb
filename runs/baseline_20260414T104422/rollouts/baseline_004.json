@@ -1,0 +1,70 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Need an appointment. Toothache is killing me. ASAP."
+      },
+      {
+        "role": "assistant",
+        "content": "I can help you with that. Could you please provide me with your name?"
+      },
+      {
+        "role": "user",
+        "content": "Mark Evans. Can we hurry this up? I\u2019m in a lot of pain."
+      },
+      {
+        "role": "assistant",
+        "content": "I understand, Mark. What kind of appointment do you need? For example, a check-up, cleaning, or emergency for your toothache? And when would you like to come in? We'll try to get you in as soon as possible."
+      },
+      {
+        "role": "user",
+        "content": "Emergency. I told you, my tooth is killing me. Today, now if you can."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for the information, Mark. Let me check the earliest availability for an emergency appointment today.\nMark, we can fit you in for an emergency appointment today. Can you please confirm if any time this afternoon works for you, or do you prefer a specific time?"
+      },
+      {
+        "role": "user",
+        "content": "Anytime. Just get me in. I'm leaving now."
+      },
+      {
+        "role": "assistant",
+        "content": "Mark, I have scheduled your emergency appointment for today this afternoon. Please arrive as soon as you can.\n\nIf you have any questions about insurance or billing, please call our billing department.\n\nIs there anything else I can assist you with?"
+      },
+      {
+        "role": "user",
+        "content": "No, that's it. See you soon. [DONE]"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Mark. We look forward to seeing you soon. Take care!"
+      }
+    ],
+    "transcript": "PATIENT: Need an appointment. Toothache is killing me. ASAP.\nRECEPTIONIST: I can help you with that. Could you please provide me with your name?\nPATIENT: Mark Evans. Can we hurry this up? I\u2019m in a lot of pain.\nRECEPTIONIST: I understand, Mark. What kind of appointment do you need? For example, a check-up, cleaning, or emergency for your toothache? And when would you like to come in? We'll try to get you in as soon as possible.\nPATIENT: Emergency. I told you, my tooth is killing me. Today, now if you can.\nRECEPTIONIST: Thank you for the information, Mark. Let me check the earliest availability for an emergency appointment today.\nMark, we can fit you in for an emergency appointment today. Can you please confirm if any time this afternoon works for you, or do you prefer a specific time?\nPATIENT: Anytime. Just get me in. I'm leaving now.\nRECEPTIONIST: Mark, I have scheduled your emergency appointment for today this afternoon. Please arrive as soon as you can.\n\nIf you have any questions about insurance or billing, please call our billing department.\n\nIs there anything else I can assist you with?\nPATIENT: No, that's it. See you soon. [DONE]\nRECEPTIONIST: Thank you, Mark. We look forward to seeing you soon. Take care!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "impatient",
+    "assistant_id": "204bb9c3-4081-4746-9789-1d9f3a84d085",
+    "call_id": "",
+    "num_turns": 5,
+    "stop_reason": "patient_done",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 1.0,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.9125,
+    "reasoning": "The assistant successfully managed the urgent nature of the request and collected most required information, though it failed to explicitly confirm a specific contact phone number or email.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

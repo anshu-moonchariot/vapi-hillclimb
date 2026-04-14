@@ -1,0 +1,70 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, I\u2019m calling to schedule a routine dental checkup and cleaning. I was hoping to come in on Christmas Day, is that possible?"
+      },
+      {
+        "role": "assistant",
+        "content": "May I have your name please? Also, routine checkups and cleanings typically can't be scheduled on holidays like Christmas Day, but I can check our next available date for you. Would you like me to do that?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, my name is Alex Miller. If Christmas is out, how about this coming Sunday morning? I\u2019m usually free then."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex Miller. I will check for availability this coming Sunday morning for your routine dental checkup and cleaning. Please hold on for a moment."
+      },
+      {
+        "role": "user",
+        "content": "Actually, I forgot we\u2019re out of town this Sunday. Could you squeeze me in at 3:00 AM on Monday instead? That's really the only time I'm awake before work."
+      },
+      {
+        "role": "assistant",
+        "content": "I'm sorry, but we cannot schedule appointments at 3:00 AM. Our office hours are typically during the day. Would you like to choose a different time on Monday or perhaps another day?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, I see. My apologies, I didn't realize you weren't open then. Could you do next Tuesday at 10:00 AM instead?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex. I have scheduled your routine dental checkup and cleaning for next Tuesday at 10:00 AM. If you have any other questions or need to reschedule, feel free to call us."
+      },
+      {
+        "role": "user",
+        "content": "That sounds perfect, thank you so much for your help. I'll see you then! [DONE]"
+      },
+      {
+        "role": "assistant",
+        "content": "You're welcome, Alex! We look forward to seeing you next Tuesday at 10:00 AM. Have a great day!"
+      }
+    ],
+    "transcript": "PATIENT: Hi, I\u2019m calling to schedule a routine dental checkup and cleaning. I was hoping to come in on Christmas Day, is that possible?\nRECEPTIONIST: May I have your name please? Also, routine checkups and cleanings typically can't be scheduled on holidays like Christmas Day, but I can check our next available date for you. Would you like me to do that?\nPATIENT: Oh, my name is Alex Miller. If Christmas is out, how about this coming Sunday morning? I\u2019m usually free then.\nRECEPTIONIST: Thank you, Alex Miller. I will check for availability this coming Sunday morning for your routine dental checkup and cleaning. Please hold on for a moment.\nPATIENT: Actually, I forgot we\u2019re out of town this Sunday. Could you squeeze me in at 3:00 AM on Monday instead? That's really the only time I'm awake before work.\nRECEPTIONIST: I'm sorry, but we cannot schedule appointments at 3:00 AM. Our office hours are typically during the day. Would you like to choose a different time on Monday or perhaps another day?\nPATIENT: Oh, I see. My apologies, I didn't realize you weren't open then. Could you do next Tuesday at 10:00 AM instead?\nRECEPTIONIST: Thank you, Alex. I have scheduled your routine dental checkup and cleaning for next Tuesday at 10:00 AM. If you have any other questions or need to reschedule, feel free to call us.\nPATIENT: That sounds perfect, thank you so much for your help. I'll see you then! [DONE]\nRECEPTIONIST: You're welcome, Alex! We look forward to seeing you next Tuesday at 10:00 AM. Have a great day!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "bad_date",
+    "assistant_id": "204bb9c3-4081-4746-9789-1d9f3a84d085",
+    "call_id": "",
+    "num_turns": 5,
+    "stop_reason": "patient_done",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.8,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.8725,
+    "reasoning": "The assistant handled unusual requests with professional grace, though it failed to collect the patient's contact information before finalizing the booking.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

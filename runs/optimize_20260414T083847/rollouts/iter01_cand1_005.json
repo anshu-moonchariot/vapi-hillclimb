@@ -1,0 +1,65 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book a checkup, but initially asks for dates the office is closed or gives conflicting preferences."
+      },
+      {
+        "role": "assistant",
+        "content": "Hello! I'd be happy to help you schedule a checkup. Could you please let me know your preferred date and time for the appointment? Also, just a heads-up, our office is closed on Sundays and public holidays. If your preferred date falls on one of those, I'll help you find another time that works. When would you like to come in?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, that's a shame. Could I come in on Christmas Day then? I really need to get this over with."
+      },
+      {
+        "role": "assistant",
+        "content": "I completely understand wanting to get your checkup done promptly. However, our office is closed on Christmas Day to allow our staff to spend the holiday with their families. Could you please let me know another date around that time that might work for you? I'll do my best to find a convenient appointment for you."
+      },
+      {
+        "role": "user",
+        "content": "Fine, how about next Sunday at 3:00 AM? I'm sure you have someone around to open up for me then."
+      },
+      {
+        "role": "assistant",
+        "content": "I appreciate your flexibility! However, our office isn\u2019t open at 3:00 AM, and we don\u2019t have staff available at that time. Our usual hours are from 8:00 AM to 5:00 PM, Monday through Saturday. Could we look at a time during those hours on Sunday or another day that works for you? I'm here to help find the best appointment slot for you!"
+      },
+      {
+        "role": "user",
+        "content": "Oh, you already told me you're closed on Sundays! My apologies. How about next Tuesday at 10:00 AM instead?"
+      },
+      {
+        "role": "assistant",
+        "content": "No worries at all! Next Tuesday at 10:00 AM works perfectly for a checkup appointment. May I please have your full name and a contact number to confirm your booking? Also, if there\u2019s anything specific you'd like us to know about your visit, please feel free to share!"
+      },
+      {
+        "role": "user",
+        "content": "My name is Alex Rivers, and my number is 555-0199. Nothing specific to add, just need a standard cleaning."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex! I\u2019ve got you scheduled for a standard cleaning on Tuesday at 10:00 AM. Your appointment is confirmed! If you have any questions or need to reschedule, feel free to reach out. We look forward to seeing you then! Have a great day!"
+      }
+    ],
+    "persona_id": "bad_date",
+    "assistant_id": "b81f1062-90c9-49db-9925-d34e14959102",
+    "num_turns": 5,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.9,
+    "reasoning": "The assistant handled the patient's difficult and contradictory inputs with exceptional patience and professionalism, though the turn efficiency was impacted by the patient's repeated errors.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

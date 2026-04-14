@@ -1,0 +1,89 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book a teeth whitening appointment, but repeatedly asks about insurance coverage."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for reaching out! I can help you with booking your teeth whitening appointment. Could you please provide me with your full name and your preferred time for the appointment? \n\nRegarding your inquiry about insurance coverage, our billing department handles all insurance and financial questions. Please reach out to them at [Insert Phone Number] for assistance. Let's focus on securing your appointment details first!"
+      },
+      {
+        "role": "user",
+        "content": "My name is Sarah Miller, and I'd like to come in next Tuesday morning. Before we lock that in, are you sure my Aetna plan really won't cover any of the cost for the whitening?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Sarah! I appreciate your patience. I can confirm your appointment for teeth whitening next Tuesday morning. \n\nAs for your Aetna plan, our billing department handles all insurance and financial questions. Please reach out to them at [Insert Phone Number] for assistance regarding coverage. \n\nNow, would you like me to go ahead and book your appointment for next Tuesday morning?"
+      },
+      {
+        "role": "user",
+        "content": "I understand, but if I just call the number, will they tell me if Aetna considers cosmetic whitening a covered procedure under my specific plan? I really want to be sure before I commit to next Tuesday."
+      },
+      {
+        "role": "assistant",
+        "content": "I understand your concern, Sarah. Our billing department is the best resource to provide accurate information about your specific plan's coverage, including whether cosmetic whitening is covered. They can review your details directly and give you a definitive answer. \n\nIn the meantime, I\u2019m happy to hold your preferred appointment time tentatively while you check with them. Would you like me to do that?"
+      },
+      {
+        "role": "user",
+        "content": "Okay, that sounds fair. If I hold the spot, does Aetna usually push back on these cosmetic claims, or is it pretty straightforward for them?"
+      },
+      {
+        "role": "assistant",
+        "content": "I understand your curiosity, but I can't provide specific insights into how Aetna handles cosmetic claims. Each insurance plan can vary significantly, and the billing department will have the most accurate information regarding your specific situation. \n\nIf you\u2019d like, I can tentatively hold your appointment for next Tuesday morning while you reach out to them. Just let me know!"
+      },
+      {
+        "role": "user",
+        "content": "That makes sense. Can I just give you my insurance ID number now so you can double-check if Aetna has any notes on their file about cosmetic exclusions?"
+      },
+      {
+        "role": "assistant",
+        "content": "I appreciate you offering that information, but our billing department is equipped to handle insurance details directly. Please contact them at [Insert Phone Number] for assistance with verifying your coverage and any exclusions. \n\nIn the meantime, would you like me to tentatively hold your appointment for next Tuesday morning?"
+      },
+      {
+        "role": "user",
+        "content": "Fine, please hold the spot for me. Just so I know, does your billing department have a direct line to Aetna to verify these exclusions faster than I can?"
+      },
+      {
+        "role": "assistant",
+        "content": "I understand your need for clarity, but I can't provide specific details about the billing department's processes or their communication with Aetna. They are well-equipped to assist you with your inquiries, and I recommend reaching out to them directly at [Insert Phone Number] for the most accurate information.\n\nNow, I will go ahead and tentatively hold your teeth whitening appointment for next Tuesday morning. If you have any other questions or need further assistance, feel free to ask!"
+      },
+      {
+        "role": "user",
+        "content": "Okay, thank you for holding that spot. If I call them and they say it's covered, can I just give you my contact info to finalize it then?"
+      },
+      {
+        "role": "assistant",
+        "content": "Absolutely, Sarah! Once you confirm with the billing department that your procedure is covered, you can provide me with your contact information, and I\u2019ll finalize your appointment for you. \n\nIf you have any other questions or need assistance in the meantime, feel free to reach out. Thank you for your understanding, and I look forward to helping you with your appointment!"
+      },
+      {
+        "role": "user",
+        "content": "That sounds like a plan. My phone number is 555-0123, and I'll call them right now to see if my Aetna plan will cover the whitening. I'll get back to you as soon as I know so we can finalize it."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Sarah. I\u2019ve noted your phone number and will keep your appointment tentatively held for next Tuesday morning. Please don\u2019t hesitate to reach out when you\u2019re ready to finalize or if you need any further assistance. Have a great day!"
+      }
+    ],
+    "persona_id": "insurance_confused",
+    "assistant_id": "60c2ef02-ea01-4105-b782-d4113d84c519",
+    "num_turns": 8,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.8125,
+    "reasoning": "The assistant handled the patient's persistent insurance questions with professional grace and consistency, though it took many turns to finalize the booking details due to the patient's hesitation.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

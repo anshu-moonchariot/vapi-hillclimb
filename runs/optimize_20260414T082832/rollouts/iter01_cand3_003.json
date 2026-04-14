@@ -1,0 +1,57 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book a teeth whitening appointment, but repeatedly asks about insurance coverage."
+      },
+      {
+        "role": "assistant",
+        "content": "I can help you with the teeth whitening appointment. However, for any questions regarding insurance coverage, please contact our billing department directly at [billing department phone number]. \n\nNow, could you please provide me with your preferred date and time for the appointment?"
+      },
+      {
+        "role": "user",
+        "content": "I understand, but wouldn't it be easier if you checked if my Aetna plan covers it first? I'd really prefer to know the cost before I commit to a Tuesday morning slot."
+      },
+      {
+        "role": "assistant",
+        "content": "I completely understand wanting to know the cost upfront. Unfortunately, I don\u2019t have access to insurance coverage details, but our billing team can assist you quickly with that. \n\nIf you'd like, I can hold a tentative Tuesday morning slot for you and you can confirm once you get the insurance information. Does that work? If yes, please let me know which Tuesday and what time in the morning you prefer."
+      },
+      {
+        "role": "user",
+        "content": "That sounds fair, but are you sure there isn't a general code or something in your system that shows if Aetna covers whitening? If not, I'll take next Tuesday at 9:00 AM, but I really need to know for sure before then."
+      },
+      {
+        "role": "assistant",
+        "content": "I appreciate your understanding. While I don't have specific insurance plan details, teeth whitening is typically considered a cosmetic procedure and often isn\u2019t covered by most insurance plans, including Aetna, but it can vary. \n\nI've tentatively booked you for next Tuesday at 9:00 AM. Please reach out to our billing department to confirm your coverage before the appointment. \n\nDoes this booking work for you?"
+      },
+      {
+        "role": "user",
+        "content": "That works for me, thank you. Just to be absolutely certain, if I call and they say it's covered, will this appointment definitely be billed through them? My name is Alex Miller, by the way."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex. If your insurance confirms coverage, we will definitely bill the appointment through your plan. Just let us know the details when you arrive or call ahead to update your insurance information.\n\nYour appointment is set for next Tuesday at 9:00 AM. If you need to make any changes, feel free to reach out. Looking forward to seeing you then!"
+      }
+    ],
+    "persona_id": "insurance_confused",
+    "assistant_id": "60c2ef02-ea01-4105-b782-d4113d84c519",
+    "num_turns": 4,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 1.0,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 1.0,
+    "reasoning": "The assistant handled the patient's persistent insurance questions with professional grace while efficiently collecting all necessary booking details.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book a checkup, but initially asks for dates the office is closed or gives conflicting preferences."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for choosing us for your checkup! To find a suitable appointment date, could you please let me know your preferred dates or any days you are available? Also, please be aware our office is closed on Sundays and most public holidays. This will help me avoid those days when scheduling. Looking forward to your reply!"
+      },
+      {
+        "role": "user",
+        "content": "Oh, I see. In that case, can I come in on Christmas Day? If not, next Sunday works best for me."
+      },
+      {
+        "role": "assistant",
+        "content": "Our office is closed on Christmas Day as it is a public holiday, and we are also closed on Sundays. Could you please provide some alternative dates during the week or on Saturdays that would work for you? This way, I can help find a suitable time for your checkup."
+      },
+      {
+        "role": "user",
+        "content": "Oh, that's a shame. How about midnight on Tuesday? If that's too late, I suppose I could do next Wednesday around 10:00 AM."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for providing your preferences. Our office hours do not extend to midnight. However, next Wednesday at 10:00 AM is within our operating hours. Could you please confirm if you would like me to schedule your checkup for next Wednesday at 10:00 AM?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, next Wednesday at 10:00 AM works perfectly for me. My name is Alex Miller, and I'm a new patient."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex! I have scheduled your checkup for next Wednesday at 10:00 AM. As a new patient, please arrive a few minutes early to complete any necessary paperwork. If you have any questions before your appointment, feel free to reach out. We look forward to seeing you then!"
+      }
+    ],
+    "persona_id": "bad_date",
+    "assistant_id": "b81f1062-90c9-49db-9925-d34e14959102",
+    "num_turns": 4,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.8,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.8825,
+    "reasoning": "The assistant handled multiple edge cases and incorrect user requests with grace and professionalism, though it failed to collect the contact information slot.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

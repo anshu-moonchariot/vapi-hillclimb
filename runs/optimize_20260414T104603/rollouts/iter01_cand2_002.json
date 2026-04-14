@@ -1,0 +1,78 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi there, I\u2019m calling because I have an appointment this Thursday, but something urgent came up and I need to move it to sometime next week instead."
+      },
+      {
+        "role": "assistant",
+        "content": "I can help with that. May I know your name and the type of appointment you had scheduled for Thursday? Also, do you have a preferred day and time next week?"
+      },
+      {
+        "role": "user",
+        "content": "My name is Alex Rivers, and it\u2019s just for a routine cleaning. I\u2019m not sure of the exact time on Thursday, but could we look at something on Tuesday or Wednesday of next week?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks, Alex. I have your name and appointment type. Between Tuesday and Wednesday next week, do you prefer morning, afternoon, or a specific time for your routine cleaning?"
+      },
+      {
+        "role": "user",
+        "content": "I\u2019d prefer a morning slot if you have anything available then. Also, could you please confirm that my Thursday appointment has been fully cancelled before we lock in the new time?"
+      },
+      {
+        "role": "assistant",
+        "content": "I will check availability for a morning slot next Tuesday or Wednesday and confirm the cancellation of your Thursday appointment. Just to be clear, do you want me to cancel your Thursday appointment regardless of the new appointment time availability?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, please cancel the Thursday slot regardless, as I definitely cannot make that one anymore. Once you've confirmed that's off the books, let me know what morning times you have for next week."
+      },
+      {
+        "role": "assistant",
+        "content": "I'll proceed to cancel your Thursday appointment and check for morning slots on next Tuesday and Wednesday. Please hold on a moment.Thank you, Alex. I've canceled your Thursday appointment. Now, for next week, we have morning slots available starting at 8:30 AM and another at 10:00 AM on both Tuesday and Wednesday. Which day and time works best for you?"
+      },
+      {
+        "role": "user",
+        "content": "That\u2019s great, thanks for confirming that for me. Let\u2019s go with Tuesday at 10:00 AM, please."
+      },
+      {
+        "role": "assistant",
+        "content": "Got it, Alex. I\u2019ve booked your routine cleaning for Tuesday at 10:00 AM. Is there anything else I can assist you with today?"
+      },
+      {
+        "role": "user",
+        "content": "That\u2019s everything I needed, thanks so much for your help! Have a great day. [DONE]"
+      },
+      {
+        "role": "assistant",
+        "content": "You're very welcome, Alex! Have a wonderful day, and we look forward to seeing you Tuesday at 10:00 AM. Take care!"
+      }
+    ],
+    "transcript": "PATIENT: Hi there, I\u2019m calling because I have an appointment this Thursday, but something urgent came up and I need to move it to sometime next week instead.\nRECEPTIONIST: I can help with that. May I know your name and the type of appointment you had scheduled for Thursday? Also, do you have a preferred day and time next week?\nPATIENT: My name is Alex Rivers, and it\u2019s just for a routine cleaning. I\u2019m not sure of the exact time on Thursday, but could we look at something on Tuesday or Wednesday of next week?\nRECEPTIONIST: Thanks, Alex. I have your name and appointment type. Between Tuesday and Wednesday next week, do you prefer morning, afternoon, or a specific time for your routine cleaning?\nPATIENT: I\u2019d prefer a morning slot if you have anything available then. Also, could you please confirm that my Thursday appointment has been fully cancelled before we lock in the new time?\nRECEPTIONIST: I will check availability for a morning slot next Tuesday or Wednesday and confirm the cancellation of your Thursday appointment. Just to be clear, do you want me to cancel your Thursday appointment regardless of the new appointment time availability?\nPATIENT: Yes, please cancel the Thursday slot regardless, as I definitely cannot make that one anymore. Once you've confirmed that's off the books, let me know what morning times you have for next week.\nRECEPTIONIST: I'll proceed to cancel your Thursday appointment and check for morning slots on next Tuesday and Wednesday. Please hold on a moment.Thank you, Alex. I've canceled your Thursday appointment. Now, for next week, we have morning slots available starting at 8:30 AM and another at 10:00 AM on both Tuesday and Wednesday. Which day and time works best for you?\nPATIENT: That\u2019s great, thanks for confirming that for me. Let\u2019s go with Tuesday at 10:00 AM, please.\nRECEPTIONIST: Got it, Alex. I\u2019ve booked your routine cleaning for Tuesday at 10:00 AM. Is there anything else I can assist you with today?\nPATIENT: That\u2019s everything I needed, thanks so much for your help! Have a great day. [DONE]\nRECEPTIONIST: You're very welcome, Alex! Have a wonderful day, and we look forward to seeing you Tuesday at 10:00 AM. Take care!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "reschedule",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 6,
+    "stop_reason": "patient_done",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 1.0,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 1.0,
+    "reasoning": "The assistant efficiently managed the rescheduling process, confirmed the cancellation as requested, and maintained a professional, natural tone throughout the interaction.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

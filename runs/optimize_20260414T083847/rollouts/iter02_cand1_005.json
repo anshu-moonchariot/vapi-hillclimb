@@ -1,0 +1,65 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi, book a checkup, but initially asks for dates the office is closed or gives conflicting preferences."
+      },
+      {
+        "role": "assistant",
+        "content": "Hello! I'd be happy to help you schedule a checkup. Could you please let me know your preferred date and time for the appointment? Also, sometimes the office is closed on certain days, so if you have multiple preferences, I can assist in finding a time that works best for you."
+      },
+      {
+        "role": "user",
+        "content": "I was hoping to come in on Christmas Day if you're open. If not, how about this coming Sunday at 2:00 PM?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for your understanding! Unfortunately, our office is closed on Christmas Day. However, I can certainly check availability for this coming Sunday at 2:00 PM. \n\nBefore we proceed, could you please provide me with your full name and current contact phone number? This will help us finalize your appointment."
+      },
+      {
+        "role": "user",
+        "content": "My name is Alex Rivers and my number is 555-0199. Wait, did I mention I actually need to be out of town on Sunday? Can I come in at 3:00 AM on Monday instead?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex! I appreciate you providing your name and contact number. However, our office does not have appointments available at 3:00 AM on Monday. \n\nCould you please let me know if there\u2019s another time on Monday that works for you? We typically open at 8:00 AM. I\u2019m here to help you find a suitable time!"
+      },
+      {
+        "role": "user",
+        "content": "Oh, 3:00 AM is too early? My apologies. How about next Tuesday at 10:00 AM instead?"
+      },
+      {
+        "role": "assistant",
+        "content": "No problem at all, Alex! I appreciate your flexibility. Let me check if we have availability for next Tuesday at 10:00 AM for your checkup. \n\nBefore I finalize that appointment, could you please confirm your full name and current contact phone number once more? Thank you!"
+      },
+      {
+        "role": "user",
+        "content": "I already told you, my name is Alex Rivers and my number is 555-0199. Is Tuesday at 10:00 AM confirmed then?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for your patience, Alex Rivers, and for providing your contact number again! I can confirm your appointment for a checkup on Tuesday at 10:00 AM. \n\nIf you have any questions or need to reschedule, feel free to reach out. We look forward to seeing you then! Have a great day!"
+      }
+    ],
+    "persona_id": "bad_date",
+    "assistant_id": "b81f1062-90c9-49db-9925-d34e14959102",
+    "num_turns": 5,
+    "stop_reason": "booking_complete",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 0.7,
+    "error_recovery": 0.7,
+    "aggregate": 0.825,
+    "reasoning": "The assistant successfully completed the booking but lost efficiency by redundantly re-asking for information that had already been provided.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

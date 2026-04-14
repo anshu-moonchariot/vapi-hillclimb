@@ -1,0 +1,10 @@
+{
+  "t": 1,
+  "decision": "rejected",
+  "best_score_before": 0.902,
+  "iteration_best_score": 0.9045,
+  "best_score_after": 0.902,
+  "candidates_tried": 3,
+  "best_prompt_hash": "569dfbd5ab52",
+  "plateau_count": 1
+}

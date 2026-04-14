@@ -1,0 +1,70 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi there, I\u2019m calling to schedule a routine dental checkup. Could I come in on Christmas Day?"
+      },
+      {
+        "role": "assistant",
+        "content": "I appreciate your interest in scheduling a routine dental checkup! However, our office is closed on Christmas Day. Could you please provide me with your full name and a preferred date and time other than Christmas Day?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, that's a shame. In that case, can you fit me in this coming Sunday at 8:00 AM? My name is Alex Rivers."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex Rivers! I just need to collect your phone number and the reason for your visit before we can proceed with the appointment for this Sunday at 8:00 AM. Could you please provide me with your phone number?"
+      },
+      {
+        "role": "user",
+        "content": "My phone number is 555-0199. Wait, I just remembered the office is usually closed on Sundays, isn't it? Let's just do next Tuesday at 3:00 PM instead."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for that update, Alex! So far, I have your name as Alex Rivers and your phone number as 555-0199. I just need to know the reason for your visit before confirming your appointment for next Tuesday at 3:00 PM. What would you like to address during your visit?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, sorry about that! It\u2019s just for a routine cleaning and a general checkup. Does that work for next Tuesday?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for the details, Alex! I have your full information now:\n\n- **Name:** Alex Rivers\n- **Phone Number:** 555-0199\n- **Reason for Visit:** Routine cleaning and general checkup\n- **Preferred Date and Time:** Next Tuesday at 3:00 PM\n\nYour appointment is all set for Tuesday at 3:00 PM for a routine cleaning and general checkup. We look forward to seeing you then! If you have any other questions, feel free to ask."
+      },
+      {
+        "role": "user",
+        "content": "That sounds perfect, thanks for your help. I'll see you then! [DONE]"
+      },
+      {
+        "role": "assistant",
+        "content": "You're welcome, Alex! Have a great day, and we'll see you next Tuesday!"
+      }
+    ],
+    "transcript": "PATIENT: Hi there, I\u2019m calling to schedule a routine dental checkup. Could I come in on Christmas Day?\nRECEPTIONIST: I appreciate your interest in scheduling a routine dental checkup! However, our office is closed on Christmas Day. Could you please provide me with your full name and a preferred date and time other than Christmas Day?\nPATIENT: Oh, that's a shame. In that case, can you fit me in this coming Sunday at 8:00 AM? My name is Alex Rivers.\nRECEPTIONIST: Thank you, Alex Rivers! I just need to collect your phone number and the reason for your visit before we can proceed with the appointment for this Sunday at 8:00 AM. Could you please provide me with your phone number?\nPATIENT: My phone number is 555-0199. Wait, I just remembered the office is usually closed on Sundays, isn't it? Let's just do next Tuesday at 3:00 PM instead.\nRECEPTIONIST: Thank you for that update, Alex! So far, I have your name as Alex Rivers and your phone number as 555-0199. I just need to know the reason for your visit before confirming your appointment for next Tuesday at 3:00 PM. What would you like to address during your visit?\nPATIENT: Oh, sorry about that! It\u2019s just for a routine cleaning and a general checkup. Does that work for next Tuesday?\nRECEPTIONIST: Thank you for the details, Alex! I have your full information now:\n\n- **Name:** Alex Rivers\n- **Phone Number:** 555-0199\n- **Reason for Visit:** Routine cleaning and general checkup\n- **Preferred Date and Time:** Next Tuesday at 3:00 PM\n\nYour appointment is all set for Tuesday at 3:00 PM for a routine cleaning and general checkup. We look forward to seeing you then! If you have any other questions, feel free to ask.\nPATIENT: That sounds perfect, thanks for your help. I'll see you then! [DONE]\nRECEPTIONIST: You're welcome, Alex! Have a great day, and we'll see you next Tuesday!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "bad_date",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 5,
+    "stop_reason": "patient_done",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 1.0,
+    "turn_efficiency": 0.8,
+    "graceful_handling": 1.0,
+    "tone_naturalness": 1.0,
+    "error_recovery": 1.0,
+    "aggregate": 0.96,
+    "reasoning": "The assistant handled the patient's scheduling changes and constraints with high professionalism and efficiency, successfully collecting all required information.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

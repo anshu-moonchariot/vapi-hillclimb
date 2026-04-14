@@ -1,0 +1,78 @@
+{
+  "rollout": {
+    "messages": [
+      {
+        "role": "user",
+        "content": "Hi there, I\u2019m calling to schedule a routine dental checkup. Are you open on Christmas Day? I find that's the only day my schedule is really clear."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for reaching out! To help you schedule your routine dental checkup, may I please have your name? Also, could you confirm if Christmas Day is the preferred date for your appointment, and if so, what time would work best for you? Our office hours on Christmas Day will allow me to check availability for you."
+      },
+      {
+        "role": "user",
+        "content": "My name is Alex Miller. I know it's a holiday, but I really need to come in on Christmas morning around 9:00 AM since that\u2019s the only time I\u2019m free. Is there any way you can squeeze me in?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you, Alex Miller! Just to confirm, you would like to schedule a routine dental checkup on Christmas Day, December 25th, at 9:00 AM. \n\nCan you please confirm that these details are correct?"
+      },
+      {
+        "role": "user",
+        "content": "Actually, I just realized the office is closed then. Could I come in at 3:00 AM this Sunday instead? I'm a night owl and that works best for me."
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for the update, Alex! So, to confirm, you would like to schedule a routine dental checkup on Sunday at 3:00 AM. \n\nCan you please confirm that these details are correct?"
+      },
+      {
+        "role": "user",
+        "content": "Oh, I forgot you probably aren't open in the middle of the night on a Sunday! How about this coming Tuesday at 10:00 AM instead? Does that work for you?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for your flexibility, Alex! Just to confirm, you would like to schedule a routine dental checkup on this coming Tuesday at 10:00 AM.\n\nCould you please confirm that these details are correct? Also, may I have the exact date for Tuesday you are referring to?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, that sounds perfect. Let's go with Tuesday, October 29th, at 10:00 AM. Does that work for you?"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for confirming, Alex! Just to finalize, you would like to schedule a routine dental checkup on Tuesday, October 29th, at 10:00 AM.\n\nCan you please confirm that these details are correct?"
+      },
+      {
+        "role": "user",
+        "content": "Yes, that is correct. Tuesday, October 29th, at 10:00 AM works perfectly for me. Thanks for your help! [DONE]"
+      },
+      {
+        "role": "assistant",
+        "content": "Great! Your routine dental checkup is scheduled for Tuesday, October 29th, at 10:00 AM. We look forward to seeing you then, Alex. If you need any further assistance, feel free to reach out. Have a wonderful day!"
+      }
+    ],
+    "transcript": "PATIENT: Hi there, I\u2019m calling to schedule a routine dental checkup. Are you open on Christmas Day? I find that's the only day my schedule is really clear.\nRECEPTIONIST: Thank you for reaching out! To help you schedule your routine dental checkup, may I please have your name? Also, could you confirm if Christmas Day is the preferred date for your appointment, and if so, what time would work best for you? Our office hours on Christmas Day will allow me to check availability for you.\nPATIENT: My name is Alex Miller. I know it's a holiday, but I really need to come in on Christmas morning around 9:00 AM since that\u2019s the only time I\u2019m free. Is there any way you can squeeze me in?\nRECEPTIONIST: Thank you, Alex Miller! Just to confirm, you would like to schedule a routine dental checkup on Christmas Day, December 25th, at 9:00 AM. \n\nCan you please confirm that these details are correct?\nPATIENT: Actually, I just realized the office is closed then. Could I come in at 3:00 AM this Sunday instead? I'm a night owl and that works best for me.\nRECEPTIONIST: Thank you for the update, Alex! So, to confirm, you would like to schedule a routine dental checkup on Sunday at 3:00 AM. \n\nCan you please confirm that these details are correct?\nPATIENT: Oh, I forgot you probably aren't open in the middle of the night on a Sunday! How about this coming Tuesday at 10:00 AM instead? Does that work for you?\nRECEPTIONIST: Thank you for your flexibility, Alex! Just to confirm, you would like to schedule a routine dental checkup on this coming Tuesday at 10:00 AM.\n\nCould you please confirm that these details are correct? Also, may I have the exact date for Tuesday you are referring to?\nPATIENT: Yes, that sounds perfect. Let's go with Tuesday, October 29th, at 10:00 AM. Does that work for you?\nRECEPTIONIST: Thank you for confirming, Alex! Just to finalize, you would like to schedule a routine dental checkup on Tuesday, October 29th, at 10:00 AM.\n\nCan you please confirm that these details are correct?\nPATIENT: Yes, that is correct. Tuesday, October 29th, at 10:00 AM works perfectly for me. Thanks for your help! [DONE]\nRECEPTIONIST: Great! Your routine dental checkup is scheduled for Tuesday, October 29th, at 10:00 AM. We look forward to seeing you then, Alex. If you need any further assistance, feel free to reach out. Have a wonderful day!",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "bad_date",
+    "assistant_id": "1fff6117-ad79-4282-8e07-a91b01ee2a31",
+    "call_id": "",
+    "num_turns": 6,
+    "stop_reason": "patient_done",
+    "failed": false,
+    "error": null
+  },
+  "score": {
+    "task_completion": 0.75,
+    "turn_efficiency": 0.5,
+    "graceful_handling": 0.7,
+    "tone_naturalness": 0.7,
+    "error_recovery": 0.7,
+    "aggregate": 0.685,
+    "reasoning": "The assistant failed to collect the required contact information and was overly repetitive in its confirmation process, though it handled the patient's unusual scheduling requests with professional patience.",
+    "failed": false,
+    "error": null,
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}

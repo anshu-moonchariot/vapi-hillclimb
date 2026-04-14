@@ -1,0 +1,29 @@
+{
+  "rollout": {
+    "messages": [],
+    "transcript": "",
+    "recording_url": "",
+    "structured_data": {},
+    "analysis": {},
+    "persona_id": "simple_booking",
+    "assistant_id": "6cfdba78-118c-4a99-a5e1-ce17a3a9fc32",
+    "call_id": "",
+    "num_turns": 0,
+    "stop_reason": "call_error",
+    "failed": true,
+    "error": "Client error '400 Bad Request' for url 'https://api.vapi.ai/call'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+  },
+  "score": {
+    "task_completion": 0.0,
+    "turn_efficiency": 0.0,
+    "graceful_handling": 0.0,
+    "tone_naturalness": 0.0,
+    "error_recovery": 0.0,
+    "aggregate": 0.0,
+    "reasoning": "",
+    "failed": true,
+    "error": "Client error '400 Bad Request' for url 'https://api.vapi.ai/call'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400",
+    "rubric_version": "v1",
+    "model": "google/gemini-3.1-flash-lite-preview"
+  }
+}
