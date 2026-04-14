@@ -308,6 +308,7 @@ The optimizer's peak measurement of **0.890** (+13.5%) remains the best estimate
 
 | Gap | Root cause | Mitigation |
 |---|---|---|
+| Vapi API credits exhausted | Account balance hit zero during development; cannot place more calls or create assistants until credits are added | Replenish Vapi credits; re-run `baseline` / `optimize` / `final-eval`; contact Vapi for additional credits if needed (per take-home instructions) |
 | Voice optimization loop incomplete | Vapi free-number daily outbound cap (~7 calls/day) | Architecture ready; use `./run_optimization.sh` after cap resets, or import paid Twilio number |
 | Final eval regressed vs. optimizer peak | LLM judge stochasticity + rollout variance | Run larger N (N=10+) for lower variance; use a fixed temperature=0 judge |
 | Only prompt is optimized | Scope decision | Temperature, `maxTokens`, voice/STT settings are straightforward additions to the mutator |
@@ -325,7 +326,7 @@ The problem statement requires: *"Your system should be reproducible — we can 
 |---|---|
 | Conda | Any modern version; env is `vapi-takehome` |
 | `uv` | `brew install uv` on macOS |
-| Vapi account | Free tier; provision 2 phone numbers in the dashboard |
+| Vapi account | Active credits (free tier or paid); provision 2 phone numbers in the dashboard if using voice mode |
 | OpenRouter API key | [openrouter.ai](https://openrouter.ai) — used for judge, mutator, and synthetic patient |
 | (Optional) Twilio number | Removes Vapi's ~7 calls/day outbound cap for voice optimization |
 

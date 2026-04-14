@@ -4,6 +4,8 @@ ML-driven system that automatically improves a Vapi dental receptionist agent th
 
 **Use case:** Dental office appointment scheduler (chosen from the provided options).
 
+**Vapi credits:** The author’s Vapi account **ran out of credits** during this project, so no further assistant creation, chat, or voice calls can be run until credits are replenished (or access restored). Reviewers can still execute the code with their own `VAPI_API_KEY` and sufficient balance. The problem statement notes you can contact Vapi if you need credits beyond the free tier.
+
 ---
 
 ## Deliverables
