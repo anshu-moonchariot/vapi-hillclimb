@@ -50,25 +50,90 @@ This run completed fully and demonstrates that the hill-climbing optimizer conve
 
 ## ML Approach
 
-**Algorithm**: LLM-guided hill-climbing (prompt mutation).
+### Algorithm: LLM-guided hill-climbing (prompt mutation)
 
-Each iteration:
-1. An LLM mutator generates K=3 candidate system prompt variants
-2. Each candidate is evaluated over N=5 personas via real Vapi voice calls
-3. The best candidate's mean score is compared to the current best
-4. If improvement > δ=0.03, the prompt is accepted; otherwise the iteration is a plateau
-5. Optimization stops after 2 consecutive plateaus (early stopping) or T=5 iterations
+The core problem is a **black-box optimization** over the space of natural language system prompts. The objective function — conversational quality of a voice agent — is non-differentiable and expensive to evaluate (each sample is a full phone call or multi-turn chat). This rules out gradient-based methods and makes stochastic search appropriate.
 
-**Evaluation** (hybrid):
-- **Soft (80%)**: LLM judge scores 5 dimensions — task completion, turn efficiency, graceful handling, tone naturalness, error recovery — against `rubric/v1.md`
-- **Hard (20%)**: `analysisPlan.structuredData` checks whether 4 booking slots were filled (`patient_name`, `appointment_date`, `procedure`, `contact_info`) and `appointment_booked=true`
+**Hill-climbing** with LLM-generated mutations is the right fit because:
+- The search space (system prompts) is discrete and high-dimensional; random perturbations are meaningless, but an LLM can generate semantically meaningful variations given a failure analysis
+- The objective is noisy (LLM judge variance); a formal acceptance threshold (δ) prevents accepting noise as signal
+- It is sample-efficient: each iteration tests only K=3 candidates, and early stopping limits total evaluations
 
-**Why this approach**: Gradient-free optimization is appropriate when the objective is non-differentiable (LLM judge outputs). Hill-climbing with LLM mutations is simple, explainable, and fast enough for prompt-space search.
+### Optimization loop
 
-**Tradeoffs**:
-- Voice calls take ~80–120s each; wall-clock time grows linearly with N×K×T
-- Vapi free numbers cap at ~7 outbound calls/day; Twilio import removes this limit
-- LLM judge variance is managed by running N=5 rollouts and averaging
+```
+best_prompt ← baseline_prompt
+best_score  ← evaluate(best_prompt, N rollouts)
+plateau_count ← 0
+
+for t in 1..T:
+    weakness_report ← analyze_failures(rollout_transcripts)
+    candidates ← mutator_llm(best_prompt, weakness_report, K=3)
+
+    for candidate in candidates:
+        score ← evaluate(candidate, N rollouts)
+        if score > best_score + δ:
+            best_prompt, best_score ← candidate, score
+            plateau_count ← 0
+            break
+
+    else:
+        plateau_count += 1
+        if plateau_count >= 2:
+            break  # converged
+```
+
+Hyperparameters: `N=5` rollouts, `K=3` candidates, `T=5` max iterations, `δ=0.03`.
+
+### Mutator design
+
+The LLM mutator receives:
+1. The current system prompt
+2. A structured failure report — which personas scored low and on which dimensions
+3. The rubric definitions — so it understands what each dimension penalises
+
+It returns K candidate prompts that each attempt to address identified weaknesses while preserving what is already working. Mutations are constrained to be minimal and targeted, not wholesale rewrites, to avoid regressing strong dimensions while fixing weak ones.
+
+### Evaluation (hybrid scoring)
+
+Every rollout is scored using a two-layer approach:
+
+**Soft (80%) — LLM judge against `rubric/v1.md`:**
+
+| Dimension | Weight | What it checks |
+|---|---|---|
+| task_completion | 35% | Were all 4 slots collected? (name, date, procedure, contact) |
+| turn_efficiency | 20% | Booking completed without wasted turns or repetition? |
+| graceful_handling | 20% | Vague, confused, or off-topic inputs handled smoothly? |
+| tone_naturalness | 15% | Sounds like a real receptionist? |
+| error_recovery | 10% | Recovered from contradictory or impossible inputs? |
+
+**Hard (20%) — `analysisPlan.structuredData` slot-check:**  
+Vapi's `analysisPlan` extracts structured JSON from every call. The hard check counts how many of `patient_name`, `appointment_date`, `procedure`, `contact_info` were filled, and halves the score if `appointment_booked=false`. This grounds the subjective judge score in objective, verifiable evidence.
+
+Final score: `0.8 × soft_judge + 0.2 × hard_slots`
+
+### Synthetic test harness
+
+Rather than using real patients, 5 LLM-driven personas simulate different caller types. Each persona is a separate Vapi assistant with a custom system prompt describing their personality and goals, attached to an inbound phone number. This allows deterministic coverage of known failure modes across every optimization iteration.
+
+### Why not other approaches?
+
+| Alternative | Why not used |
+|---|---|
+| Bayesian optimisation | Requires a parameterised, low-dimensional search space; prompt space is unstructured |
+| Reinforcement learning | Needs orders of magnitude more samples; impractical with voice calls costing ~90s each |
+| Genetic algorithms | Crossover of prompts produces incoherent text; LLM mutation is more semantically valid |
+| Fine-tuning the base model | Out of scope and overkill for prompt-level optimisation |
+
+### Tradeoffs
+
+| Tradeoff | Impact | Mitigation |
+|---|---|---|
+| LLM judge variance | Same transcript can score differently across runs | Average over N=5 rollouts; use δ threshold to reject noise |
+| Voice call cost/time | ~90s per call; full voice run = N×K×T = 75 calls (~112 min) | Chat mode bypasses PSTN for unlimited, fast iteration |
+| Prompt-only optimisation | Temperature, voice, STT settings left unchanged | Mutator can be extended to propose any assistant config field |
+| No tools in the agent | Reschedule/cancel requires real calendar access | Out of scope; documented as a known gap |
 
 ---
 
